@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Adaugă lista ta de redare sau datele de conectare de la furnizor ca să începi.</string>
+    <string name="welcome_add_source">Adaugă o sursă</string>
+    <string name="welcome_paste_link">Lipește linkul unei liste</string>
+    <string name="welcome_sign_in">Conectează-te cu server și date de conectare</string>
+
+    <!-- Add source -->
+    <string name="add_title">Adaugă o sursă</string>
+    <string name="add_mode_link">Link către listă</string>
+    <string name="add_mode_login">Server și conectare</string>
+    <string name="add_field_link">Linkul listei (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Link ghid TV (opțional)</string>
+    <string name="sources_guide">Link ghid TV</string>
+    <string name="sources_guide_body">Adresa unui ghid XMLTV de la furnizorul tău. Lasă gol pentru a folosi ghidul indicat de playlist, dacă există.</string>
+    <string name="sources_guide_save">Salvează</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Nume de utilizator</string>
+    <string name="add_field_password">Parolă</string>
+    <string name="add_continue">Continuă</string>
+    <string name="add_checking">Se verifică…</string>
+    <string name="add_cancel">Anulează</string>
+    <string name="add_missing_fields">Completează toate câmpurile.</string>
+
+    <!-- Import -->
+    <string name="import_title">Se configurează %1$s</string>
+    <string name="import_connecting">Se conectează…</string>
+    <string name="import_live">Se importă TV în direct…</string>
+    <string name="import_movies">Se importă filmele…</string>
+    <string name="import_series">Se importă serialele…</string>
+    <string name="import_finishing">Se finalizează…</string>
+    <string name="import_guide">Se actualizează ghidul TV…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s canal în direct</item>
+        <item quantity="few">%1$s canale în direct</item>
+        <item quantity="other">%1$s de canale în direct</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="few">%1$s filme</item>
+        <item quantity="other">%1$s de filme</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s serial</item>
+        <item quantity="few">%1$s seriale</item>
+        <item quantity="other">%1$s de seriale</item>
+    </plurals>
+    <string name="import_done">Gata</string>
+    <string name="import_continue">Continuă</string>
+    <string name="import_retry">Încearcă din nou</string>
+    <string name="import_back">Înapoi</string>
+    <string name="import_failed">Nu s-a putut finaliza configurarea acestei surse.</string>
+
+    <!-- Library -->
+    <string name="library_title">Biblioteca ta</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s canal după îmbinarea duplicatelor</item>
+        <item quantity="few">%1$s canale după îmbinarea duplicatelor</item>
+        <item quantity="other">%1$s de canale după îmbinarea duplicatelor</item>
+    </plurals>
+    <string name="library_source_updated">Actualizată</string>
+    <string name="library_source_never">Încă neimportată</string>
+    <string name="library_refresh">Actualizează</string>
+    <string name="library_add_source">Adaugă altă sursă</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Configurează de pe telefon</string>
+    <string name="welcome_type_on_tv">Scrie pe TV</string>
+    <string name="phone_title">Configurează de pe telefon</string>
+    <string name="phone_steps">Scanează codul cu camera telefonului și introdu acolo linkul listei sau datele de conectare. Telefonul trebuie să fie în aceeași rețea Wi-Fi cu acest TV.</string>
+    <string name="phone_or_open">Sau deschide %1$s</string>
+    <string name="phone_no_network">Acest TV nu este conectat la nicio rețea. Conecteaz-o la Wi-Fi sau la Ethernet, ori scrie sursa pe TV.</string>
+    <string name="phone_type_instead">Scrie pe TV în schimb</string>
+
+    <!-- Home -->
+    <string name="tab_live">TV în direct</string>
+    <string name="tab_movies">Filme</string>
+    <string name="tab_series">Seriale</string>
+    <string name="tab_search">Căutare</string>
+    <string name="tab_settings">Setări</string>
+    <string name="settings_general">General</string>
+    <string name="settings_sources">Surse</string>
+    <string name="settings_language">Limba interfeței</string>
+    <string name="settings_language_device">La fel ca dispozitivul (%1$s)</string>
+
+    <string name="tab_home">Acasă</string>
+    <string name="home_continue">Continuă vizionarea</string>
+    <string name="home_favourite_channels">Canale favorite</string>
+    <string name="home_my_movies">Lista mea · Filme</string>
+    <string name="home_my_series">Lista mea · Seriale</string>
+    <string name="home_empty">Ce urmărești, lista ta și canalele tale favorite vor apărea aici.</string>
+    <string name="home_remove_continue">Elimină din Continuă vizionarea</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favorite</string>
+    <string name="live_recent">Vizionate recent</string>
+    <string name="live_other">Alte canale</string>
+    <string name="live_empty">Niciun canal în direct în sursele tale active.</string>
+    <string name="genre_all">Toate canalele</string>
+    <string name="genre_news">Știri</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Copii</string>
+    <string name="genre_movies">Filme</string>
+    <string name="genre_entertainment">Divertisment</string>
+    <string name="genre_documentary">Documentare</string>
+    <string name="genre_music">Muzică</string>
+    <string name="genre_religion">Religie</string>
+    <string name="genre_other">Altele</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Continuă vizionarea</string>
+    <string name="vod_favorites">Lista mea</string>
+    <string name="vod_recent">Adăugate recent</string>
+    <string name="vod_empty">Nimic aici încă.</string>
+    <string name="vod_all_languages">Toate limbile</string>
+    <string name="vod_all_movies_in">Toate filmele · %1$s</string>
+    <string name="vod_all_series_in">Toate serialele · %1$s</string>
+    <string name="vod_filter">Filtrează</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtrează această listă</string>
+    <string name="vod_no_match">Nimic din această listă nu se potrivește cu „%1$s”.</string>
+    <string name="vod_sort">Sortare: %1$s</string>
+    <string name="vod_sort_recent">Adăugate recent</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Cele mai noi</string>
+    <string name="vod_sort_rating">Cele mai bine cotate</string>
+    <string name="vod_language_not_stated">Limbă nespecificată</string>
+    <string name="vod_all_movies_not_stated">Toate filmele, limbă nespecificată</string>
+    <string name="vod_all_series_not_stated">Toate serialele, limbă nespecificată</string>
+    <string name="details_play">Redă</string>
+    <string name="details_resume">Reia de la %1$s</string>
+    <string name="details_start_over">Începe de la capăt</string>
+    <string name="details_play_episode">Redă %1$s</string>
+    <string name="details_resume_episode">Reia %1$s</string>
+    <string name="details_favorite">Adaugă la lista mea</string>
+    <string name="details_unfavorite">Elimină din lista mea</string>
+    <string name="details_cast">Cu %1$s</string>
+    <string name="details_season">Sezonul %1$d</string>
+    <string name="details_no_episodes">Niciun episod disponibil.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Canale, emisiuni, filme, seriale</string>
+    <string name="search_on_tv">La TV</string>
+    <string name="tab_guide">Ghid</string>
+    <string name="guide_search">Caută în ghid</string>
+    <string name="guide_nothing">Nicio emisiune care să se potrivească cu „%1$s” în %2$s.</string>
+    <string name="guide_no_info">Fără informații în ghid</string>
+    <string name="guide_today">Azi</string>
+    <string name="guide_tomorrow">Mâine</string>
+    <string name="guide_channels">Canale</string>
+    <string name="live_all">Toate canalele</string>
+    <string name="guide_now_until">Acum · până la %1$s</string>
+    <string name="guide_today_at">Azi %1$s</string>
+    <string name="guide_tomorrow_at">Mâine %1$s</string>
+    <string name="guide_watch_channel">Urmărește %1$s acum</string>
+    <string name="search_intro">Scrie cel puțin două litere.</string>
+    <string name="search_nothing">Nu s-a găsit nimic pentru „%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Acest canal nu funcționează acum</string>
+    <string name="player_title_unavailable">Acest titlu nu poate fi redat acum</string>
+    <string name="player_offline_hint_live">Apasă OK ca să încerci din nou sau Sus/Jos pentru alt canal.</string>
+    <string name="player_offline_hint">Apasă OK ca să încerci din nou.</string>
+    <string name="player_up_next">Urmează: %1$s</string>
+    <string name="player_up_next_in">Începe în %1$d s</string>
+    <string name="player_up_next_hint">OK pentru redare acum · Înapoi pentru oprire</string>
+    <string name="player_still_watching">Încă te uiți?</string>
+    <string name="player_still_watching_hint">OK pentru a reda %1$s · Înapoi pentru oprire</string>
+    <string name="player_next_episode">Episodul următor  ›</string>
+    <string name="player_stop">Oprește</string>
+    <string name="player_audio">Audio: %1$s</string>
+    <string name="player_audio_title">Pistă audio</string>
+    <string name="player_audio_choose">♪  Audio: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">%1$d canale</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Limbă necunoscută</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">rată de biți nespecificată</string>
+    <string name="track_default">implicită</string>
+    <string name="track_forced">forțate</string>
+    <string name="track_commentary">comentarii</string>
+    <string name="track_audio_description">audiodescriere</string>
+    <string name="track_hard_of_hearing">pentru persoane cu deficiențe de auz</string>
+    <string name="track_dub">dublată</string>
+    <string name="subtitles_title">Subtitrări</string>
+    <string name="subtitles_off">Dezactivate</string>
+    <string name="player_subtitles_choose">Subtitrări: %1$s</string>
+    <string name="subtitle_image">%1$s (imagine)</string>
+    <string name="subtitle_closed_captions">Subtitrări pentru surzi</string>
+    <string name="player_offline_hint_touch">Furnizorul nu trimite video. Încearcă din nou peste puțin timp.</string>
+    <string name="player_retry">Încearcă din nou</string>
+    <string name="player_hint_live">Sus/Jos: canal  ·  Stânga/Dreapta: lista de canale</string>
+    <string name="player_hint_vod">Stânga/Dreapta: derulare înapoi/înainte  ·  OK: pauză</string>
+    <string name="player_favorite">Adaugă %1$s la favorite</string>
+    <string name="player_unfavorite">Elimină %1$s din favorite</string>
+    <string name="player_now_playing">Se redă acum</string>
+    <string name="player_backup_stream">Flux de rezervă</string>
+    <string name="player_zoom">Imagine: %1$s</string>
+    <string name="player_add_favourite_short">☆  Adaugă la favorite</string>
+    <string name="player_remove_favourite_short">★  Favorit</string>
+    <string name="zoom_fit">Potrivit</string>
+    <string name="zoom_fill">Umple ecranul</string>
+    <string name="zoom_stretch">Întins</string>
+    <string name="player_next">Următorul %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">dezactivată</string>
+    <string name="sources_enable">Activează</string>
+    <string name="sources_disable">Dezactivează</string>
+    <string name="sources_move_up">Preferă această sursă</string>
+    <string name="sources_delete">Elimină</string>
+    <string name="sources_delete_confirm">Apasă din nou pentru a elimina</string>
+    <string name="settings_title">Conținut</string>
+    <string name="settings_adult_off">Conținut pentru adulți: ascuns</string>
+    <string name="settings_adult_on">Conținut pentru adulți: afișat</string>
+
+    <!-- About -->
+    <string name="about_title">Despre și licențe</string>
+    <string name="about_body">PureIPTV redă sursele pe care le adaugi chiar tu. Nu oferă niciun canal sau conținut. Creată cu acest software open source:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV este software liber: poate fi distribuit și modificat în condițiile GNU General Public License, versiunea 3 sau (la alegere) orice versiune ulterioară. Este oferit fără nicio garanție. Cod sursă: %1$s</string>
+    <string name="about_privacy">PureIPTV nu colectează date despre tine. Sursele și datele tale de conectare rămân pe acest dispozitiv și sunt trimise doar furnizorilor pe care îi adaugi. Politica de confidențialitate: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Serverul nu poate fi contactat. Verifică adresa și conexiunea la internet.</string>
+    <string name="error_invalid_credentials">Furnizorul nu a acceptat aceste date de conectare. Verifică numele de utilizator și parola.</string>
+    <string name="error_account_expired">Contul a expirat. Contactează furnizorul pentru a-l reînnoi.</string>
+    <string name="error_not_a_playlist">Această adresă nu duce la o listă de redare sau la o conectare la furnizor.</string>
+    <string name="error_unknown">Ceva nu a mers bine. Încearcă din nou.</string>
+</resources>

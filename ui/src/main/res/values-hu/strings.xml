@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Az induláshoz add hozzá a lejátszási listádat vagy a szolgáltatód bejelentkezési adatait.</string>
+    <string name="welcome_add_source">Forrás hozzáadása</string>
+    <string name="welcome_paste_link">Lejátszási lista hivatkozásának beillesztése</string>
+    <string name="welcome_sign_in">Bejelentkezés szerverrel és felhasználónévvel</string>
+
+    <!-- Add source -->
+    <string name="add_title">Forrás hozzáadása</string>
+    <string name="add_mode_link">Lejátszási lista hivatkozása</string>
+    <string name="add_mode_login">Szerver és bejelentkezés</string>
+    <string name="add_field_link">Lejátszási lista hivatkozása (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Műsorújság hivatkozása (nem kötelező)</string>
+    <string name="sources_guide">Műsorújság hivatkozása</string>
+    <string name="sources_guide_body">A szolgáltatód XMLTV-műsorújságának címe. Hagyd üresen, ha a lejátszási listában megadott műsorújságot szeretnéd használni, ha van ilyen.</string>
+    <string name="sources_guide_save">Mentés</string>
+    <string name="add_field_server">Szerver</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Felhasználónév</string>
+    <string name="add_field_password">Jelszó</string>
+    <string name="add_continue">Tovább</string>
+    <string name="add_checking">Ellenőrzés…</string>
+    <string name="add_cancel">Mégse</string>
+    <string name="add_missing_fields">Kérjük, töltsd ki az összes mezőt.</string>
+
+    <!-- Import -->
+    <string name="import_title">Beállítás: %1$s</string>
+    <string name="import_connecting">Csatlakozás…</string>
+    <string name="import_live">Élő TV importálása…</string>
+    <string name="import_movies">Filmek importálása…</string>
+    <string name="import_series">Sorozatok importálása…</string>
+    <string name="import_finishing">Befejezés…</string>
+    <string name="import_guide">Műsorújság frissítése…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s élő csatorna</item>
+        <item quantity="other">%1$s élő csatorna</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s film</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s sorozat</item>
+        <item quantity="other">%1$s sorozat</item>
+    </plurals>
+    <string name="import_done">Kész</string>
+    <string name="import_continue">Tovább</string>
+    <string name="import_retry">Újra</string>
+    <string name="import_back">Vissza</string>
+    <string name="import_failed">A forrás beállítását nem sikerült befejezni.</string>
+
+    <!-- Library -->
+    <string name="library_title">A könyvtárad</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s csatorna az ismétlődések összevonása után</item>
+        <item quantity="other">%1$s csatorna az ismétlődések összevonása után</item>
+    </plurals>
+    <string name="library_source_updated">Naprakész</string>
+    <string name="library_source_never">Még nincs importálva</string>
+    <string name="library_refresh">Frissítés</string>
+    <string name="library_add_source">Újabb forrás hozzáadása</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Beállítás telefonról</string>
+    <string name="welcome_type_on_tv">Beírás a tévén</string>
+    <string name="phone_title">Beállítás telefonról</string>
+    <string name="phone_steps">Olvasd be a kódot a telefon kamerájával, és add meg ott a lejátszási lista hivatkozását vagy a bejelentkezési adataidat. A telefonnak ugyanazon a Wi-Fi-hálózaton kell lennie, mint a tévének.</string>
+    <string name="phone_or_open">Vagy nyisd meg: %1$s</string>
+    <string name="phone_no_network">A tévé nincs hálózatra csatlakoztatva. Csatlakoztasd Wi-Fi-hez vagy Ethernethez, vagy írd be a forrást a tévén.</string>
+    <string name="phone_type_instead">Inkább beírom a tévén</string>
+
+    <!-- Home -->
+    <string name="tab_live">Élő TV</string>
+    <string name="tab_movies">Filmek</string>
+    <string name="tab_series">Sorozatok</string>
+    <string name="tab_search">Keresés</string>
+    <string name="tab_settings">Beállítások</string>
+    <string name="settings_general">Általános</string>
+    <string name="settings_sources">Források</string>
+    <string name="settings_language">Felület nyelve</string>
+    <string name="settings_language_device">Megegyezik az eszközével (%1$s)</string>
+
+    <string name="tab_home">Kezdőlap</string>
+    <string name="home_continue">Megtekintés folytatása</string>
+    <string name="home_favourite_channels">Kedvenc csatornák</string>
+    <string name="home_my_movies">Saját lista · Filmek</string>
+    <string name="home_my_series">Saját lista · Sorozatok</string>
+    <string name="home_empty">Itt jelenik meg, amit nézel, a saját listád és a kedvenc csatornáid.</string>
+    <string name="home_remove_continue">Eltávolítás a Megtekintés folytatása listáról</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Kedvencek</string>
+    <string name="live_recent">Nemrég nézett</string>
+    <string name="live_other">További csatornák</string>
+    <string name="live_empty">A bekapcsolt forrásaidban nincsenek élő csatornák.</string>
+    <string name="genre_all">Összes csatorna</string>
+    <string name="genre_news">Hírek</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Gyerekek</string>
+    <string name="genre_movies">Filmek</string>
+    <string name="genre_entertainment">Szórakoztató</string>
+    <string name="genre_documentary">Dokumentum</string>
+    <string name="genre_music">Zene</string>
+    <string name="genre_religion">Vallás</string>
+    <string name="genre_other">Egyéb</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Megtekintés folytatása</string>
+    <string name="vod_favorites">Saját lista</string>
+    <string name="vod_recent">Nemrég hozzáadott</string>
+    <string name="vod_empty">Itt még nincs semmi.</string>
+    <string name="vod_all_languages">Minden nyelv</string>
+    <string name="vod_all_movies_in">Összes film · %1$s</string>
+    <string name="vod_all_series_in">Összes sorozat · %1$s</string>
+    <string name="vod_filter">Szűrő</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Lista szűrése</string>
+    <string name="vod_no_match">A listában nincs találat erre: „%1$s”.</string>
+    <string name="vod_sort">Rendezés: %1$s</string>
+    <string name="vod_sort_recent">Nemrég hozzáadott</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Legújabb</string>
+    <string name="vod_sort_rating">Legjobbra értékelt</string>
+    <string name="vod_language_not_stated">Nyelv nincs megadva</string>
+    <string name="vod_all_movies_not_stated">Összes film, nyelv nincs megadva</string>
+    <string name="vod_all_series_not_stated">Összes sorozat, nyelv nincs megadva</string>
+    <string name="details_play">Lejátszás</string>
+    <string name="details_resume">Folytatás innen: %1$s</string>
+    <string name="details_start_over">Elölről</string>
+    <string name="details_play_episode">Lejátszás: %1$s</string>
+    <string name="details_resume_episode">Folytatás: %1$s</string>
+    <string name="details_favorite">Hozzáadás a saját listához</string>
+    <string name="details_unfavorite">Eltávolítás a saját listáról</string>
+    <string name="details_cast">Szereplők: %1$s</string>
+    <string name="details_season">%1$d. évad</string>
+    <string name="details_no_episodes">Nincsenek elérhető epizódok.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Csatornák, műsorok, filmek, sorozatok</string>
+    <string name="search_on_tv">A tévében</string>
+    <string name="tab_guide">Műsor</string>
+    <string name="guide_search">Keresés a műsorban</string>
+    <string name="guide_nothing">Nincs „%1$s” nevű műsor itt: %2$s.</string>
+    <string name="guide_no_info">Nincs műsorinformáció</string>
+    <string name="guide_today">Ma</string>
+    <string name="guide_tomorrow">Holnap</string>
+    <string name="guide_channels">Csatornák</string>
+    <string name="live_all">Összes csatorna</string>
+    <string name="guide_now_until">Most · eddig: %1$s</string>
+    <string name="guide_today_at">Ma %1$s</string>
+    <string name="guide_tomorrow_at">Holnap %1$s</string>
+    <string name="guide_watch_channel">Megnézem most: %1$s</string>
+    <string name="search_intro">Írj be legalább két betűt.</string>
+    <string name="search_nothing">Nincs találat erre: „%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Ez a csatorna most nem működik</string>
+    <string name="player_title_unavailable">Ez a cím most nem játszható le</string>
+    <string name="player_offline_hint_live">Nyomd meg az OK gombot az újrapróbáláshoz, vagy a Fel/Le gombot másik csatornához.</string>
+    <string name="player_offline_hint">Nyomd meg az OK gombot az újrapróbáláshoz.</string>
+    <string name="player_up_next">Következik: %1$s</string>
+    <string name="player_up_next_in">Indul: %1$d mp múlva</string>
+    <string name="player_up_next_hint">OK: lejátszás most · Vissza: leállítás</string>
+    <string name="player_still_watching">Még nézed?</string>
+    <string name="player_still_watching_hint">OK: lejátszás (%1$s) · Vissza: leállítás</string>
+    <string name="player_next_episode">Következő epizód  ›</string>
+    <string name="player_stop">Leállítás</string>
+    <string name="player_audio">Hang: %1$s</string>
+    <string name="player_audio_title">Hangsáv</string>
+    <string name="player_audio_choose">♪  Hang: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">sztereó</string>
+    <string name="audio_channels">%1$d csatorna</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Ismeretlen nyelv</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitráta nincs megadva</string>
+    <string name="track_default">alapértelmezett</string>
+    <string name="track_forced">kényszerített</string>
+    <string name="track_commentary">kommentár</string>
+    <string name="track_audio_description">hangleírás</string>
+    <string name="track_hard_of_hearing">nagyothallóknak</string>
+    <string name="track_dub">szinkron</string>
+    <string name="subtitles_title">Feliratok</string>
+    <string name="subtitles_off">Ki</string>
+    <string name="player_subtitles_choose">Felirat: %1$s</string>
+    <string name="subtitle_image">%1$s (kép)</string>
+    <string name="subtitle_closed_captions">Rejtett feliratok</string>
+    <string name="player_offline_hint_touch">A szolgáltató nem küld videót. Próbáld újra egy kis idő múlva.</string>
+    <string name="player_retry">Újra</string>
+    <string name="player_hint_live">Fel/Le: csatorna  ·  Balra/Jobbra: csatornalista</string>
+    <string name="player_hint_vod">Balra/Jobbra: tekerés vissza/előre  ·  OK: szünet</string>
+    <string name="player_favorite">Kedvencekhez adás: %1$s</string>
+    <string name="player_unfavorite">Eltávolítás a kedvencek közül: %1$s</string>
+    <string name="player_now_playing">Most megy</string>
+    <string name="player_backup_stream">Tartalék adatfolyam</string>
+    <string name="player_zoom">Kép: %1$s</string>
+    <string name="player_add_favourite_short">☆  Kedvencekhez adás</string>
+    <string name="player_remove_favourite_short">★  Kedvenc</string>
+    <string name="zoom_fit">Illesztés</string>
+    <string name="zoom_fill">Képernyő kitöltése</string>
+    <string name="zoom_stretch">Nyújtás</string>
+    <string name="player_next">Következő %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">kikapcsolva</string>
+    <string name="sources_enable">Bekapcsolás</string>
+    <string name="sources_disable">Kikapcsolás</string>
+    <string name="sources_move_up">Ennek a forrásnak az előnyben részesítése</string>
+    <string name="sources_delete">Eltávolítás</string>
+    <string name="sources_delete_confirm">Nyomd meg újra az eltávolításhoz</string>
+    <string name="settings_title">Tartalom</string>
+    <string name="settings_adult_off">Felnőtt tartalom: rejtve</string>
+    <string name="settings_adult_on">Felnőtt tartalom: látható</string>
+
+    <!-- About -->
+    <string name="about_title">Névjegy és licencek</string>
+    <string name="about_body">A PureIPTV az általad hozzáadott forrásokat játssza le. Nem biztosít csatornákat vagy tartalmat. Ezekkel a nyílt forráskódú szoftverekkel készült:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">A PureIPTV szabad szoftver: a GNU General Public License 3. vagy (választás szerint) bármely későbbi verziójának feltételei szerint terjeszthető és módosítható. Mindenféle garancia nélkül érhető el. Forráskód: %1$s</string>
+    <string name="about_privacy">A PureIPTV nem gyűjt rólad adatokat. A forrásaid és a bejelentkezési adataid ezen az eszközön maradnak, és csak az általad hozzáadott szolgáltatók kapják meg őket. Adatvédelmi irányelvek: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">A szerver nem érhető el. Ellenőrizd a címet és az internetkapcsolatot.</string>
+    <string name="error_invalid_credentials">A szolgáltató nem fogadta el ezt a bejelentkezést. Ellenőrizd a felhasználónevet és a jelszót.</string>
+    <string name="error_account_expired">Ez a fiók lejárt. A megújításhoz fordulj a szolgáltatódhoz.</string>
+    <string name="error_not_a_playlist">Ez a cím nem lejátszási listára vagy szolgáltatói bejelentkezésre mutat.</string>
+    <string name="error_unknown">Hiba történt. Kérjük, próbáld újra.</string>
+</resources>

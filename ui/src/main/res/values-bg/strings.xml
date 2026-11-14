@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Добавете плейлиста или данните за вход от доставчика си, за да започнете.</string>
+    <string name="welcome_add_source">Добавяне на източник</string>
+    <string name="welcome_paste_link">Поставяне на връзка към плейлиста</string>
+    <string name="welcome_sign_in">Вход със сървър и данни за вход</string>
+
+    <!-- Add source -->
+    <string name="add_title">Добавяне на източник</string>
+    <string name="add_mode_link">Връзка към плейлиста</string>
+    <string name="add_mode_login">Сървър и вход</string>
+    <string name="add_field_link">Връзка към плейлиста (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Връзка към ТВ програмата (по желание)</string>
+    <string name="sources_guide">Връзка към ТВ програмата</string>
+    <string name="sources_guide_body">Адресът на XMLTV програма от доставчика. Оставете празно, за да се използва програмата, посочена в плейлистата, ако има такава.</string>
+    <string name="sources_guide_save">Запази</string>
+    <string name="add_field_server">Сървър</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Потребителско име</string>
+    <string name="add_field_password">Парола</string>
+    <string name="add_continue">Напред</string>
+    <string name="add_checking">Проверка…</string>
+    <string name="add_cancel">Отказ</string>
+    <string name="add_missing_fields">Моля, попълнете всички полета.</string>
+
+    <!-- Import -->
+    <string name="import_title">Настройване на %1$s</string>
+    <string name="import_connecting">Свързване…</string>
+    <string name="import_live">Внасяне на телевизия на живо…</string>
+    <string name="import_movies">Внасяне на филми…</string>
+    <string name="import_series">Внасяне на сериали…</string>
+    <string name="import_finishing">Приключване…</string>
+    <string name="import_guide">Обновяване на телевизионната програма…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s канал на живо</item>
+        <item quantity="other">%1$s канала на живо</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s филм</item>
+        <item quantity="other">%1$s филма</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s сериал</item>
+        <item quantity="other">%1$s сериала</item>
+    </plurals>
+    <string name="import_done">Готово</string>
+    <string name="import_continue">Напред</string>
+    <string name="import_retry">Опитайте отново</string>
+    <string name="import_back">Назад</string>
+    <string name="import_failed">Настройването на този източник не можа да завърши.</string>
+
+    <!-- Library -->
+    <string name="library_title">Вашата библиотека</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s канал след обединяване на дубликатите</item>
+        <item quantity="other">%1$s канала след обединяване на дубликатите</item>
+    </plurals>
+    <string name="library_source_updated">Актуален</string>
+    <string name="library_source_never">Все още не е внесен</string>
+    <string name="library_refresh">Обновяване</string>
+    <string name="library_add_source">Добавяне на друг източник</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Настройка от телефона</string>
+    <string name="welcome_type_on_tv">Въведете на телевизора</string>
+    <string name="phone_title">Настройка от телефона</string>
+    <string name="phone_steps">Сканирайте кода с камерата на телефона си и въведете там връзката към плейлиста или данните за вход. Телефонът трябва да е в същата Wi-Fi мрежа като този телевизор.</string>
+    <string name="phone_or_open">Или отворете %1$s</string>
+    <string name="phone_no_network">Този телевизор не е свързан с мрежа. Свържете го с Wi-Fi или Ethernet или въведете източника на телевизора.</string>
+    <string name="phone_type_instead">Въведете на телевизора</string>
+
+    <!-- Home -->
+    <string name="tab_live">На живо</string>
+    <string name="tab_movies">Филми</string>
+    <string name="tab_series">Сериали</string>
+    <string name="tab_search">Търсене</string>
+    <string name="tab_settings">Настройки</string>
+    <string name="settings_general">Общи</string>
+    <string name="settings_sources">Източници</string>
+    <string name="settings_language">Език на интерфейса</string>
+    <string name="settings_language_device">Като на устройството (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Начало</string>
+    <string name="home_continue">Продължете гледането</string>
+    <string name="home_favourite_channels">Любими канали</string>
+    <string name="home_my_movies">Моят списък · Филми</string>
+    <string name="home_my_series">Моят списък · Сериали</string>
+    <string name="home_empty">Тук ще се показват гледаното, вашият списък и любимите ви канали.</string>
+    <string name="home_remove_continue">Премахване от „Продължете гледането“</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Любими</string>
+    <string name="live_recent">Наскоро гледани</string>
+    <string name="live_other">Други канали</string>
+    <string name="live_empty">Няма канали на живо във вашите включени източници.</string>
+    <string name="genre_all">Всички канали</string>
+    <string name="genre_news">Новини</string>
+    <string name="genre_sports">Спорт</string>
+    <string name="genre_kids">Детски</string>
+    <string name="genre_movies">Филми</string>
+    <string name="genre_entertainment">Забавление</string>
+    <string name="genre_documentary">Документални</string>
+    <string name="genre_music">Музика</string>
+    <string name="genre_religion">Религия</string>
+    <string name="genre_other">Други</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Продължете гледането</string>
+    <string name="vod_favorites">Моят списък</string>
+    <string name="vod_recent">Наскоро добавени</string>
+    <string name="vod_empty">Още нищо тук.</string>
+    <string name="vod_all_languages">Всички езици</string>
+    <string name="vod_all_movies_in">Всички филми · %1$s</string>
+    <string name="vod_all_series_in">Всички сериали · %1$s</string>
+    <string name="vod_filter">Филтър</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Филтриране на списъка</string>
+    <string name="vod_no_match">В този списък няма нищо за „%1$s“.</string>
+    <string name="vod_sort">Подреждане: %1$s</string>
+    <string name="vod_sort_recent">Наскоро добавени</string>
+    <string name="vod_sort_title">А–Я</string>
+    <string name="vod_sort_year">Най-нови</string>
+    <string name="vod_sort_rating">Най-високо оценени</string>
+    <string name="vod_language_not_stated">Езикът не е посочен</string>
+    <string name="vod_all_movies_not_stated">Всички филми, езикът не е посочен</string>
+    <string name="vod_all_series_not_stated">Всички сериали, езикът не е посочен</string>
+    <string name="details_play">Пускане</string>
+    <string name="details_resume">Продължаване от %1$s</string>
+    <string name="details_start_over">Отначало</string>
+    <string name="details_play_episode">Пускане на %1$s</string>
+    <string name="details_resume_episode">Продължаване на %1$s</string>
+    <string name="details_favorite">Добавяне в моя списък</string>
+    <string name="details_unfavorite">Премахване от моя списък</string>
+    <string name="details_cast">С участието на %1$s</string>
+    <string name="details_season">Сезон %1$d</string>
+    <string name="details_no_episodes">Няма налични епизоди.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Канали, предавания, филми, сериали</string>
+    <string name="search_on_tv">По телевизията</string>
+    <string name="tab_guide">Програма</string>
+    <string name="guide_search">Търсене в програмата</string>
+    <string name="guide_nothing">Няма предавания за „%1$s“ · %2$s</string>
+    <string name="guide_no_info">Няма информация за програмата</string>
+    <string name="guide_today">Днес</string>
+    <string name="guide_tomorrow">Утре</string>
+    <string name="guide_channels">Канали</string>
+    <string name="live_all">Всички канали</string>
+    <string name="guide_now_until">Сега · до %1$s</string>
+    <string name="guide_today_at">Днес %1$s</string>
+    <string name="guide_tomorrow_at">Утре %1$s</string>
+    <string name="guide_watch_channel">Гледане на %1$s сега</string>
+    <string name="search_intro">Въведете поне две букви.</string>
+    <string name="search_nothing">Няма резултати за „%1$s“.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Този канал не работи в момента</string>
+    <string name="player_title_unavailable">Това заглавие не може да се пусне в момента</string>
+    <string name="player_offline_hint_live">Натиснете OK за нов опит или Нагоре/Надолу за друг канал.</string>
+    <string name="player_offline_hint">Натиснете OK за нов опит.</string>
+    <string name="player_up_next">Следва: %1$s</string>
+    <string name="player_up_next_in">Започва след %1$d с</string>
+    <string name="player_up_next_hint">OK за пускане сега · Назад за спиране</string>
+    <string name="player_still_watching">Още ли гледате?</string>
+    <string name="player_still_watching_hint">OK за пускане на %1$s · Назад за спиране</string>
+    <string name="player_next_episode">Следващ епизод  ›</string>
+    <string name="player_stop">Спиране</string>
+    <string name="player_audio">Аудио: %1$s</string>
+    <string name="player_audio_title">Аудиозапис</string>
+    <string name="player_audio_choose">♪  Аудио: %1$s</string>
+    <string name="audio_mono">моно</string>
+    <string name="audio_stereo">стерео</string>
+    <string name="audio_channels">Канали: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Неизвестен език</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">битрейтът не е посочен</string>
+    <string name="track_default">по подразбиране</string>
+    <string name="track_forced">принудителни</string>
+    <string name="track_commentary">коментар</string>
+    <string name="track_audio_description">аудиоописание</string>
+    <string name="track_hard_of_hearing">за хора с увреден слух</string>
+    <string name="track_dub">дублиран</string>
+    <string name="subtitles_title">Субтитри</string>
+    <string name="subtitles_off">Изкл.</string>
+    <string name="player_subtitles_choose">Субтитри: %1$s</string>
+    <string name="subtitle_image">%1$s (изображение)</string>
+    <string name="subtitle_closed_captions">Скрити субтитри</string>
+    <string name="player_offline_hint_touch">Доставчикът не изпраща видео. Опитайте отново след малко.</string>
+    <string name="player_retry">Опитайте отново</string>
+    <string name="player_hint_live">Нагоре/Надолу: канал  ·  Наляво/Надясно: списък с канали</string>
+    <string name="player_hint_vod">Наляво/Надясно: назад/напред  ·  OK: пауза</string>
+    <string name="player_favorite">Добавяне на %1$s в любими</string>
+    <string name="player_unfavorite">Премахване на %1$s от любими</string>
+    <string name="player_now_playing">Сега върви</string>
+    <string name="player_backup_stream">Резервен поток</string>
+    <string name="player_zoom">Картина: %1$s</string>
+    <string name="player_add_favourite_short">☆  Добавяне в любими</string>
+    <string name="player_remove_favourite_short">★  Любим</string>
+    <string name="zoom_fit">Побиране</string>
+    <string name="zoom_fill">Цял екран</string>
+    <string name="zoom_stretch">Разтягане</string>
+    <string name="player_next">Следва: %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">изключен</string>
+    <string name="sources_enable">Включване</string>
+    <string name="sources_disable">Изключване</string>
+    <string name="sources_move_up">Предпочитане на този източник</string>
+    <string name="sources_delete">Премахване</string>
+    <string name="sources_delete_confirm">Натиснете отново за премахване</string>
+    <string name="settings_title">Съдържание</string>
+    <string name="settings_adult_off">Съдържание за възрастни: скрито</string>
+    <string name="settings_adult_on">Съдържание за възрастни: показано</string>
+
+    <!-- About -->
+    <string name="about_title">За приложението и лицензи</string>
+    <string name="about_body">PureIPTV възпроизвежда източници, които добавяте сами. Не предоставя никакви канали или съдържание. Изградено с този софтуер с отворен код:</string>
+    <string name="about_license_text">Лиценз Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV е свободен софтуер: може да се споделя и променя при условията на GNU General Public License, версия 3 или (по избор) всяка по-нова версия. Предоставя се без каквато и да е гаранция. Изходен код: %1$s</string>
+    <string name="about_privacy">PureIPTV не събира данни за вас. Вашите източници и данни за вход остават на това устройство и се изпращат само до доставчиците, които добавите. Политика за поверителност: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Няма връзка със сървъра. Проверете адреса и интернет връзката си.</string>
+    <string name="error_invalid_credentials">Доставчикът не прие тези данни за вход. Проверете потребителското име и паролата.</string>
+    <string name="error_account_expired">Този акаунт е изтекъл. Свържете се с доставчика си, за да го подновите.</string>
+    <string name="error_not_a_playlist">Този адрес не води до плейлиста или вход при доставчик.</string>
+    <string name="error_unknown">Нещо се обърка. Моля, опитайте отново.</string>
+</resources>

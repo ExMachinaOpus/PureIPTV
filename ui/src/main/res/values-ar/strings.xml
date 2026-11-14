@@ -1,0 +1,247 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">أضف قائمة التشغيل أو بيانات الدخول من مزوّدك للبدء.</string>
+    <string name="welcome_add_source">إضافة مصدر</string>
+    <string name="welcome_paste_link">لصق رابط قائمة تشغيل</string>
+    <string name="welcome_sign_in">تسجيل الدخول بالخادم وبيانات الدخول</string>
+
+    <!-- Add source -->
+    <string name="add_title">إضافة مصدر</string>
+    <string name="add_mode_link">رابط قائمة التشغيل</string>
+    <string name="add_mode_login">الخادم وبيانات الدخول</string>
+    <string name="add_field_link">رابط قائمة التشغيل (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">رابط دليل البرامج (اختياري)</string>
+    <string name="sources_guide">رابط دليل البرامج</string>
+    <string name="sources_guide_body">عنوان دليل XMLTV من مزوّدك. اتركه فارغًا لاستخدام الدليل المذكور في قائمة التشغيل، إن وُجد.</string>
+    <string name="sources_guide_save">حفظ</string>
+    <string name="add_field_server">الخادم</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">اسم المستخدم</string>
+    <string name="add_field_password">كلمة المرور</string>
+    <string name="add_continue">متابعة</string>
+    <string name="add_checking">جارٍ التحقق…</string>
+    <string name="add_cancel">إلغاء</string>
+    <string name="add_missing_fields">يُرجى ملء جميع الحقول.</string>
+
+    <!-- Import -->
+    <string name="import_title">جارٍ إعداد %1$s</string>
+    <string name="import_connecting">جارٍ الاتصال…</string>
+    <string name="import_live">جارٍ استيراد البث المباشر…</string>
+    <string name="import_movies">جارٍ استيراد الأفلام…</string>
+    <string name="import_series">جارٍ استيراد المسلسلات…</string>
+    <string name="import_finishing">جارٍ الإنهاء…</string>
+    <string name="import_guide">جارٍ تحديث دليل البرامج…</string>
+    <plurals name="count_live_channels">
+        <item quantity="zero">%1$s قناة مباشرة</item>
+        <item quantity="one">قناة مباشرة واحدة</item>
+        <item quantity="two">قناتان مباشرتان</item>
+        <item quantity="few">%1$s قنوات مباشرة</item>
+        <item quantity="many">%1$s قناة مباشرة</item>
+        <item quantity="other">%1$s قناة مباشرة</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="zero">%1$s فيلم</item>
+        <item quantity="one">فيلم واحد</item>
+        <item quantity="two">فيلمان</item>
+        <item quantity="few">%1$s أفلام</item>
+        <item quantity="many">%1$s فيلمًا</item>
+        <item quantity="other">%1$s فيلم</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="zero">%1$s مسلسل</item>
+        <item quantity="one">مسلسل واحد</item>
+        <item quantity="two">مسلسلان</item>
+        <item quantity="few">%1$s مسلسلات</item>
+        <item quantity="many">%1$s مسلسلًا</item>
+        <item quantity="other">%1$s مسلسل</item>
+    </plurals>
+    <string name="import_done">اكتمل الإعداد</string>
+    <string name="import_continue">متابعة</string>
+    <string name="import_retry">إعادة المحاولة</string>
+    <string name="import_back">رجوع</string>
+    <string name="import_failed">تعذّر إكمال إعداد هذا المصدر.</string>
+
+    <!-- Library -->
+    <string name="library_title">مكتبتك</string>
+    <plurals name="library_merged">
+        <item quantity="zero">%1$s قناة بعد دمج المكرّرات</item>
+        <item quantity="one">قناة واحدة بعد دمج المكرّرات</item>
+        <item quantity="two">قناتان بعد دمج المكرّرات</item>
+        <item quantity="few">%1$s قنوات بعد دمج المكرّرات</item>
+        <item quantity="many">%1$s قناة بعد دمج المكرّرات</item>
+        <item quantity="other">%1$s قناة بعد دمج المكرّرات</item>
+    </plurals>
+    <string name="library_source_updated">محدَّث</string>
+    <string name="library_source_never">لم يُستورد بعد</string>
+    <string name="library_refresh">تحديث</string>
+    <string name="library_add_source">إضافة مصدر آخر</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">الإعداد من هاتفك</string>
+    <string name="welcome_type_on_tv">الكتابة على التلفاز</string>
+    <string name="phone_title">الإعداد من هاتفك</string>
+    <string name="phone_steps">امسح الرمز بكاميرا هاتفك وأدخل رابط قائمة التشغيل أو بيانات الدخول هناك. يجب أن يكون هاتفك على شبكة Wi-Fi نفسها المتصل بها هذا التلفاز.</string>
+    <string name="phone_or_open">أو افتح %1$s</string>
+    <string name="phone_no_network">هذا التلفاز غير متصل بأي شبكة. صِله بشبكة Wi-Fi أو Ethernet، أو اكتب المصدر على التلفاز.</string>
+    <string name="phone_type_instead">الكتابة على التلفاز بدلًا من ذلك</string>
+
+    <!-- Home -->
+    <string name="tab_live">البث المباشر</string>
+    <string name="tab_movies">الأفلام</string>
+    <string name="tab_series">المسلسلات</string>
+    <string name="tab_search">بحث</string>
+    <string name="tab_settings">الإعدادات</string>
+    <string name="settings_general">عام</string>
+    <string name="settings_sources">المصادر</string>
+    <string name="settings_language">لغة الواجهة</string>
+    <string name="settings_language_device">مثل الجهاز (%1$s)</string>
+
+    <string name="tab_home">الرئيسية</string>
+    <string name="home_continue">متابعة المشاهدة</string>
+    <string name="home_favourite_channels">القنوات المفضّلة</string>
+    <string name="home_my_movies">قائمتي · الأفلام</string>
+    <string name="home_my_series">قائمتي · المسلسلات</string>
+    <string name="home_empty">ستظهر هنا المشاهدات وقائمتك وقنواتك المفضّلة.</string>
+    <string name="home_remove_continue">إزالة من متابعة المشاهدة</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">المفضّلة</string>
+    <string name="live_recent">شوهدت مؤخرًا</string>
+    <string name="live_other">قنوات أخرى</string>
+    <string name="live_empty">لا توجد قنوات مباشرة في المصادر المفعّلة.</string>
+    <string name="genre_all">كل القنوات</string>
+    <string name="genre_news">الأخبار</string>
+    <string name="genre_sports">الرياضة</string>
+    <string name="genre_kids">الأطفال</string>
+    <string name="genre_movies">الأفلام</string>
+    <string name="genre_entertainment">الترفيه</string>
+    <string name="genre_documentary">الوثائقية</string>
+    <string name="genre_music">الموسيقى</string>
+    <string name="genre_religion">الدين</string>
+    <string name="genre_other">أخرى</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">متابعة المشاهدة</string>
+    <string name="vod_favorites">قائمتي</string>
+    <string name="vod_recent">أُضيفت مؤخرًا</string>
+    <string name="vod_empty">لا يوجد شيء هنا بعد.</string>
+    <string name="vod_all_languages">كل اللغات</string>
+    <string name="vod_all_movies_in">كل الأفلام · %1$s</string>
+    <string name="vod_all_series_in">كل المسلسلات · %1$s</string>
+    <string name="vod_filter">تصفية</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">تصفية هذه القائمة</string>
+    <string name="vod_no_match">لا شيء في هذه القائمة يطابق «%1$s».</string>
+    <string name="vod_sort">الترتيب: %1$s</string>
+    <string name="vod_sort_recent">أُضيفت مؤخرًا</string>
+    <string name="vod_sort_title">أ–ي</string>
+    <string name="vod_sort_year">الأحدث</string>
+    <string name="vod_sort_rating">الأعلى تقييمًا</string>
+    <string name="vod_language_not_stated">اللغة غير محددة</string>
+    <string name="vod_all_movies_not_stated">كل الأفلام، اللغة غير محددة</string>
+    <string name="vod_all_series_not_stated">كل المسلسلات، اللغة غير محددة</string>
+    <string name="details_play">تشغيل</string>
+    <string name="details_resume">استئناف من %1$s</string>
+    <string name="details_start_over">البدء من جديد</string>
+    <string name="details_play_episode">تشغيل %1$s</string>
+    <string name="details_resume_episode">استئناف %1$s</string>
+    <string name="details_favorite">إضافة إلى قائمتي</string>
+    <string name="details_unfavorite">إزالة من قائمتي</string>
+    <string name="details_cast">بطولة: %1$s</string>
+    <string name="details_season">الموسم %1$d</string>
+    <string name="details_no_episodes">لا توجد حلقات متاحة.</string>
+
+    <!-- Search -->
+    <string name="search_hint">القنوات، البرامج، الأفلام، المسلسلات</string>
+    <string name="search_on_tv">على التلفاز</string>
+    <string name="tab_guide">الدليل</string>
+    <string name="guide_search">البحث في الدليل</string>
+    <string name="guide_nothing">لا يوجد برنامج يطابق «%1$s» في %2$s.</string>
+    <string name="guide_no_info">لا توجد معلومات في الدليل</string>
+    <string name="guide_today">اليوم</string>
+    <string name="guide_tomorrow">غدًا</string>
+    <string name="guide_channels">القنوات</string>
+    <string name="live_all">كل القنوات</string>
+    <string name="guide_now_until">الآن · حتى %1$s</string>
+    <string name="guide_today_at">اليوم %1$s</string>
+    <string name="guide_tomorrow_at">غدًا %1$s</string>
+    <string name="guide_watch_channel">مشاهدة %1$s الآن</string>
+    <string name="search_intro">اكتب حرفين على الأقل.</string>
+    <string name="search_nothing">لم يُعثر على نتائج لـ «%1$s».</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">هذه القناة لا تعمل حاليًا</string>
+    <string name="player_title_unavailable">لا يمكن تشغيل هذا العنوان حاليًا</string>
+    <string name="player_offline_hint_live">اضغط OK للمحاولة مجددًا، أو أعلى/أسفل لقناة أخرى.</string>
+    <string name="player_offline_hint">اضغط OK للمحاولة مجددًا.</string>
+    <string name="player_up_next">التالي: %1$s</string>
+    <string name="player_up_next_in">يبدأ خلال %1$d ث</string>
+    <string name="player_up_next_hint">OK للتشغيل الآن · رجوع للإيقاف</string>
+    <string name="player_still_watching">هل ما زلت تشاهد؟</string>
+    <string name="player_still_watching_hint">OK لتشغيل %1$s · رجوع للإيقاف</string>
+    <string name="player_next_episode">الحلقة التالية  ›</string>
+    <string name="player_stop">إيقاف</string>
+    <string name="player_audio">الصوت: %1$s</string>
+    <string name="player_audio_title">المسار الصوتي</string>
+    <string name="player_audio_choose">♪  الصوت: %1$s</string>
+    <string name="audio_mono">أحادي</string>
+    <string name="audio_stereo">ستيريو</string>
+    <string name="audio_channels">عدد القنوات: %1$d</string>
+    <string name="audio_kbps">%1$d كيلوبت/ث</string>
+    <string name="audio_unknown_language">لغة غير معروفة</string>
+    <string name="audio_khz">%1$s كيلوهرتز</string>
+    <string name="audio_bitrate_unknown">معدل البت غير محدد</string>
+    <string name="track_default">افتراضي</string>
+    <string name="track_forced">إجباري</string>
+    <string name="track_commentary">تعليق</string>
+    <string name="track_audio_description">وصف صوتي</string>
+    <string name="track_hard_of_hearing">لضعاف السمع</string>
+    <string name="track_dub">مدبلج</string>
+    <string name="subtitles_title">الترجمة</string>
+    <string name="subtitles_off">إيقاف</string>
+    <string name="player_subtitles_choose">الترجمة: %1$s</string>
+    <string name="subtitle_image">%1$s (صورة)</string>
+    <string name="subtitle_closed_captions">ترجمة لضعاف السمع</string>
+    <string name="player_offline_hint_touch">المزوّد لا يرسل أي فيديو. حاول مجددًا بعد قليل.</string>
+    <string name="player_retry">إعادة المحاولة</string>
+    <string name="player_hint_live">أعلى/أسفل: القناة  ·  يسار/يمين: قائمة القنوات</string>
+    <string name="player_hint_vod">يسار/يمين: ترجيع/تقديم  ·  OK: إيقاف مؤقت</string>
+    <string name="player_favorite">إضافة %1$s إلى المفضّلة</string>
+    <string name="player_unfavorite">إزالة %1$s من المفضّلة</string>
+    <string name="player_now_playing">قيد التشغيل الآن</string>
+    <string name="player_backup_stream">بث احتياطي</string>
+    <string name="player_zoom">الصورة: %1$s</string>
+    <string name="player_add_favourite_short">☆  إضافة إلى المفضّلة</string>
+    <string name="player_remove_favourite_short">★  مفضّلة</string>
+    <string name="zoom_fit">ملاءمة</string>
+    <string name="zoom_fill">ملء الشاشة</string>
+    <string name="zoom_stretch">تمديد</string>
+    <string name="player_next">التالي %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">متوقف</string>
+    <string name="sources_enable">تشغيل</string>
+    <string name="sources_disable">إيقاف</string>
+    <string name="sources_move_up">تفضيل هذا المصدر</string>
+    <string name="sources_delete">إزالة</string>
+    <string name="sources_delete_confirm">اضغط مجددًا للإزالة</string>
+    <string name="settings_title">المحتوى</string>
+    <string name="settings_adult_off">محتوى البالغين: مخفي</string>
+    <string name="settings_adult_on">محتوى البالغين: ظاهر</string>
+
+    <!-- About -->
+    <string name="about_title">حول التطبيق والتراخيص</string>
+    <string name="about_body">يشغّل PureIPTV المصادر التي تضيفها بنفسك. ولا يوفّر أي قنوات أو محتوى. بُني باستخدام هذه البرمجيات مفتوحة المصدر:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV برنامج حر: يمكن مشاركته وتعديله وفق شروط رخصة جنو العمومية العامة (GNU General Public License)، الإصدار 3 أو (حسب الاختيار) أي إصدار لاحق. يُقدَّم دون أي ضمان على الإطلاق. الشيفرة المصدرية: %1$s</string>
+    <string name="about_privacy">لا يجمع PureIPTV أي بيانات عنك. تبقى مصادرك وبيانات الدخول على هذا الجهاز ولا تُرسل إلا إلى المزوّدين الذين تضيفهم. سياسة الخصوصية: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">تعذّر الوصول إلى الخادم. تحقق من العنوان ومن اتصالك بالإنترنت.</string>
+    <string name="error_invalid_credentials">لم يقبل المزوّد بيانات الدخول هذه. تحقق من اسم المستخدم وكلمة المرور.</string>
+    <string name="error_account_expired">انتهت صلاحية هذا الحساب. تواصل مع مزوّدك لتجديده.</string>
+    <string name="error_not_a_playlist">هذا العنوان لا يشير إلى قائمة تشغيل أو بيانات دخول مزوّد.</string>
+    <string name="error_unknown">حدث خطأ ما. يُرجى المحاولة مجددًا.</string>
+</resources>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Přidejte svůj playlist nebo přihlášení od poskytovatele a můžete začít.</string>
+    <string name="welcome_add_source">Přidat zdroj</string>
+    <string name="welcome_paste_link">Vložit odkaz na playlist</string>
+    <string name="welcome_sign_in">Přihlásit se serverem a jménem</string>
+
+    <!-- Add source -->
+    <string name="add_title">Přidat zdroj</string>
+    <string name="add_mode_link">Odkaz na playlist</string>
+    <string name="add_mode_login">Server a přihlášení</string>
+    <string name="add_field_link">Odkaz na playlist (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Odkaz na TV program (nepovinné)</string>
+    <string name="sources_guide">Odkaz na TV program</string>
+    <string name="sources_guide_body">Adresa programu XMLTV od poskytovatele. Nechte prázdné, chcete-li použít program uvedený v playlistu, pokud nějaký má.</string>
+    <string name="sources_guide_save">Uložit</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Uživatelské jméno</string>
+    <string name="add_field_password">Heslo</string>
+    <string name="add_continue">Pokračovat</string>
+    <string name="add_checking">Kontroluji…</string>
+    <string name="add_cancel">Zrušit</string>
+    <string name="add_missing_fields">Vyplňte prosím všechna pole.</string>
+
+    <!-- Import -->
+    <string name="import_title">Nastavení: %1$s</string>
+    <string name="import_connecting">Připojování…</string>
+    <string name="import_live">Importuji živé vysílání…</string>
+    <string name="import_movies">Importuji filmy…</string>
+    <string name="import_series">Importuji seriály…</string>
+    <string name="import_finishing">Dokončování…</string>
+    <string name="import_guide">Aktualizuji TV program…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s živý kanál</item>
+        <item quantity="few">%1$s živé kanály</item>
+        <item quantity="many">%1$s živého kanálu</item>
+        <item quantity="other">%1$s živých kanálů</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="few">%1$s filmy</item>
+        <item quantity="many">%1$s filmu</item>
+        <item quantity="other">%1$s filmů</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s seriál</item>
+        <item quantity="few">%1$s seriály</item>
+        <item quantity="many">%1$s seriálu</item>
+        <item quantity="other">%1$s seriálů</item>
+    </plurals>
+    <string name="import_done">Hotovo</string>
+    <string name="import_continue">Pokračovat</string>
+    <string name="import_retry">Zkusit znovu</string>
+    <string name="import_back">Zpět</string>
+    <string name="import_failed">Nastavení tohoto zdroje se nepodařilo dokončit.</string>
+
+    <!-- Library -->
+    <string name="library_title">Vaše knihovna</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanál po sloučení duplicit</item>
+        <item quantity="few">%1$s kanály po sloučení duplicit</item>
+        <item quantity="many">%1$s kanálu po sloučení duplicit</item>
+        <item quantity="other">%1$s kanálů po sloučení duplicit</item>
+    </plurals>
+    <string name="library_source_updated">Aktuální</string>
+    <string name="library_source_never">Zatím neimportováno</string>
+    <string name="library_refresh">Obnovit</string>
+    <string name="library_add_source">Přidat další zdroj</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Nastavit z telefonu</string>
+    <string name="welcome_type_on_tv">Zadat na televizi</string>
+    <string name="phone_title">Nastavit z telefonu</string>
+    <string name="phone_steps">Naskenujte kód fotoaparátem telefonu a zadejte tam odkaz na playlist nebo přihlášení. Telefon musí být ve stejné Wi-Fi síti jako tato televize.</string>
+    <string name="phone_or_open">Nebo otevřete %1$s</string>
+    <string name="phone_no_network">Tato televize není připojená k síti. Připojte ji k Wi-Fi nebo ethernetu, nebo zdroj zadejte přímo na televizi.</string>
+    <string name="phone_type_instead">Raději zadat na televizi</string>
+
+    <!-- Home -->
+    <string name="tab_live">Živě</string>
+    <string name="tab_movies">Filmy</string>
+    <string name="tab_series">Seriály</string>
+    <string name="tab_search">Hledat</string>
+    <string name="tab_settings">Nastavení</string>
+    <string name="settings_general">Obecné</string>
+    <string name="settings_sources">Zdroje</string>
+    <string name="settings_language">Jazyk rozhraní</string>
+    <string name="settings_language_device">Stejný jako zařízení (%1$s)</string>
+
+    <string name="tab_home">Domů</string>
+    <string name="home_continue">Pokračovat ve sledování</string>
+    <string name="home_favourite_channels">Oblíbené kanály</string>
+    <string name="home_my_movies">Můj seznam · Filmy</string>
+    <string name="home_my_series">Můj seznam · Seriály</string>
+    <string name="home_empty">Zde se zobrazí, co sledujete, váš seznam a oblíbené kanály.</string>
+    <string name="home_remove_continue">Odebrat z Pokračovat ve sledování</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Oblíbené</string>
+    <string name="live_recent">Naposledy sledované</string>
+    <string name="live_other">Ostatní kanály</string>
+    <string name="live_empty">Ve vašich zapnutých zdrojích nejsou žádné živé kanály.</string>
+    <string name="genre_all">Všechny kanály</string>
+    <string name="genre_news">Zprávy</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Pro děti</string>
+    <string name="genre_movies">Filmy</string>
+    <string name="genre_entertainment">Zábava</string>
+    <string name="genre_documentary">Dokumenty</string>
+    <string name="genre_music">Hudba</string>
+    <string name="genre_religion">Náboženství</string>
+    <string name="genre_other">Ostatní</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Pokračovat ve sledování</string>
+    <string name="vod_favorites">Můj seznam</string>
+    <string name="vod_recent">Nedávno přidané</string>
+    <string name="vod_empty">Zatím tu nic není.</string>
+    <string name="vod_all_languages">Všechny jazyky</string>
+    <string name="vod_all_movies_in">Všechny filmy · %1$s</string>
+    <string name="vod_all_series_in">Všechny seriály · %1$s</string>
+    <string name="vod_filter">Filtr</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtrovat tento seznam</string>
+    <string name="vod_no_match">V tomto seznamu nic neodpovídá „%1$s“.</string>
+    <string name="vod_sort">Řadit: %1$s</string>
+    <string name="vod_sort_recent">Nedávno přidané</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Nejnovější</string>
+    <string name="vod_sort_rating">Nejlépe hodnocené</string>
+    <string name="vod_language_not_stated">Jazyk neuveden</string>
+    <string name="vod_all_movies_not_stated">Všechny filmy, jazyk neuveden</string>
+    <string name="vod_all_series_not_stated">Všechny seriály, jazyk neuveden</string>
+    <string name="details_play">Přehrát</string>
+    <string name="details_resume">Pokračovat od %1$s</string>
+    <string name="details_start_over">Od začátku</string>
+    <string name="details_play_episode">Přehrát: %1$s</string>
+    <string name="details_resume_episode">Pokračovat: %1$s</string>
+    <string name="details_favorite">Přidat do mého seznamu</string>
+    <string name="details_unfavorite">Odebrat z mého seznamu</string>
+    <string name="details_cast">Hrají: %1$s</string>
+    <string name="details_season">Řada %1$d</string>
+    <string name="details_no_episodes">Žádné epizody nejsou k dispozici.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanály, pořady, filmy, seriály</string>
+    <string name="search_on_tv">V televizi</string>
+    <string name="tab_guide">Program</string>
+    <string name="guide_search">Hledat v programu</string>
+    <string name="guide_nothing">Žádný pořad „%1$s“ (%2$s).</string>
+    <string name="guide_no_info">Žádné informace o programu</string>
+    <string name="guide_today">Dnes</string>
+    <string name="guide_tomorrow">Zítra</string>
+    <string name="guide_channels">Kanály</string>
+    <string name="live_all">Všechny kanály</string>
+    <string name="guide_now_until">Nyní · do %1$s</string>
+    <string name="guide_today_at">Dnes %1$s</string>
+    <string name="guide_tomorrow_at">Zítra %1$s</string>
+    <string name="guide_watch_channel">Sledovat nyní: %1$s</string>
+    <string name="search_intro">Zadejte alespoň dvě písmena.</string>
+    <string name="search_nothing">Pro „%1$s“ nebylo nic nalezeno.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Tento kanál právě nefunguje</string>
+    <string name="player_title_unavailable">Tento titul nelze právě přehrát</string>
+    <string name="player_offline_hint_live">Stisknutím OK to zkusíte znovu, tlačítky Nahoru/Dolů přepnete kanál.</string>
+    <string name="player_offline_hint">Stisknutím OK to zkusíte znovu.</string>
+    <string name="player_up_next">Další: %1$s</string>
+    <string name="player_up_next_in">Spustí se za %1$d s</string>
+    <string name="player_up_next_hint">OK: přehrát hned · Zpět: zastavit</string>
+    <string name="player_still_watching">Ještě sledujete?</string>
+    <string name="player_still_watching_hint">OK: přehrát %1$s · Zpět: zastavit</string>
+    <string name="player_next_episode">Další epizoda  ›</string>
+    <string name="player_stop">Zastavit</string>
+    <string name="player_audio">Zvuk: %1$s</string>
+    <string name="player_audio_title">Zvuková stopa</string>
+    <string name="player_audio_choose">♪  Zvuk: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">Kanálů: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Neznámý jazyk</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">datový tok neuveden</string>
+    <string name="track_default">výchozí</string>
+    <string name="track_forced">vynucené</string>
+    <string name="track_commentary">komentář</string>
+    <string name="track_audio_description">zvukový popis</string>
+    <string name="track_hard_of_hearing">pro neslyšící</string>
+    <string name="track_dub">dabing</string>
+    <string name="subtitles_title">Titulky</string>
+    <string name="subtitles_off">Vypnuto</string>
+    <string name="player_subtitles_choose">Titulky: %1$s</string>
+    <string name="subtitle_image">%1$s (obrázek)</string>
+    <string name="subtitle_closed_captions">Skryté titulky</string>
+    <string name="player_offline_hint_touch">Poskytovatel neposílá žádné video. Zkuste to za chvíli znovu.</string>
+    <string name="player_retry">Zkusit znovu</string>
+    <string name="player_hint_live">Nahoru/Dolů: kanál  ·  Vlevo/Vpravo: seznam kanálů</string>
+    <string name="player_hint_vod">Vlevo/Vpravo: přetáčení zpět/vpřed  ·  OK: pozastavit</string>
+    <string name="player_favorite">Přidat do oblíbených: %1$s</string>
+    <string name="player_unfavorite">Odebrat z oblíbených: %1$s</string>
+    <string name="player_now_playing">Právě hraje</string>
+    <string name="player_backup_stream">Záložní stream</string>
+    <string name="player_zoom">Obraz: %1$s</string>
+    <string name="player_add_favourite_short">☆  Přidat do oblíbených</string>
+    <string name="player_remove_favourite_short">★  Oblíbené</string>
+    <string name="zoom_fit">Přizpůsobit</string>
+    <string name="zoom_fill">Vyplnit obrazovku</string>
+    <string name="zoom_stretch">Roztáhnout</string>
+    <string name="player_next">Další %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">vypnuto</string>
+    <string name="sources_enable">Zapnout</string>
+    <string name="sources_disable">Vypnout</string>
+    <string name="sources_move_up">Upřednostnit tento zdroj</string>
+    <string name="sources_delete">Odebrat</string>
+    <string name="sources_delete_confirm">Dalším stisknutím odeberete</string>
+    <string name="settings_title">Obsah</string>
+    <string name="settings_adult_off">Obsah pro dospělé: skrytý</string>
+    <string name="settings_adult_on">Obsah pro dospělé: zobrazený</string>
+
+    <!-- About -->
+    <string name="about_title">O aplikaci a licence</string>
+    <string name="about_body">PureIPTV přehrává zdroje, které si sami přidáte. Neposkytuje žádné kanály ani obsah. Vytvořeno s tímto open-source softwarem:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV je svobodný software: lze jej šířit a upravovat za podmínek GNU General Public License verze 3 nebo (podle volby) jakékoli pozdější verze. Je poskytován zcela bez záruky. Zdrojový kód: %1$s</string>
+    <string name="about_privacy">PureIPTV o vás neshromažďuje žádné údaje. Vaše zdroje a přihlašovací údaje zůstávají v tomto zařízení a odesílají se pouze poskytovatelům, které přidáte. Zásady ochrany osobních údajů: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Server není dostupný. Zkontrolujte adresu a připojení k internetu.</string>
+    <string name="error_invalid_credentials">Poskytovatel toto přihlášení nepřijal. Zkontrolujte uživatelské jméno a heslo.</string>
+    <string name="error_account_expired">Platnost tohoto účtu vypršela. Pro obnovení kontaktujte svého poskytovatele.</string>
+    <string name="error_not_a_playlist">Tato adresa nevede na playlist ani přihlášení poskytovatele.</string>
+    <string name="error_unknown">Něco se pokazilo. Zkuste to prosím znovu.</string>
+</resources>

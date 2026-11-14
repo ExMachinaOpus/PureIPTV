@@ -1,0 +1,25 @@
+﻿#EXTM3U url-tvg="http://epg.example.com/guide.xml.gz,http://epg2.example.com/a.xml" x-tvg-url="http://epg.example.com/guide.xml.gz"
+#EXTINF:-1 tvg-id="BBCOne.uk" tvg-name="UK: BBC One FHD" tvg-logo="http://logo/bbc1.png" group-title="UK | Entertainment",UK: BBC One FHD
+http://example.com:8080/live/user/pass/1001.ts
+#EXTINF:-1 tvg-id="" tvg-name="Sky, Sports Main Event" group-title="UK | Sports, Premium",|UK| Sky Sports Main Event ᴴᴰ
+http://example.com:8080/live/user/pass/1002.ts
+
+#EXTINF:-1 tvg-id='cnn.us' group-title=US,US: CNN
+#EXTVLCOPT:http-user-agent=Mozilla/5.0 (SMART-TV)
+#EXTVLCOPT:http-referrer=http://referer.example.com/
+http://cdn.example.com/cnn/index.m3u8
+#EXTINF:-1 group-title="DE Sport",DE: Sport1 HD
+http://cdn.example.com/sport1.m3u8|User-Agent=VLC%2F3.0&Referer=http://x.example.com/
+#EXTINF:-1 tvg-name="##### SPORTS #####" group-title="UK | Sports",##### SPORTS #####
+http://example.com/dummy.ts
+#EXTINF:7200 group-title="Movies",The Matrix (1999)
+http://example.com:8080/movie/user/pass/5001.mkv
+#EXTINF:-1 group-title="Series",Breaking Bad S01 E02 - Cat's in the Bag
+http://cdn.example.com/files/bb/s01e02.mp4
+#EXTINF:-1,Channel Without Attributes
+#EXTGRP:Misc
+http://cdn.example.com/plain.m3u8
+#KODIPROP:inputstream.adaptive.stream_headers=User-Agent=Kodi&Referer=http%3A%2F%2Fk.example.com%2F
+#EXTINF:-1 group-title="FR",FR: TF1
+http://cdn.example.com/tf1.m3u8
+http://cdn.example.com/bare-url-without-extinf.m3u8

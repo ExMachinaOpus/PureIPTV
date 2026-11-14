@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Shown by the system while sources are imported in the background (ImportKeepAliveWorker). -->
+    <string name="import_notification">Updating your channels</string>
+</resources>

@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Προσθέστε τη λίστα αναπαραγωγής ή τα στοιχεία σύνδεσης του παρόχου σας για να ξεκινήσετε.</string>
+    <string name="welcome_add_source">Προσθήκη πηγής</string>
+    <string name="welcome_paste_link">Επικόλληση συνδέσμου λίστας</string>
+    <string name="welcome_sign_in">Σύνδεση με διακομιστή και στοιχεία</string>
+
+    <!-- Add source -->
+    <string name="add_title">Προσθήκη πηγής</string>
+    <string name="add_mode_link">Σύνδεσμος λίστας</string>
+    <string name="add_mode_login">Διακομιστής και σύνδεση</string>
+    <string name="add_field_link">Σύνδεσμος λίστας (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Σύνδεσμος τηλεοπτικού οδηγού (προαιρετικό)</string>
+    <string name="sources_guide">Σύνδεσμος τηλεοπτικού οδηγού</string>
+    <string name="sources_guide_body">Η διεύθυνση ενός οδηγού XMLTV από τον πάροχό σας. Αφήστε το κενό για να χρησιμοποιηθεί ο οδηγός που ορίζει η λίστα αναπαραγωγής, αν υπάρχει.</string>
+    <string name="sources_guide_save">Αποθήκευση</string>
+    <string name="add_field_server">Διακομιστής</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Όνομα χρήστη</string>
+    <string name="add_field_password">Κωδικός πρόσβασης</string>
+    <string name="add_continue">Συνέχεια</string>
+    <string name="add_checking">Έλεγχος…</string>
+    <string name="add_cancel">Ακύρωση</string>
+    <string name="add_missing_fields">Συμπληρώστε όλα τα πεδία.</string>
+
+    <!-- Import -->
+    <string name="import_title">Ρύθμιση: %1$s</string>
+    <string name="import_connecting">Σύνδεση…</string>
+    <string name="import_live">Εισαγωγή ζωντανής τηλεόρασης…</string>
+    <string name="import_movies">Εισαγωγή ταινιών…</string>
+    <string name="import_series">Εισαγωγή σειρών…</string>
+    <string name="import_finishing">Ολοκλήρωση…</string>
+    <string name="import_guide">Ενημέρωση του τηλεοπτικού οδηγού…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s ζωντανό κανάλι</item>
+        <item quantity="other">%1$s ζωντανά κανάλια</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s ταινία</item>
+        <item quantity="other">%1$s ταινίες</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s σειρά</item>
+        <item quantity="other">%1$s σειρές</item>
+    </plurals>
+    <string name="import_done">Έτοιμο</string>
+    <string name="import_continue">Συνέχεια</string>
+    <string name="import_retry">Δοκιμή ξανά</string>
+    <string name="import_back">Πίσω</string>
+    <string name="import_failed">Δεν ήταν δυνατή η ολοκλήρωση της ρύθμισης αυτής της πηγής.</string>
+
+    <!-- Library -->
+    <string name="library_title">Η βιβλιοθήκη σας</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s κανάλι μετά τη συγχώνευση διπλότυπων</item>
+        <item quantity="other">%1$s κανάλια μετά τη συγχώνευση διπλότυπων</item>
+    </plurals>
+    <string name="library_source_updated">Ενημερωμένο</string>
+    <string name="library_source_never">Δεν έχει εισαχθεί ακόμα</string>
+    <string name="library_refresh">Ανανέωση</string>
+    <string name="library_add_source">Προσθήκη άλλης πηγής</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Ρύθμιση από το κινητό</string>
+    <string name="welcome_type_on_tv">Πληκτρολόγηση στην τηλεόραση</string>
+    <string name="phone_title">Ρύθμιση από το κινητό</string>
+    <string name="phone_steps">Σαρώστε τον κωδικό με την κάμερα του κινητού σας και εισαγάγετε εκεί τον σύνδεσμο της λίστας ή τα στοιχεία σύνδεσης. Το κινητό πρέπει να βρίσκεται στο ίδιο Wi-Fi με αυτή την τηλεόραση.</string>
+    <string name="phone_or_open">Ή ανοίξτε το %1$s</string>
+    <string name="phone_no_network">Αυτή η τηλεόραση δεν είναι συνδεδεμένη σε δίκτυο. Συνδέστε την σε Wi-Fi ή Ethernet ή πληκτρολογήστε την πηγή στην τηλεόραση.</string>
+    <string name="phone_type_instead">Πληκτρολόγηση στην τηλεόραση</string>
+
+    <!-- Home -->
+    <string name="tab_live">Ζωντανά</string>
+    <string name="tab_movies">Ταινίες</string>
+    <string name="tab_series">Σειρές</string>
+    <string name="tab_search">Αναζήτηση</string>
+    <string name="tab_settings">Ρυθμίσεις</string>
+    <string name="settings_general">Γενικά</string>
+    <string name="settings_sources">Πηγές</string>
+    <string name="settings_language">Γλώσσα διεπαφής</string>
+    <string name="settings_language_device">Ίδια με τη συσκευή (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Αρχική</string>
+    <string name="home_continue">Συνέχεια παρακολούθησης</string>
+    <string name="home_favourite_channels">Αγαπημένα κανάλια</string>
+    <string name="home_my_movies">Η λίστα μου · Ταινίες</string>
+    <string name="home_my_series">Η λίστα μου · Σειρές</string>
+    <string name="home_empty">Εδώ θα εμφανίζονται όσα βλέπετε, η λίστα σας και τα αγαπημένα σας κανάλια.</string>
+    <string name="home_remove_continue">Αφαίρεση από τη «Συνέχεια παρακολούθησης»</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Αγαπημένα</string>
+    <string name="live_recent">Πρόσφατα</string>
+    <string name="live_other">Άλλα κανάλια</string>
+    <string name="live_empty">Δεν υπάρχουν ζωντανά κανάλια στις ενεργές πηγές σας.</string>
+    <string name="genre_all">Όλα τα κανάλια</string>
+    <string name="genre_news">Ειδήσεις</string>
+    <string name="genre_sports">Αθλητικά</string>
+    <string name="genre_kids">Παιδικά</string>
+    <string name="genre_movies">Ταινίες</string>
+    <string name="genre_entertainment">Ψυχαγωγία</string>
+    <string name="genre_documentary">Ντοκιμαντέρ</string>
+    <string name="genre_music">Μουσική</string>
+    <string name="genre_religion">Θρησκεία</string>
+    <string name="genre_other">Άλλα</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Συνέχεια παρακολούθησης</string>
+    <string name="vod_favorites">Η λίστα μου</string>
+    <string name="vod_recent">Προστέθηκαν πρόσφατα</string>
+    <string name="vod_empty">Δεν υπάρχει τίποτα ακόμα.</string>
+    <string name="vod_all_languages">Όλες οι γλώσσες</string>
+    <string name="vod_all_movies_in">Όλες οι ταινίες · %1$s</string>
+    <string name="vod_all_series_in">Όλες οι σειρές · %1$s</string>
+    <string name="vod_filter">Φίλτρο</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Φιλτράρισμα αυτής της λίστας</string>
+    <string name="vod_no_match">Τίποτα σε αυτή τη λίστα δεν ταιριάζει με «%1$s».</string>
+    <string name="vod_sort">Ταξινόμηση: %1$s</string>
+    <string name="vod_sort_recent">Πρόσφατα</string>
+    <string name="vod_sort_title">Α–Ω</string>
+    <string name="vod_sort_year">Νεότερα</string>
+    <string name="vod_sort_rating">Κορυφαίες βαθμολογίες</string>
+    <string name="vod_language_not_stated">Μη δηλωμένη γλώσσα</string>
+    <string name="vod_all_movies_not_stated">Όλες οι ταινίες, χωρίς δηλωμένη γλώσσα</string>
+    <string name="vod_all_series_not_stated">Όλες οι σειρές, χωρίς δηλωμένη γλώσσα</string>
+    <string name="details_play">Αναπαραγωγή</string>
+    <string name="details_resume">Συνέχεια από %1$s</string>
+    <string name="details_start_over">Από την αρχή</string>
+    <string name="details_play_episode">Αναπαραγωγή: %1$s</string>
+    <string name="details_resume_episode">Συνέχεια: %1$s</string>
+    <string name="details_favorite">Προσθήκη στη λίστα μου</string>
+    <string name="details_unfavorite">Αφαίρεση από τη λίστα μου</string>
+    <string name="details_cast">Παίζουν: %1$s</string>
+    <string name="details_season">Κύκλος %1$d</string>
+    <string name="details_no_episodes">Δεν υπάρχουν διαθέσιμα επεισόδια.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Κανάλια, εκπομπές, ταινίες, σειρές</string>
+    <string name="search_on_tv">Στην τηλεόραση</string>
+    <string name="tab_guide">Οδηγός</string>
+    <string name="guide_search">Αναζήτηση στον οδηγό</string>
+    <string name="guide_nothing">Καμία εκπομπή για «%1$s» · %2$s</string>
+    <string name="guide_no_info">Δεν υπάρχουν πληροφορίες οδηγού</string>
+    <string name="guide_today">Σήμερα</string>
+    <string name="guide_tomorrow">Αύριο</string>
+    <string name="guide_channels">Κανάλια</string>
+    <string name="live_all">Όλα τα κανάλια</string>
+    <string name="guide_now_until">Τώρα · έως %1$s</string>
+    <string name="guide_today_at">Σήμερα %1$s</string>
+    <string name="guide_tomorrow_at">Αύριο %1$s</string>
+    <string name="guide_watch_channel">Προβολή τώρα: %1$s</string>
+    <string name="search_intro">Πληκτρολογήστε τουλάχιστον δύο γράμματα.</string>
+    <string name="search_nothing">Δεν βρέθηκε τίποτα για «%1$s».</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Αυτό το κανάλι δεν λειτουργεί αυτή τη στιγμή</string>
+    <string name="player_title_unavailable">Αυτός ο τίτλος δεν μπορεί να αναπαραχθεί αυτή τη στιγμή</string>
+    <string name="player_offline_hint_live">Πατήστε OK για να δοκιμάσετε ξανά ή Πάνω/Κάτω για άλλο κανάλι.</string>
+    <string name="player_offline_hint">Πατήστε OK για να δοκιμάσετε ξανά.</string>
+    <string name="player_up_next">Επόμενο: %1$s</string>
+    <string name="player_up_next_in">Ξεκινά σε %1$d δ</string>
+    <string name="player_up_next_hint">OK για αναπαραγωγή τώρα · Πίσω για διακοπή</string>
+    <string name="player_still_watching">Συνεχίζετε να παρακολουθείτε;</string>
+    <string name="player_still_watching_hint">OK για αναπαραγωγή: %1$s · Πίσω για διακοπή</string>
+    <string name="player_next_episode">Επόμενο επεισόδιο  ›</string>
+    <string name="player_stop">Διακοπή</string>
+    <string name="player_audio">Ήχος: %1$s</string>
+    <string name="player_audio_title">Κομμάτι ήχου</string>
+    <string name="player_audio_choose">♪  Ήχος: %1$s</string>
+    <string name="audio_mono">μονοφωνικό</string>
+    <string name="audio_stereo">στερεοφωνικό</string>
+    <string name="audio_channels">%1$d κανάλια</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Άγνωστη γλώσσα</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">ρυθμός bit μη δηλωμένος</string>
+    <string name="track_default">προεπιλογή</string>
+    <string name="track_forced">αναγκαστικοί</string>
+    <string name="track_commentary">σχολιασμός</string>
+    <string name="track_audio_description">ηχητική περιγραφή</string>
+    <string name="track_hard_of_hearing">για άτομα με προβλήματα ακοής</string>
+    <string name="track_dub">μεταγλωττισμένο</string>
+    <string name="subtitles_title">Υπότιτλοι</string>
+    <string name="subtitles_off">Ανενεργοί</string>
+    <string name="player_subtitles_choose">Υπότιτλοι: %1$s</string>
+    <string name="subtitle_image">%1$s (εικόνα)</string>
+    <string name="subtitle_closed_captions">Υπότιτλοι για κωφούς</string>
+    <string name="player_offline_hint_touch">Ο πάροχος δεν στέλνει εικόνα. Δοκιμάστε ξανά σε λίγο.</string>
+    <string name="player_retry">Δοκιμή ξανά</string>
+    <string name="player_hint_live">Πάνω/Κάτω: κανάλι  ·  Αριστερά/Δεξιά: λίστα καναλιών</string>
+    <string name="player_hint_vod">Αριστερά/Δεξιά: πίσω/μπροστά  ·  OK: παύση</string>
+    <string name="player_favorite">Προσθήκη στα αγαπημένα: %1$s</string>
+    <string name="player_unfavorite">Αφαίρεση από τα αγαπημένα: %1$s</string>
+    <string name="player_now_playing">Παίζει τώρα</string>
+    <string name="player_backup_stream">Εφεδρική ροή</string>
+    <string name="player_zoom">Εικόνα: %1$s</string>
+    <string name="player_add_favourite_short">☆  Προσθήκη στα αγαπημένα</string>
+    <string name="player_remove_favourite_short">★  Αγαπημένο</string>
+    <string name="zoom_fit">Προσαρμογή</string>
+    <string name="zoom_fill">Πλήρης οθόνη</string>
+    <string name="zoom_stretch">Εκτάση</string>
+    <string name="player_next">Επόμενο %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">ανενεργή</string>
+    <string name="sources_enable">Ενεργοποίηση</string>
+    <string name="sources_disable">Απενεργοποίηση</string>
+    <string name="sources_move_up">Προτίμηση αυτής της πηγής</string>
+    <string name="sources_delete">Αφαίρεση</string>
+    <string name="sources_delete_confirm">Πατήστε ξανά για αφαίρεση</string>
+    <string name="settings_title">Περιεχόμενο</string>
+    <string name="settings_adult_off">Περιεχόμενο για ενήλικες: κρυφό</string>
+    <string name="settings_adult_on">Περιεχόμενο για ενήλικες: εμφανίζεται</string>
+
+    <!-- About -->
+    <string name="about_title">Πληροφορίες και άδειες χρήσης</string>
+    <string name="about_body">Το PureIPTV αναπαράγει πηγές που προσθέτετε εσείς. Δεν παρέχει κανάλια ή περιεχόμενο. Δημιουργήθηκε με αυτό το λογισμικό ανοικτού κώδικα:</string>
+    <string name="about_license_text">Άδεια Apache 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">Το PureIPTV είναι ελεύθερο λογισμικό: μπορεί να διανέμεται και να τροποποιείται σύμφωνα με τους όρους της GNU General Public License, έκδοση 3 ή (κατ\' επιλογή) οποιασδήποτε νεότερης έκδοσης. Παρέχεται χωρίς καμία απολύτως εγγύηση. Πηγαίος κώδικας: %1$s</string>
+    <string name="about_privacy">Το PureIPTV δεν συλλέγει δεδομένα για εσάς. Οι πηγές και τα στοιχεία σύνδεσής σας παραμένουν σε αυτή τη συσκευή και αποστέλλονται μόνο στους παρόχους που προσθέτετε. Πολιτική απορρήτου: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Δεν είναι δυνατή η σύνδεση με τον διακομιστή. Ελέγξτε τη διεύθυνση και τη σύνδεσή σας στο διαδίκτυο.</string>
+    <string name="error_invalid_credentials">Ο πάροχος δεν αποδέχτηκε αυτά τα στοιχεία σύνδεσης. Ελέγξτε το όνομα χρήστη και τον κωδικό.</string>
+    <string name="error_account_expired">Ο λογαριασμός έχει λήξει. Επικοινωνήστε με τον πάροχό σας για ανανέωση.</string>
+    <string name="error_not_a_playlist">Αυτή η διεύθυνση δεν οδηγεί σε λίστα αναπαραγωγής ή σύνδεση παρόχου.</string>
+    <string name="error_unknown">Κάτι πήγε στραβά. Δοκιμάστε ξανά.</string>
+</resources>

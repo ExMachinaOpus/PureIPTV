@@ -1,0 +1,22 @@
+PureIPTV is a player only. It does not include, sell or recommend any channels, playlists or subscriptions: you add a source you already have.
+
+Give it one thing, a playlist link or a server address with username and password, and it works out the rest: which entries are live channels, films or series, which channels are duplicates, and how to show tens of thousands of entries as a library you can actually browse.
+
+Made for Google TV and Android TV first, with full support for phones and tablets.
+
+• One-step setup: type it on the TV, or scan a QR code and type it on your phone
+• Several sources in one library: switch them on and off, and the same channel from two sources shows once, with automatic fallback when a stream fails
+• Live TV grouped by category, and a programme guide with search
+• Films and series with posters, plots, seasons and episodes; resume where you stopped and go straight to the next episode
+• Home with Continue watching, favourite channels and your list
+• Search across channels, programmes, films and series
+• Audio and subtitle choice, picture size per stream, surround audio on devices without their own decoder, and picture-in-picture on phones
+• Everything works with the remote's arrows, OK and Back
+• Built for very large playlists: 50,000+ channels and 100,000+ films
+• Clear messages when a stream doesn't work, never error codes
+• Adult content hidden unless you switch it on
+• 35 languages
+
+Private: no account, no analytics, no ads. Your sources and logins stay on your device and are only sent to the providers you add.
+
+Open source under the GPL 3.0 licence.

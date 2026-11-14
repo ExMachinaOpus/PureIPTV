@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Alustamiseks lisage oma esitusloend või teenusepakkuja sisselogimisandmed.</string>
+    <string name="welcome_add_source">Lisa allikas</string>
+    <string name="welcome_paste_link">Kleebi esitusloendi link</string>
+    <string name="welcome_sign_in">Logi sisse serveri ja andmetega</string>
+
+    <!-- Add source -->
+    <string name="add_title">Lisa allikas</string>
+    <string name="add_mode_link">Esitusloendi link</string>
+    <string name="add_mode_login">Server ja sisselogimine</string>
+    <string name="add_field_link">Esitusloendi link (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">TV-kava link (valikuline)</string>
+    <string name="sources_guide">TV-kava link</string>
+    <string name="sources_guide_body">Teenusepakkuja XMLTV-kava aadress. Jäta tühjaks, et kasutada esitusloendis märgitud kava, kui see on olemas.</string>
+    <string name="sources_guide_save">Salvesta</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Kasutajanimi</string>
+    <string name="add_field_password">Parool</string>
+    <string name="add_continue">Jätka</string>
+    <string name="add_checking">Kontrollin…</string>
+    <string name="add_cancel">Tühista</string>
+    <string name="add_missing_fields">Täitke kõik väljad.</string>
+
+    <!-- Import -->
+    <string name="import_title">Seadistamine: %1$s</string>
+    <string name="import_connecting">Ühendamine…</string>
+    <string name="import_live">Otse-TV importimine…</string>
+    <string name="import_movies">Filmide importimine…</string>
+    <string name="import_series">Sarjade importimine…</string>
+    <string name="import_finishing">Lõpetamine…</string>
+    <string name="import_guide">TV-kava värskendamine…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s otsekanal</item>
+        <item quantity="other">%1$s otsekanalit</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s filmi</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s sari</item>
+        <item quantity="other">%1$s sarja</item>
+    </plurals>
+    <string name="import_done">Valmis</string>
+    <string name="import_continue">Jätka</string>
+    <string name="import_retry">Proovi uuesti</string>
+    <string name="import_back">Tagasi</string>
+    <string name="import_failed">Selle allika seadistamist ei õnnestunud lõpetada.</string>
+
+    <!-- Library -->
+    <string name="library_title">Teie meediakogu</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanal pärast duplikaatide ühendamist</item>
+        <item quantity="other">%1$s kanalit pärast duplikaatide ühendamist</item>
+    </plurals>
+    <string name="library_source_updated">Ajakohane</string>
+    <string name="library_source_never">Pole veel imporditud</string>
+    <string name="library_refresh">Värskenda</string>
+    <string name="library_add_source">Lisa veel üks allikas</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Seadista telefonis</string>
+    <string name="welcome_type_on_tv">Sisesta teleris</string>
+    <string name="phone_title">Seadista telefonis</string>
+    <string name="phone_steps">Skannige kood telefoni kaameraga ja sisestage seal oma esitusloendi link või sisselogimisandmed. Telefon peab olema samas Wi-Fi-võrgus nagu see teler.</string>
+    <string name="phone_or_open">Või ava %1$s</string>
+    <string name="phone_no_network">See teler pole võrku ühendatud. Ühendage see Wi-Fi või Etherneti kaudu või sisestage allikas teleris.</string>
+    <string name="phone_type_instead">Sisesta hoopis teleris</string>
+
+    <!-- Home -->
+    <string name="tab_live">Otse-TV</string>
+    <string name="tab_movies">Filmid</string>
+    <string name="tab_series">Sarjad</string>
+    <string name="tab_search">Otsing</string>
+    <string name="tab_settings">Seaded</string>
+    <string name="settings_general">Üldine</string>
+    <string name="settings_sources">Allikad</string>
+    <string name="settings_language">Liidese keel</string>
+    <string name="settings_language_device">Sama mis seadmes (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Avaleht</string>
+    <string name="home_continue">Jätka vaatamist</string>
+    <string name="home_favourite_channels">Lemmikkanalid</string>
+    <string name="home_my_movies">Minu loend · Filmid</string>
+    <string name="home_my_series">Minu loend · Sarjad</string>
+    <string name="home_empty">Siia ilmuvad see, mida vaatate, teie loend ja lemmikkanalid.</string>
+    <string name="home_remove_continue">Eemalda jaotisest „Jätka vaatamist“</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Lemmikud</string>
+    <string name="live_recent">Hiljuti vaadatud</string>
+    <string name="live_other">Muud kanalid</string>
+    <string name="live_empty">Teie sisselülitatud allikates pole otsekanaleid.</string>
+    <string name="genre_all">Kõik kanalid</string>
+    <string name="genre_news">Uudised</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Lastele</string>
+    <string name="genre_movies">Filmid</string>
+    <string name="genre_entertainment">Meelelahutus</string>
+    <string name="genre_documentary">Dokumentaal</string>
+    <string name="genre_music">Muusika</string>
+    <string name="genre_religion">Religioon</string>
+    <string name="genre_other">Muu</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Jätka vaatamist</string>
+    <string name="vod_favorites">Minu loend</string>
+    <string name="vod_recent">Hiljuti lisatud</string>
+    <string name="vod_empty">Siin pole veel midagi.</string>
+    <string name="vod_all_languages">Kõik keeled</string>
+    <string name="vod_all_movies_in">Kõik filmid · %1$s</string>
+    <string name="vod_all_series_in">Kõik sarjad · %1$s</string>
+    <string name="vod_filter">Filter</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtreeri seda loendit</string>
+    <string name="vod_no_match">Selles loendis pole midagi, mis vastaks otsingule „%1$s“.</string>
+    <string name="vod_sort">Järjestus: %1$s</string>
+    <string name="vod_sort_recent">Hiljuti lisatud</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Uusimad</string>
+    <string name="vod_sort_rating">Kõrgeima hindega</string>
+    <string name="vod_language_not_stated">Keel pole märgitud</string>
+    <string name="vod_all_movies_not_stated">Kõik filmid, keel pole märgitud</string>
+    <string name="vod_all_series_not_stated">Kõik sarjad, keel pole märgitud</string>
+    <string name="details_play">Esita</string>
+    <string name="details_resume">Jätka kohast %1$s</string>
+    <string name="details_start_over">Alusta otsast</string>
+    <string name="details_play_episode">Esita: %1$s</string>
+    <string name="details_resume_episode">Jätka: %1$s</string>
+    <string name="details_favorite">Lisa minu loendisse</string>
+    <string name="details_unfavorite">Eemalda minu loendist</string>
+    <string name="details_cast">Osatäitjad: %1$s</string>
+    <string name="details_season">Hooaeg %1$d</string>
+    <string name="details_no_episodes">Episoode pole saadaval.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanalid, saated, filmid, sarjad</string>
+    <string name="search_on_tv">Teleris</string>
+    <string name="tab_guide">Kava</string>
+    <string name="guide_search">Otsi kavast</string>
+    <string name="guide_nothing">Otsingule „%1$s“ vastavaid saateid pole · %2$s</string>
+    <string name="guide_no_info">Kava teave puudub</string>
+    <string name="guide_today">Täna</string>
+    <string name="guide_tomorrow">Homme</string>
+    <string name="guide_channels">Kanalid</string>
+    <string name="live_all">Kõik kanalid</string>
+    <string name="guide_now_until">Praegu · kuni %1$s</string>
+    <string name="guide_today_at">Täna %1$s</string>
+    <string name="guide_tomorrow_at">Homme %1$s</string>
+    <string name="guide_watch_channel">Vaata kohe: %1$s</string>
+    <string name="search_intro">Sisestage vähemalt kaks tähte.</string>
+    <string name="search_nothing">Otsingule „%1$s“ ei leitud midagi.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">See kanal ei tööta praegu</string>
+    <string name="player_title_unavailable">Seda pealkirja ei saa praegu esitada</string>
+    <string name="player_offline_hint_live">Vajutage uuesti proovimiseks OK või teise kanali jaoks Üles/Alla.</string>
+    <string name="player_offline_hint">Vajutage uuesti proovimiseks OK.</string>
+    <string name="player_up_next">Järgmine: %1$s</string>
+    <string name="player_up_next_in">Algab %1$d s pärast</string>
+    <string name="player_up_next_hint">OK – esita kohe · Tagasi – peata</string>
+    <string name="player_still_watching">Kas vaatate veel?</string>
+    <string name="player_still_watching_hint">OK – esita: %1$s · Tagasi – peata</string>
+    <string name="player_next_episode">Järgmine osa  ›</string>
+    <string name="player_stop">Peata</string>
+    <string name="player_audio">Heli: %1$s</string>
+    <string name="player_audio_title">Helirada</string>
+    <string name="player_audio_choose">♪  Heli: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">Kanaleid: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Tundmatu keel</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitikiirus pole teada</string>
+    <string name="track_default">vaikimisi</string>
+    <string name="track_forced">sunnitud</string>
+    <string name="track_commentary">kommentaar</string>
+    <string name="track_audio_description">audiokirjeldus</string>
+    <string name="track_hard_of_hearing">kuulmispuudega inimestele</string>
+    <string name="track_dub">dubleeritud</string>
+    <string name="subtitles_title">Subtiitrid</string>
+    <string name="subtitles_off">Väljas</string>
+    <string name="player_subtitles_choose">Subtiitrid: %1$s</string>
+    <string name="subtitle_image">%1$s (pilt)</string>
+    <string name="subtitle_closed_captions">Suletud subtiitrid</string>
+    <string name="player_offline_hint_touch">Teenusepakkuja ei saada videot. Proovige hetke pärast uuesti.</string>
+    <string name="player_retry">Proovi uuesti</string>
+    <string name="player_hint_live">Üles/Alla: kanal  ·  Vasakule/Paremale: kanalite loend</string>
+    <string name="player_hint_vod">Vasakule/Paremale: tagasi/edasi  ·  OK: paus</string>
+    <string name="player_favorite">Lisa lemmikutesse: %1$s</string>
+    <string name="player_unfavorite">Eemalda lemmikutest: %1$s</string>
+    <string name="player_now_playing">Praegu mängib</string>
+    <string name="player_backup_stream">Varuvoog</string>
+    <string name="player_zoom">Pilt: %1$s</string>
+    <string name="player_add_favourite_short">☆  Lisa lemmikutesse</string>
+    <string name="player_remove_favourite_short">★  Lemmik</string>
+    <string name="zoom_fit">Sobita</string>
+    <string name="zoom_fill">Täida ekraan</string>
+    <string name="zoom_stretch">Venita</string>
+    <string name="player_next">Järgmine: %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">väljas</string>
+    <string name="sources_enable">Lülita sisse</string>
+    <string name="sources_disable">Lülita välja</string>
+    <string name="sources_move_up">Eelista seda allikat</string>
+    <string name="sources_delete">Eemalda</string>
+    <string name="sources_delete_confirm">Eemaldamiseks vajutage uuesti</string>
+    <string name="settings_title">Sisu</string>
+    <string name="settings_adult_off">Täiskasvanutele mõeldud sisu: peidetud</string>
+    <string name="settings_adult_on">Täiskasvanutele mõeldud sisu: kuvatud</string>
+
+    <!-- About -->
+    <string name="about_title">Teave ja litsentsid</string>
+    <string name="about_body">PureIPTV esitab allikaid, mille lisate ise. See ei paku ühtegi kanalit ega sisu. Loodud selle avatud lähtekoodiga tarkvara abil:</string>
+    <string name="about_license_text">Litsents Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV on vaba tarkvara: seda võib jagada ja muuta GNU General Public License\'i versiooni 3 või (valikuliselt) mis tahes hilisema versiooni tingimustel. Seda pakutakse ilma igasuguse garantiita. Lähtekood: %1$s</string>
+    <string name="about_privacy">PureIPTV ei kogu teie kohta andmeid. Teie allikad ja sisselogimisandmed jäävad sellesse seadmesse ning saadetakse ainult teie lisatud teenusepakkujatele. Privaatsuspoliitika: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Serveriga ei saa ühendust. Kontrollige aadressi ja internetiühendust.</string>
+    <string name="error_invalid_credentials">Teenusepakkuja ei võtnud sisselogimisandmeid vastu. Kontrollige kasutajanime ja parooli.</string>
+    <string name="error_account_expired">See konto on aegunud. Uuendamiseks võtke ühendust teenusepakkujaga.</string>
+    <string name="error_not_a_playlist">See aadress ei viita esitusloendile ega teenusepakkuja sisselogimisele.</string>
+    <string name="error_unknown">Midagi läks valesti. Proovige uuesti.</string>
+</resources>

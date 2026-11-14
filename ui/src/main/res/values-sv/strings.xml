@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Lägg till din spellista eller inloggning hos din leverantör för att komma igång.</string>
+    <string name="welcome_add_source">Lägg till en källa</string>
+    <string name="welcome_paste_link">Klistra in en länk till en spellista</string>
+    <string name="welcome_sign_in">Logga in med server och inloggning</string>
+
+    <!-- Add source -->
+    <string name="add_title">Lägg till en källa</string>
+    <string name="add_mode_link">Länk till spellista</string>
+    <string name="add_mode_login">Server och inloggning</string>
+    <string name="add_field_link">Länk till spellista (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Länk till tv-tablå (valfritt)</string>
+    <string name="sources_guide">Länk till tv-tablå</string>
+    <string name="sources_guide_body">Adressen till en XMLTV-tablå från din leverantör. Lämna tomt för att använda tablån som spellistan anger, om den har en.</string>
+    <string name="sources_guide_save">Spara</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Användarnamn</string>
+    <string name="add_field_password">Lösenord</string>
+    <string name="add_continue">Fortsätt</string>
+    <string name="add_checking">Kontrollerar…</string>
+    <string name="add_cancel">Avbryt</string>
+    <string name="add_missing_fields">Fyll i alla fält.</string>
+
+    <!-- Import -->
+    <string name="import_title">Konfigurerar %1$s</string>
+    <string name="import_connecting">Ansluter…</string>
+    <string name="import_live">Importerar live-tv…</string>
+    <string name="import_movies">Importerar filmer…</string>
+    <string name="import_series">Importerar serier…</string>
+    <string name="import_finishing">Gör klart…</string>
+    <string name="import_guide">Uppdaterar tv-tablån…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s livekanal</item>
+        <item quantity="other">%1$s livekanaler</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s filmer</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s serie</item>
+        <item quantity="other">%1$s serier</item>
+    </plurals>
+    <string name="import_done">Klart</string>
+    <string name="import_continue">Fortsätt</string>
+    <string name="import_retry">Försök igen</string>
+    <string name="import_back">Tillbaka</string>
+    <string name="import_failed">Det gick inte att slutföra konfigurationen av källan.</string>
+
+    <!-- Library -->
+    <string name="library_title">Ditt bibliotek</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanal efter sammanslagning av dubbletter</item>
+        <item quantity="other">%1$s kanaler efter sammanslagning av dubbletter</item>
+    </plurals>
+    <string name="library_source_updated">Uppdaterad</string>
+    <string name="library_source_never">Inte importerad än</string>
+    <string name="library_refresh">Uppdatera</string>
+    <string name="library_add_source">Lägg till en källa till</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Konfigurera från mobilen</string>
+    <string name="welcome_type_on_tv">Skriv på tv:n</string>
+    <string name="phone_title">Konfigurera från mobilen</string>
+    <string name="phone_steps">Skanna koden med mobilens kamera och ange länken till spellistan eller din inloggning där. Mobilen måste vara ansluten till samma wifi som tv:n.</string>
+    <string name="phone_or_open">Eller öppna %1$s</string>
+    <string name="phone_no_network">Tv:n är inte ansluten till något nätverk. Anslut den till wifi eller Ethernet, eller skriv in källan på tv:n.</string>
+    <string name="phone_type_instead">Skriv på tv:n i stället</string>
+
+    <!-- Home -->
+    <string name="tab_live">Live-tv</string>
+    <string name="tab_movies">Filmer</string>
+    <string name="tab_series">Serier</string>
+    <string name="tab_search">Sök</string>
+    <string name="tab_settings">Inställningar</string>
+    <string name="settings_general">Allmänt</string>
+    <string name="settings_sources">Källor</string>
+    <string name="settings_language">Gränssnittsspråk</string>
+    <string name="settings_language_device">Samma som enheten (%1$s)</string>
+
+    <string name="tab_home">Hem</string>
+    <string name="home_continue">Fortsätt titta</string>
+    <string name="home_favourite_channels">Favoritkanaler</string>
+    <string name="home_my_movies">Min lista · Filmer</string>
+    <string name="home_my_series">Min lista · Serier</string>
+    <string name="home_empty">Det du tittar på, din lista och dina favoritkanaler visas här.</string>
+    <string name="home_remove_continue">Ta bort från Fortsätt titta</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favoriter</string>
+    <string name="live_recent">Senast sedda</string>
+    <string name="live_other">Övriga kanaler</string>
+    <string name="live_empty">Inga livekanaler i dina aktiverade källor.</string>
+    <string name="genre_all">Alla kanaler</string>
+    <string name="genre_news">Nyheter</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Barn</string>
+    <string name="genre_movies">Film</string>
+    <string name="genre_entertainment">Underhållning</string>
+    <string name="genre_documentary">Dokumentär</string>
+    <string name="genre_music">Musik</string>
+    <string name="genre_religion">Religion</string>
+    <string name="genre_other">Övrigt</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Fortsätt titta</string>
+    <string name="vod_favorites">Min lista</string>
+    <string name="vod_recent">Nyligen tillagda</string>
+    <string name="vod_empty">Inget här än.</string>
+    <string name="vod_all_languages">Alla språk</string>
+    <string name="vod_all_movies_in">Alla filmer · %1$s</string>
+    <string name="vod_all_series_in">Alla serier · %1$s</string>
+    <string name="vod_filter">Filtrera</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtrera den här listan</string>
+    <string name="vod_no_match">Inget i listan matchar ”%1$s”.</string>
+    <string name="vod_sort">Sortera: %1$s</string>
+    <string name="vod_sort_recent">Nyligen tillagda</string>
+    <string name="vod_sort_title">A–Ö</string>
+    <string name="vod_sort_year">Nyast</string>
+    <string name="vod_sort_rating">Högst betyg</string>
+    <string name="vod_language_not_stated">Språk ej angivet</string>
+    <string name="vod_all_movies_not_stated">Alla filmer, språk ej angivet</string>
+    <string name="vod_all_series_not_stated">Alla serier, språk ej angivet</string>
+    <string name="details_play">Spela upp</string>
+    <string name="details_resume">Fortsätt från %1$s</string>
+    <string name="details_start_over">Börja om</string>
+    <string name="details_play_episode">Spela upp %1$s</string>
+    <string name="details_resume_episode">Fortsätt %1$s</string>
+    <string name="details_favorite">Lägg till i min lista</string>
+    <string name="details_unfavorite">Ta bort från min lista</string>
+    <string name="details_cast">Med %1$s</string>
+    <string name="details_season">Säsong %1$d</string>
+    <string name="details_no_episodes">Inga avsnitt tillgängliga.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanaler, program, filmer, serier</string>
+    <string name="search_on_tv">På tv</string>
+    <string name="tab_guide">Tablå</string>
+    <string name="guide_search">Sök i tablån</string>
+    <string name="guide_nothing">Inget program som matchar ”%1$s” i %2$s.</string>
+    <string name="guide_no_info">Ingen tablåinformation</string>
+    <string name="guide_today">Idag</string>
+    <string name="guide_tomorrow">Imorgon</string>
+    <string name="guide_channels">Kanaler</string>
+    <string name="live_all">Alla kanaler</string>
+    <string name="guide_now_until">Nu · till %1$s</string>
+    <string name="guide_today_at">Idag %1$s</string>
+    <string name="guide_tomorrow_at">Imorgon %1$s</string>
+    <string name="guide_watch_channel">Titta på %1$s nu</string>
+    <string name="search_intro">Skriv minst två bokstäver.</string>
+    <string name="search_nothing">Inget hittades för ”%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Den här kanalen fungerar inte just nu</string>
+    <string name="player_title_unavailable">Den här titeln går inte att spela upp just nu</string>
+    <string name="player_offline_hint_live">Tryck på OK för att försöka igen, eller Upp/Ned för en annan kanal.</string>
+    <string name="player_offline_hint">Tryck på OK för att försöka igen.</string>
+    <string name="player_up_next">Nästa: %1$s</string>
+    <string name="player_up_next_in">Startar om %1$d s</string>
+    <string name="player_up_next_hint">OK för att spela nu · Tillbaka för att stoppa</string>
+    <string name="player_still_watching">Tittar du fortfarande?</string>
+    <string name="player_still_watching_hint">OK för att spela %1$s · Tillbaka för att stoppa</string>
+    <string name="player_next_episode">Nästa avsnitt  ›</string>
+    <string name="player_stop">Stoppa</string>
+    <string name="player_audio">Ljud: %1$s</string>
+    <string name="player_audio_title">Ljudspår</string>
+    <string name="player_audio_choose">♪  Ljud: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">%1$d kanaler</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Okänt språk</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bithastighet ej angiven</string>
+    <string name="track_default">standard</string>
+    <string name="track_forced">tvingad</string>
+    <string name="track_commentary">kommentar</string>
+    <string name="track_audio_description">syntolkning</string>
+    <string name="track_hard_of_hearing">för hörselskadade</string>
+    <string name="track_dub">dubbad</string>
+    <string name="subtitles_title">Undertexter</string>
+    <string name="subtitles_off">Av</string>
+    <string name="player_subtitles_choose">Undertexter: %1$s</string>
+    <string name="subtitle_image">%1$s (bild)</string>
+    <string name="subtitle_closed_captions">Textning för hörselskadade</string>
+    <string name="player_offline_hint_touch">Leverantören skickar ingen video. Försök igen om en stund.</string>
+    <string name="player_retry">Försök igen</string>
+    <string name="player_hint_live">Upp/Ned: kanal  ·  Vänster/Höger: kanallista</string>
+    <string name="player_hint_vod">Vänster/Höger: spola bakåt/framåt  ·  OK: pausa</string>
+    <string name="player_favorite">Lägg till %1$s i favoriter</string>
+    <string name="player_unfavorite">Ta bort %1$s från favoriter</string>
+    <string name="player_now_playing">Spelas nu</string>
+    <string name="player_backup_stream">Reservström</string>
+    <string name="player_zoom">Bild: %1$s</string>
+    <string name="player_add_favourite_short">☆  Lägg till i favoriter</string>
+    <string name="player_remove_favourite_short">★  Favorit</string>
+    <string name="zoom_fit">Anpassad</string>
+    <string name="zoom_fill">Fyll skärmen</string>
+    <string name="zoom_stretch">Sträckt</string>
+    <string name="player_next">Nästa %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">avstängd</string>
+    <string name="sources_enable">Slå på</string>
+    <string name="sources_disable">Stäng av</string>
+    <string name="sources_move_up">Föredra den här källan</string>
+    <string name="sources_delete">Ta bort</string>
+    <string name="sources_delete_confirm">Tryck igen för att ta bort</string>
+    <string name="settings_title">Innehåll</string>
+    <string name="settings_adult_off">Vuxeninnehåll: dolt</string>
+    <string name="settings_adult_on">Vuxeninnehåll: visas</string>
+
+    <!-- About -->
+    <string name="about_title">Om appen och licenser</string>
+    <string name="about_body">PureIPTV spelar upp källor som du själv lägger till. Appen tillhandahåller inga kanaler eller något innehåll. Byggd med denna programvara med öppen källkod:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV är fri programvara: den får delas och ändras enligt villkoren i GNU General Public License, version 3 eller (om du vill) någon senare version. Den levereras helt utan garanti. Källkod: %1$s</string>
+    <string name="about_privacy">PureIPTV samlar inte in några uppgifter om dig. Dina källor och inloggningar stannar på den här enheten och skickas bara till de leverantörer du lägger till. Integritetspolicy: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Det går inte att nå servern. Kontrollera adressen och din internetanslutning.</string>
+    <string name="error_invalid_credentials">Leverantören godkände inte inloggningen. Kontrollera användarnamn och lösenord.</string>
+    <string name="error_account_expired">Kontot har gått ut. Kontakta din leverantör för att förnya det.</string>
+    <string name="error_not_a_playlist">Adressen leder inte till en spellista eller leverantörsinloggning.</string>
+    <string name="error_unknown">Något gick fel. Försök igen.</string>
+</resources>

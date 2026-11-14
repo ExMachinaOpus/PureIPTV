@@ -1,0 +1,5 @@
+# GitHub Pages site for PureIPTV (Settings › Pages: deploy from branch master, folder /docs).
+title: PureIPTV
+description: An IPTV player for Google TV, Android TV and Android phones that just works.
+theme: jekyll-theme-primer
+lang: en-GB

@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">برای شروع، فهرست پخش یا اطلاعات ورود ارائه‌دهنده‌تان را اضافه کنید.</string>
+    <string name="welcome_add_source">افزودن منبع</string>
+    <string name="welcome_paste_link">چسباندن پیوند فهرست پخش</string>
+    <string name="welcome_sign_in">ورود با سرور و اطلاعات ورود</string>
+
+    <!-- Add source -->
+    <string name="add_title">افزودن منبع</string>
+    <string name="add_mode_link">پیوند فهرست پخش</string>
+    <string name="add_mode_login">سرور و اطلاعات ورود</string>
+    <string name="add_field_link">پیوند فهرست پخش (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">پیوند راهنمای برنامه‌ها (اختیاری)</string>
+    <string name="sources_guide">پیوند راهنمای برنامه‌ها</string>
+    <string name="sources_guide_body">نشانی راهنمای XMLTV از ارائه‌دهندهٔ شما. برای استفاده از راهنمایی که فهرست پخش معرفی می‌کند (در صورت وجود)، خالی بگذارید.</string>
+    <string name="sources_guide_save">ذخیره</string>
+    <string name="add_field_server">سرور</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">نام کاربری</string>
+    <string name="add_field_password">گذرواژه</string>
+    <string name="add_continue">ادامه</string>
+    <string name="add_checking">در حال بررسی…</string>
+    <string name="add_cancel">لغو</string>
+    <string name="add_missing_fields">لطفاً همه فیلدها را پر کنید.</string>
+
+    <!-- Import -->
+    <string name="import_title">در حال راه‌اندازی %1$s</string>
+    <string name="import_connecting">در حال اتصال…</string>
+    <string name="import_live">در حال وارد کردن تلویزیون زنده…</string>
+    <string name="import_movies">در حال وارد کردن فیلم‌ها…</string>
+    <string name="import_series">در حال وارد کردن سریال‌ها…</string>
+    <string name="import_finishing">در حال پایان دادن…</string>
+    <string name="import_guide">در حال به‌روزرسانی راهنمای برنامه‌ها…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s کانال زنده</item>
+        <item quantity="other">%1$s کانال زنده</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s فیلم</item>
+        <item quantity="other">%1$s فیلم</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s سریال</item>
+        <item quantity="other">%1$s سریال</item>
+    </plurals>
+    <string name="import_done">همه‌چیز آماده است</string>
+    <string name="import_continue">ادامه</string>
+    <string name="import_retry">تلاش دوباره</string>
+    <string name="import_back">بازگشت</string>
+    <string name="import_failed">راه‌اندازی این منبع کامل نشد.</string>
+
+    <!-- Library -->
+    <string name="library_title">کتابخانه شما</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s کانال پس از ادغام موارد تکراری</item>
+        <item quantity="other">%1$s کانال پس از ادغام موارد تکراری</item>
+    </plurals>
+    <string name="library_source_updated">به‌روز</string>
+    <string name="library_source_never">هنوز وارد نشده</string>
+    <string name="library_refresh">به‌روزرسانی</string>
+    <string name="library_add_source">افزودن منبع دیگر</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">راه‌اندازی از روی گوشی</string>
+    <string name="welcome_type_on_tv">تایپ روی تلویزیون</string>
+    <string name="phone_title">راه‌اندازی از روی گوشی</string>
+    <string name="phone_steps">کد را با دوربین گوشی اسکن کنید و پیوند فهرست پخش یا اطلاعات ورود را آنجا وارد کنید. گوشی باید به همان Wi-Fi متصل باشد که این تلویزیون به آن وصل است.</string>
+    <string name="phone_or_open">یا باز کنید %1$s</string>
+    <string name="phone_no_network">این تلویزیون به هیچ شبکه‌ای متصل نیست. آن را به Wi-Fi یا Ethernet وصل کنید، یا منبع را روی تلویزیون تایپ کنید.</string>
+    <string name="phone_type_instead">به‌جای آن، تایپ روی تلویزیون</string>
+
+    <!-- Home -->
+    <string name="tab_live">تلویزیون زنده</string>
+    <string name="tab_movies">فیلم‌ها</string>
+    <string name="tab_series">سریال‌ها</string>
+    <string name="tab_search">جستجو</string>
+    <string name="tab_settings">تنظیمات</string>
+    <string name="settings_general">عمومی</string>
+    <string name="settings_sources">منبع‌ها</string>
+    <string name="settings_language">زبان رابط</string>
+    <string name="settings_language_device">مانند دستگاه (%1$s)</string>
+
+    <string name="tab_home">خانه</string>
+    <string name="home_continue">ادامه تماشا</string>
+    <string name="home_favourite_channels">کانال‌های مورد علاقه</string>
+    <string name="home_my_movies">فهرست من · فیلم‌ها</string>
+    <string name="home_my_series">فهرست من · سریال‌ها</string>
+    <string name="home_empty">آنچه تماشا می‌کنید، فهرست شما و کانال‌های مورد علاقه‌تان اینجا نمایش داده می‌شود.</string>
+    <string name="home_remove_continue">حذف از ادامه تماشا</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">مورد علاقه‌ها</string>
+    <string name="live_recent">اخیراً تماشا شده</string>
+    <string name="live_other">کانال‌های دیگر</string>
+    <string name="live_empty">هیچ کانال زنده‌ای در منبع‌های فعال شما نیست.</string>
+    <string name="genre_all">همه کانال‌ها</string>
+    <string name="genre_news">اخبار</string>
+    <string name="genre_sports">ورزش</string>
+    <string name="genre_kids">کودکان</string>
+    <string name="genre_movies">فیلم</string>
+    <string name="genre_entertainment">سرگرمی</string>
+    <string name="genre_documentary">مستند</string>
+    <string name="genre_music">موسیقی</string>
+    <string name="genre_religion">مذهبی</string>
+    <string name="genre_other">سایر</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">ادامه تماشا</string>
+    <string name="vod_favorites">فهرست من</string>
+    <string name="vod_recent">اخیراً اضافه شده</string>
+    <string name="vod_empty">هنوز چیزی اینجا نیست.</string>
+    <string name="vod_all_languages">همه زبان‌ها</string>
+    <string name="vod_all_movies_in">همه فیلم‌ها · %1$s</string>
+    <string name="vod_all_series_in">همه سریال‌ها · %1$s</string>
+    <string name="vod_filter">فیلتر</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">فیلتر کردن این فهرست</string>
+    <string name="vod_no_match">هیچ موردی در این فهرست با «%1$s» مطابقت ندارد.</string>
+    <string name="vod_sort">مرتب‌سازی: %1$s</string>
+    <string name="vod_sort_recent">اخیراً اضافه شده</string>
+    <string name="vod_sort_title">الف–ی</string>
+    <string name="vod_sort_year">جدیدترین</string>
+    <string name="vod_sort_rating">بالاترین امتیاز</string>
+    <string name="vod_language_not_stated">زبان مشخص نشده</string>
+    <string name="vod_all_movies_not_stated">همه فیلم‌ها، زبان مشخص نشده</string>
+    <string name="vod_all_series_not_stated">همه سریال‌ها، زبان مشخص نشده</string>
+    <string name="details_play">پخش</string>
+    <string name="details_resume">ادامه از %1$s</string>
+    <string name="details_start_over">شروع از ابتدا</string>
+    <string name="details_play_episode">پخش %1$s</string>
+    <string name="details_resume_episode">ادامه %1$s</string>
+    <string name="details_favorite">افزودن به فهرست من</string>
+    <string name="details_unfavorite">حذف از فهرست من</string>
+    <string name="details_cast">بازیگران: %1$s</string>
+    <string name="details_season">فصل %1$d</string>
+    <string name="details_no_episodes">قسمتی در دسترس نیست.</string>
+
+    <!-- Search -->
+    <string name="search_hint">کانال‌ها، برنامه‌ها، فیلم‌ها، سریال‌ها</string>
+    <string name="search_on_tv">در حال پخش از تلویزیون</string>
+    <string name="tab_guide">راهنما</string>
+    <string name="guide_search">جستجو در راهنما</string>
+    <string name="guide_nothing">برنامه‌ای مطابق «%1$s» در %2$s نیست.</string>
+    <string name="guide_no_info">اطلاعاتی در راهنما نیست</string>
+    <string name="guide_today">امروز</string>
+    <string name="guide_tomorrow">فردا</string>
+    <string name="guide_channels">کانال‌ها</string>
+    <string name="live_all">همه کانال‌ها</string>
+    <string name="guide_now_until">اکنون · تا %1$s</string>
+    <string name="guide_today_at">امروز %1$s</string>
+    <string name="guide_tomorrow_at">فردا %1$s</string>
+    <string name="guide_watch_channel">تماشای %1$s اکنون</string>
+    <string name="search_intro">دست‌کم دو حرف تایپ کنید.</string>
+    <string name="search_nothing">چیزی برای «%1$s» پیدا نشد.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">این کانال در حال حاضر کار نمی‌کند</string>
+    <string name="player_title_unavailable">این عنوان در حال حاضر قابل پخش نیست</string>
+    <string name="player_offline_hint_live">برای تلاش دوباره OK را بزنید، یا برای کانال دیگر بالا/پایین.</string>
+    <string name="player_offline_hint">برای تلاش دوباره OK را بزنید.</string>
+    <string name="player_up_next">بعدی: %1$s</string>
+    <string name="player_up_next_in">شروع تا %1$d ثانیه دیگر</string>
+    <string name="player_up_next_hint">OK برای پخش فوری · بازگشت برای توقف</string>
+    <string name="player_still_watching">هنوز تماشا می‌کنید؟</string>
+    <string name="player_still_watching_hint">OK برای پخش %1$s · بازگشت برای توقف</string>
+    <string name="player_next_episode">قسمت بعدی  ›</string>
+    <string name="player_stop">توقف</string>
+    <string name="player_audio">صدا: %1$s</string>
+    <string name="player_audio_title">ترک صدا</string>
+    <string name="player_audio_choose">♪  صدا: %1$s</string>
+    <string name="audio_mono">تک‌کاناله</string>
+    <string name="audio_stereo">استریو</string>
+    <string name="audio_channels">تعداد کانال‌ها: %1$d</string>
+    <string name="audio_kbps">%1$d کیلوبیت بر ثانیه</string>
+    <string name="audio_unknown_language">زبان ناشناخته</string>
+    <string name="audio_khz">%1$s کیلوهرتز</string>
+    <string name="audio_bitrate_unknown">نرخ بیت مشخص نشده</string>
+    <string name="track_default">پیش‌فرض</string>
+    <string name="track_forced">اجباری</string>
+    <string name="track_commentary">گزارش و تفسیر</string>
+    <string name="track_audio_description">توصیف صوتی</string>
+    <string name="track_hard_of_hearing">برای ناشنوایان و کم‌شنوایان</string>
+    <string name="track_dub">دوبله‌شده</string>
+    <string name="subtitles_title">زیرنویس</string>
+    <string name="subtitles_off">خاموش</string>
+    <string name="player_subtitles_choose">زیرنویس: %1$s</string>
+    <string name="subtitle_image">%1$s (تصویری)</string>
+    <string name="subtitle_closed_captions">زیرنویس ناشنوایان</string>
+    <string name="player_offline_hint_touch">ارائه‌دهنده ویدیویی ارسال نمی‌کند. کمی بعد دوباره تلاش کنید.</string>
+    <string name="player_retry">تلاش دوباره</string>
+    <string name="player_hint_live">بالا/پایین: کانال  ·  چپ/راست: فهرست کانال‌ها</string>
+    <string name="player_hint_vod">چپ/راست: عقب/جلو  ·  OK: توقف موقت</string>
+    <string name="player_favorite">افزودن %1$s به مورد علاقه‌ها</string>
+    <string name="player_unfavorite">حذف %1$s از مورد علاقه‌ها</string>
+    <string name="player_now_playing">در حال پخش</string>
+    <string name="player_backup_stream">پخش پشتیبان</string>
+    <string name="player_zoom">تصویر: %1$s</string>
+    <string name="player_add_favourite_short">☆  افزودن به مورد علاقه‌ها</string>
+    <string name="player_remove_favourite_short">★  مورد علاقه</string>
+    <string name="zoom_fit">متناسب</string>
+    <string name="zoom_fill">پر کردن صفحه</string>
+    <string name="zoom_stretch">کشیده</string>
+    <string name="player_next">بعدی %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">خاموش</string>
+    <string name="sources_enable">روشن کردن</string>
+    <string name="sources_disable">خاموش کردن</string>
+    <string name="sources_move_up">ترجیح دادن این منبع</string>
+    <string name="sources_delete">حذف</string>
+    <string name="sources_delete_confirm">برای حذف دوباره بزنید</string>
+    <string name="settings_title">محتوا</string>
+    <string name="settings_adult_off">محتوای بزرگسالان: پنهان</string>
+    <string name="settings_adult_on">محتوای بزرگسالان: نمایش</string>
+
+    <!-- About -->
+    <string name="about_title">درباره و مجوزها</string>
+    <string name="about_body">PureIPTV منبع‌هایی را پخش می‌کند که خودتان اضافه می‌کنید. این برنامه هیچ کانال یا محتوایی ارائه نمی‌دهد. ساخته‌شده با این نرم‌افزارهای متن‌باز:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV نرم‌افزار آزاد است: می‌توان آن را تحت شرایط مجوز عمومی همگانی گنو (GNU General Public License)، نسخهٔ ۳ یا (به انتخاب) هر نسخهٔ بعدی، توزیع و تغییر داد. این نرم‌افزار بدون هیچ‌گونه ضمانتی ارائه می‌شود. کد منبع: %1$s</string>
+    <string name="about_privacy">PureIPTV هیچ داده‌ای درباره شما جمع‌آوری نمی‌کند. منابع و اطلاعات ورود شما روی همین دستگاه می‌ماند و فقط به ارائه‌دهندگانی که اضافه می‌کنید فرستاده می‌شود. سیاست حریم خصوصی: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">دسترسی به سرور ممکن نیست. نشانی و اتصال اینترنت خود را بررسی کنید.</string>
+    <string name="error_invalid_credentials">ارائه‌دهنده این اطلاعات ورود را نپذیرفت. نام کاربری و گذرواژه را بررسی کنید.</string>
+    <string name="error_account_expired">این حساب منقضی شده است. برای تمدید با ارائه‌دهنده تماس بگیرید.</string>
+    <string name="error_not_a_playlist">این نشانی به فهرست پخش یا اطلاعات ورود ارائه‌دهنده اشاره نمی‌کند.</string>
+    <string name="error_unknown">مشکلی پیش آمد. لطفاً دوباره تلاش کنید.</string>
+</resources>

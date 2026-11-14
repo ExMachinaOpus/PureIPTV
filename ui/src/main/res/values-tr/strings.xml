@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Başlamak için çalma listenizi veya sağlayıcı girişinizi ekleyin.</string>
+    <string name="welcome_add_source">Kaynak ekle</string>
+    <string name="welcome_paste_link">Çalma listesi bağlantısını yapıştır</string>
+    <string name="welcome_sign_in">Sunucu ve giriş bilgileriyle oturum aç</string>
+
+    <!-- Add source -->
+    <string name="add_title">Kaynak ekle</string>
+    <string name="add_mode_link">Çalma listesi bağlantısı</string>
+    <string name="add_mode_login">Sunucu ve giriş</string>
+    <string name="add_field_link">Çalma listesi bağlantısı (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">TV rehberi bağlantısı (isteğe bağlı)</string>
+    <string name="sources_guide">TV rehberi bağlantısı</string>
+    <string name="sources_guide_body">Sağlayıcınızın XMLTV rehberinin adresi. Oynatma listesinin belirttiği rehberi (varsa) kullanmak için boş bırakın.</string>
+    <string name="sources_guide_save">Kaydet</string>
+    <string name="add_field_server">Sunucu</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Kullanıcı adı</string>
+    <string name="add_field_password">Parola</string>
+    <string name="add_continue">Devam</string>
+    <string name="add_checking">Denetleniyor…</string>
+    <string name="add_cancel">İptal</string>
+    <string name="add_missing_fields">Lütfen tüm alanları doldurun.</string>
+
+    <!-- Import -->
+    <string name="import_title">Kurulum: %1$s</string>
+    <string name="import_connecting">Bağlanılıyor…</string>
+    <string name="import_live">Canlı TV içe aktarılıyor…</string>
+    <string name="import_movies">Filmler içe aktarılıyor…</string>
+    <string name="import_series">Diziler içe aktarılıyor…</string>
+    <string name="import_finishing">Tamamlanıyor…</string>
+    <string name="import_guide">TV rehberi güncelleniyor…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s canlı kanal</item>
+        <item quantity="other">%1$s canlı kanal</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s film</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s dizi</item>
+        <item quantity="other">%1$s dizi</item>
+    </plurals>
+    <string name="import_done">Hazır</string>
+    <string name="import_continue">Devam</string>
+    <string name="import_retry">Tekrar dene</string>
+    <string name="import_back">Geri</string>
+    <string name="import_failed">Bu kaynağın kurulumu tamamlanamadı.</string>
+
+    <!-- Library -->
+    <string name="library_title">Kitaplığınız</string>
+    <plurals name="library_merged">
+        <item quantity="one">Yinelenenler birleştirildikten sonra %1$s kanal</item>
+        <item quantity="other">Yinelenenler birleştirildikten sonra %1$s kanal</item>
+    </plurals>
+    <string name="library_source_updated">Güncel</string>
+    <string name="library_source_never">Henüz içe aktarılmadı</string>
+    <string name="library_refresh">Yenile</string>
+    <string name="library_add_source">Başka bir kaynak ekle</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Telefondan kur</string>
+    <string name="welcome_type_on_tv">Televizyonda yaz</string>
+    <string name="phone_title">Telefondan kur</string>
+    <string name="phone_steps">Kodu telefonunuzun kamerasıyla tarayın ve çalma listesi bağlantınızı veya giriş bilgilerinizi orada girin. Telefonunuz bu TV ile aynı Wi-Fi ağında olmalıdır.</string>
+    <string name="phone_or_open">Veya şunu açın: %1$s</string>
+    <string name="phone_no_network">Bu TV bir ağa bağlı değil. Wi-Fi ya da Ethernet bağlantısı kurun veya kaynağı televizyonda yazın.</string>
+    <string name="phone_type_instead">Bunun yerine televizyonda yaz</string>
+
+    <!-- Home -->
+    <string name="tab_live">Canlı TV</string>
+    <string name="tab_movies">Filmler</string>
+    <string name="tab_series">Diziler</string>
+    <string name="tab_search">Ara</string>
+    <string name="tab_settings">Ayarlar</string>
+    <string name="settings_general">Genel</string>
+    <string name="settings_sources">Kaynaklar</string>
+    <string name="settings_language">Arayüz dili</string>
+    <string name="settings_language_device">Cihazla aynı (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Ana Sayfa</string>
+    <string name="home_continue">İzlemeye devam et</string>
+    <string name="home_favourite_channels">Favori kanallar</string>
+    <string name="home_my_movies">Listem · Filmler</string>
+    <string name="home_my_series">Listem · Diziler</string>
+    <string name="home_empty">İzlediğiniz içerikler, listeniz ve favori kanallarınız burada görünür.</string>
+    <string name="home_remove_continue">İzlemeye devam et listesinden kaldır</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favoriler</string>
+    <string name="live_recent">Son izlenenler</string>
+    <string name="live_other">Diğer kanallar</string>
+    <string name="live_empty">Etkin kaynaklarınızda canlı kanal yok.</string>
+    <string name="genre_all">Tüm kanallar</string>
+    <string name="genre_news">Haberler</string>
+    <string name="genre_sports">Spor</string>
+    <string name="genre_kids">Çocuk</string>
+    <string name="genre_movies">Filmler</string>
+    <string name="genre_entertainment">Eğlence</string>
+    <string name="genre_documentary">Belgesel</string>
+    <string name="genre_music">Müzik</string>
+    <string name="genre_religion">Din</string>
+    <string name="genre_other">Diğer</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">İzlemeye devam et</string>
+    <string name="vod_favorites">Listem</string>
+    <string name="vod_recent">Son eklenenler</string>
+    <string name="vod_empty">Burada henüz bir şey yok.</string>
+    <string name="vod_all_languages">Tüm diller</string>
+    <string name="vod_all_movies_in">Tüm filmler · %1$s</string>
+    <string name="vod_all_series_in">Tüm diziler · %1$s</string>
+    <string name="vod_filter">Filtre</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Bu listeyi filtrele</string>
+    <string name="vod_no_match">Bu listede “%1$s” ile eşleşen bir şey yok.</string>
+    <string name="vod_sort">Sırala: %1$s</string>
+    <string name="vod_sort_recent">Son eklenenler</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">En yeniler</string>
+    <string name="vod_sort_rating">En yüksek puanlılar</string>
+    <string name="vod_language_not_stated">Dil belirtilmemiş</string>
+    <string name="vod_all_movies_not_stated">Tüm filmler, dil belirtilmemiş</string>
+    <string name="vod_all_series_not_stated">Tüm diziler, dil belirtilmemiş</string>
+    <string name="details_play">Oynat</string>
+    <string name="details_resume">Şuradan devam et: %1$s</string>
+    <string name="details_start_over">Baştan başla</string>
+    <string name="details_play_episode">Oynat: %1$s</string>
+    <string name="details_resume_episode">Devam et: %1$s</string>
+    <string name="details_favorite">Listeme ekle</string>
+    <string name="details_unfavorite">Listemden kaldır</string>
+    <string name="details_cast">Oyuncular: %1$s</string>
+    <string name="details_season">%1$d. Sezon</string>
+    <string name="details_no_episodes">Kullanılabilir bölüm yok.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanallar, programlar, filmler, diziler</string>
+    <string name="search_on_tv">Televizyonda</string>
+    <string name="tab_guide">Rehber</string>
+    <string name="guide_search">Rehberde ara</string>
+    <string name="guide_nothing">“%1$s” ile eşleşen program yok · %2$s</string>
+    <string name="guide_no_info">Rehber bilgisi yok</string>
+    <string name="guide_today">Bugün</string>
+    <string name="guide_tomorrow">Yarın</string>
+    <string name="guide_channels">Kanallar</string>
+    <string name="live_all">Tüm kanallar</string>
+    <string name="guide_now_until">Şimdi · %1$s saatine kadar</string>
+    <string name="guide_today_at">Bugün %1$s</string>
+    <string name="guide_tomorrow_at">Yarın %1$s</string>
+    <string name="guide_watch_channel">Şimdi izle: %1$s</string>
+    <string name="search_intro">En az iki harf yazın.</string>
+    <string name="search_nothing">“%1$s” için sonuç bulunamadı.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Bu kanal şu anda çalışmıyor</string>
+    <string name="player_title_unavailable">Bu içerik şu anda oynatılamıyor</string>
+    <string name="player_offline_hint_live">Tekrar denemek için OK tuşuna, başka kanal için Yukarı/Aşağı tuşuna basın.</string>
+    <string name="player_offline_hint">Tekrar denemek için OK tuşuna basın.</string>
+    <string name="player_up_next">Sıradaki: %1$s</string>
+    <string name="player_up_next_in">%1$d sn içinde başlıyor</string>
+    <string name="player_up_next_hint">Şimdi oynatmak için OK · Durdurmak için Geri</string>
+    <string name="player_still_watching">Hâlâ izliyor musunuz?</string>
+    <string name="player_still_watching_hint">Oynatmak için OK: %1$s · Durdurmak için Geri</string>
+    <string name="player_next_episode">Sonraki bölüm  ›</string>
+    <string name="player_stop">Durdur</string>
+    <string name="player_audio">Ses: %1$s</string>
+    <string name="player_audio_title">Ses parçası</string>
+    <string name="player_audio_choose">♪  Ses: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">%1$d kanal</string>
+    <string name="audio_kbps">%1$d kb/sn</string>
+    <string name="audio_unknown_language">Bilinmeyen dil</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bit hızı belirtilmemiş</string>
+    <string name="track_default">varsayılan</string>
+    <string name="track_forced">zorunlu</string>
+    <string name="track_commentary">yorum</string>
+    <string name="track_audio_description">sesli betimleme</string>
+    <string name="track_hard_of_hearing">işitme engelliler için</string>
+    <string name="track_dub">dublaj</string>
+    <string name="subtitles_title">Altyazı</string>
+    <string name="subtitles_off">Kapalı</string>
+    <string name="player_subtitles_choose">Altyazı: %1$s</string>
+    <string name="subtitle_image">%1$s (görüntü)</string>
+    <string name="subtitle_closed_captions">Gizli altyazı</string>
+    <string name="player_offline_hint_touch">Sağlayıcı görüntü göndermiyor. Biraz sonra tekrar deneyin.</string>
+    <string name="player_retry">Tekrar dene</string>
+    <string name="player_hint_live">Yukarı/Aşağı: kanal  ·  Sol/Sağ: kanal listesi</string>
+    <string name="player_hint_vod">Sol/Sağ: geri/ileri sar  ·  OK: duraklat</string>
+    <string name="player_favorite">Favorilere ekle: %1$s</string>
+    <string name="player_unfavorite">Favorilerden kaldır: %1$s</string>
+    <string name="player_now_playing">Şu an oynatılıyor</string>
+    <string name="player_backup_stream">Yedek yayın</string>
+    <string name="player_zoom">Görüntü: %1$s</string>
+    <string name="player_add_favourite_short">☆  Favorilere ekle</string>
+    <string name="player_remove_favourite_short">★  Favori</string>
+    <string name="zoom_fit">Sığdır</string>
+    <string name="zoom_fill">Ekranı doldur</string>
+    <string name="zoom_stretch">Uzat</string>
+    <string name="player_next">Sonraki %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">kapalı</string>
+    <string name="sources_enable">Aç</string>
+    <string name="sources_disable">Kapat</string>
+    <string name="sources_move_up">Bu kaynağı tercih et</string>
+    <string name="sources_delete">Kaldır</string>
+    <string name="sources_delete_confirm">Kaldırmak için tekrar basın</string>
+    <string name="settings_title">İçerik</string>
+    <string name="settings_adult_off">Yetişkin içeriği: gizli</string>
+    <string name="settings_adult_on">Yetişkin içeriği: gösteriliyor</string>
+
+    <!-- About -->
+    <string name="about_title">Hakkında ve lisanslar</string>
+    <string name="about_body">PureIPTV yalnızca sizin eklediğiniz kaynakları oynatır. Hiçbir kanal veya içerik sağlamaz. Şu açık kaynak yazılımlarla geliştirilmiştir:</string>
+    <string name="about_license_text">Apache Lisansı 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV özgür bir yazılımdır: GNU General Public License sürüm 3 veya (tercihe göre) daha sonraki herhangi bir sürümün koşulları altında paylaşılabilir ve değiştirilebilir. Hiçbir garanti olmadan sunulur. Kaynak kodu: %1$s</string>
+    <string name="about_privacy">PureIPTV sizinle ilgili hiçbir veri toplamaz. Kaynaklarınız ve giriş bilgileriniz bu cihazda kalır ve yalnızca eklediğiniz sağlayıcılara gönderilir. Gizlilik politikası: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Sunucuya ulaşılamıyor. Adresi ve internet bağlantınızı kontrol edin.</string>
+    <string name="error_invalid_credentials">Sağlayıcı bu girişi kabul etmedi. Kullanıcı adını ve parolayı kontrol edin.</string>
+    <string name="error_account_expired">Bu hesabın süresi dolmuş. Yenilemek için sağlayıcınızla iletişime geçin.</string>
+    <string name="error_not_a_playlist">Bu adres bir çalma listesine veya sağlayıcı girişine işaret etmiyor.</string>
+    <string name="error_unknown">Bir sorun oluştu. Lütfen tekrar deneyin.</string>
+</resources>

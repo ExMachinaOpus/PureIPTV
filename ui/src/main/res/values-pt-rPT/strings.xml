@@ -1,0 +1,235 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Adicione a sua lista de reprodução ou os dados de acesso do seu fornecedor para começar.</string>
+    <string name="welcome_add_source">Adicionar uma fonte</string>
+    <string name="welcome_paste_link">Colar a ligação de uma lista</string>
+    <string name="welcome_sign_in">Iniciar sessão com servidor e dados de acesso</string>
+
+    <!-- Add source -->
+    <string name="add_title">Adicionar uma fonte</string>
+    <string name="add_mode_link">Ligação da lista</string>
+    <string name="add_mode_login">Servidor e acesso</string>
+    <string name="add_field_link">Ligação da lista (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Ligação do guia de TV (opcional)</string>
+    <string name="sources_guide">Ligação do guia de TV</string>
+    <string name="sources_guide_body">O endereço de um guia XMLTV do seu fornecedor. Deixe em branco para usar o guia indicado na lista de reprodução, se existir.</string>
+    <string name="sources_guide_save">Guardar</string>
+    <string name="add_field_server">Servidor</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Nome de utilizador</string>
+    <string name="add_field_password">Palavra-passe</string>
+    <string name="add_continue">Continuar</string>
+    <string name="add_checking">A verificar…</string>
+    <string name="add_cancel">Cancelar</string>
+    <string name="add_missing_fields">Preencha todos os campos.</string>
+
+    <!-- Import -->
+    <string name="import_title">A configurar %1$s</string>
+    <string name="import_connecting">A ligar…</string>
+    <string name="import_live">A importar TV em direto…</string>
+    <string name="import_movies">A importar filmes…</string>
+    <string name="import_series">A importar séries…</string>
+    <string name="import_finishing">A concluir…</string>
+    <string name="import_guide">A atualizar o guia de TV…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s canal em direto</item>
+        <item quantity="many">%1$s de canais em direto</item>
+        <item quantity="other">%1$s canais em direto</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s filme</item>
+        <item quantity="many">%1$s de filmes</item>
+        <item quantity="other">%1$s filmes</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s série</item>
+        <item quantity="many">%1$s de séries</item>
+        <item quantity="other">%1$s séries</item>
+    </plurals>
+    <string name="import_done">Tudo pronto</string>
+    <string name="import_continue">Continuar</string>
+    <string name="import_retry">Tentar novamente</string>
+    <string name="import_back">Voltar</string>
+    <string name="import_failed">Não foi possível concluir a configuração desta fonte.</string>
+
+    <!-- Library -->
+    <string name="library_title">A sua biblioteca</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s canal após unir duplicados</item>
+        <item quantity="many">%1$s de canais após unir duplicados</item>
+        <item quantity="other">%1$s canais após unir duplicados</item>
+    </plurals>
+    <string name="library_source_updated">Atualizada</string>
+    <string name="library_source_never">Ainda não importada</string>
+    <string name="library_refresh">Atualizar</string>
+    <string name="library_add_source">Adicionar outra fonte</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Configurar a partir do telemóvel</string>
+    <string name="welcome_type_on_tv">Escrever na TV</string>
+    <string name="phone_title">Configurar a partir do telemóvel</string>
+    <string name="phone_steps">Leia o código com a câmara do telemóvel e introduza aí a ligação da lista ou os seus dados de acesso. O telemóvel tem de estar na mesma rede Wi-Fi que esta TV.</string>
+    <string name="phone_or_open">Ou abra %1$s</string>
+    <string name="phone_no_network">Esta TV não está ligada a nenhuma rede. Ligue-a ao Wi-Fi ou por Ethernet, ou escreva a fonte na TV.</string>
+    <string name="phone_type_instead">Escrever antes na TV</string>
+
+    <!-- Home -->
+    <string name="tab_live">TV em direto</string>
+    <string name="tab_movies">Filmes</string>
+    <string name="tab_series">Séries</string>
+    <string name="tab_search">Pesquisa</string>
+    <string name="tab_settings">Definições</string>
+    <string name="settings_general">Geral</string>
+    <string name="settings_sources">Fontes</string>
+    <string name="settings_language">Idioma da interface</string>
+    <string name="settings_language_device">Igual ao dispositivo (%1$s)</string>
+
+    <string name="tab_home">Início</string>
+    <string name="home_continue">Continuar a ver</string>
+    <string name="home_favourite_channels">Canais favoritos</string>
+    <string name="home_my_movies">A minha lista · Filmes</string>
+    <string name="home_my_series">A minha lista · Séries</string>
+    <string name="home_empty">O que está a ver, a sua lista e os seus canais favoritos aparecem aqui.</string>
+    <string name="home_remove_continue">Remover de Continuar a ver</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favoritos</string>
+    <string name="live_recent">Vistos recentemente</string>
+    <string name="live_other">Outros canais</string>
+    <string name="live_empty">Sem canais em direto nas suas fontes ativadas.</string>
+    <string name="genre_all">Todos os canais</string>
+    <string name="genre_news">Notícias</string>
+    <string name="genre_sports">Desporto</string>
+    <string name="genre_kids">Infantil</string>
+    <string name="genre_movies">Cinema</string>
+    <string name="genre_entertainment">Entretenimento</string>
+    <string name="genre_documentary">Documentários</string>
+    <string name="genre_music">Música</string>
+    <string name="genre_religion">Religião</string>
+    <string name="genre_other">Outros</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Continuar a ver</string>
+    <string name="vod_favorites">A minha lista</string>
+    <string name="vod_recent">Adicionados recentemente</string>
+    <string name="vod_empty">Ainda não há nada aqui.</string>
+    <string name="vod_all_languages">Todos os idiomas</string>
+    <string name="vod_all_movies_in">Todos os filmes · %1$s</string>
+    <string name="vod_all_series_in">Todas as séries · %1$s</string>
+    <string name="vod_filter">Filtrar</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtrar esta lista</string>
+    <string name="vod_no_match">Nada nesta lista corresponde a “%1$s”.</string>
+    <string name="vod_sort">Ordenar: %1$s</string>
+    <string name="vod_sort_recent">Adicionados recentemente</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Mais recentes</string>
+    <string name="vod_sort_rating">Mais bem avaliados</string>
+    <string name="vod_language_not_stated">Idioma não indicado</string>
+    <string name="vod_all_movies_not_stated">Todos os filmes, idioma não indicado</string>
+    <string name="vod_all_series_not_stated">Todas as séries, idioma não indicado</string>
+    <string name="details_play">Reproduzir</string>
+    <string name="details_resume">Retomar a partir de %1$s</string>
+    <string name="details_start_over">Recomeçar</string>
+    <string name="details_play_episode">Reproduzir %1$s</string>
+    <string name="details_resume_episode">Retomar %1$s</string>
+    <string name="details_favorite">Adicionar à minha lista</string>
+    <string name="details_unfavorite">Remover da minha lista</string>
+    <string name="details_cast">Com %1$s</string>
+    <string name="details_season">Temporada %1$d</string>
+    <string name="details_no_episodes">Sem episódios disponíveis.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Canais, programas, filmes, séries</string>
+    <string name="search_on_tv">Na TV</string>
+    <string name="tab_guide">Guia</string>
+    <string name="guide_search">Pesquisar no guia</string>
+    <string name="guide_nothing">Nenhum programa corresponde a “%1$s” em %2$s.</string>
+    <string name="guide_no_info">Sem informação do guia</string>
+    <string name="guide_today">Hoje</string>
+    <string name="guide_tomorrow">Amanhã</string>
+    <string name="guide_channels">Canais</string>
+    <string name="live_all">Todos os canais</string>
+    <string name="guide_now_until">Agora · até às %1$s</string>
+    <string name="guide_today_at">Hoje %1$s</string>
+    <string name="guide_tomorrow_at">Amanhã %1$s</string>
+    <string name="guide_watch_channel">Ver %1$s agora</string>
+    <string name="search_intro">Escreva pelo menos duas letras.</string>
+    <string name="search_nothing">Nada encontrado para “%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Este canal não está a funcionar neste momento</string>
+    <string name="player_title_unavailable">Este título não pode ser reproduzido neste momento</string>
+    <string name="player_offline_hint_live">Prima OK para tentar novamente, ou Cima/Baixo para mudar de canal.</string>
+    <string name="player_offline_hint">Prima OK para tentar novamente.</string>
+    <string name="player_up_next">Seguinte: %1$s</string>
+    <string name="player_up_next_in">Começa em %1$d s</string>
+    <string name="player_up_next_hint">OK para reproduzir já · Voltar para parar</string>
+    <string name="player_still_watching">Ainda está a ver?</string>
+    <string name="player_still_watching_hint">OK para reproduzir %1$s · Voltar para parar</string>
+    <string name="player_next_episode">Episódio seguinte  ›</string>
+    <string name="player_stop">Parar</string>
+    <string name="player_audio">Áudio: %1$s</string>
+    <string name="player_audio_title">Faixa de áudio</string>
+    <string name="player_audio_choose">♪  Áudio: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">estéreo</string>
+    <string name="audio_channels">%1$d canais</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Idioma desconhecido</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">taxa de bits não indicada</string>
+    <string name="track_default">predefinida</string>
+    <string name="track_forced">forçadas</string>
+    <string name="track_commentary">comentários</string>
+    <string name="track_audio_description">audiodescrição</string>
+    <string name="track_hard_of_hearing">para pessoas com deficiência auditiva</string>
+    <string name="track_dub">dobrada</string>
+    <string name="subtitles_title">Legendas</string>
+    <string name="subtitles_off">Desativadas</string>
+    <string name="player_subtitles_choose">Legendas: %1$s</string>
+    <string name="subtitle_image">%1$s (imagem)</string>
+    <string name="subtitle_closed_captions">Legendas para surdos</string>
+    <string name="player_offline_hint_touch">O fornecedor não está a enviar vídeo. Tente novamente dentro de instantes.</string>
+    <string name="player_retry">Tentar novamente</string>
+    <string name="player_hint_live">Cima/Baixo: canal  ·  Esquerda/Direita: lista de canais</string>
+    <string name="player_hint_vod">Esquerda/Direita: recuar/avançar  ·  OK: pausa</string>
+    <string name="player_favorite">Adicionar %1$s aos favoritos</string>
+    <string name="player_unfavorite">Remover %1$s dos favoritos</string>
+    <string name="player_now_playing">A reproduzir</string>
+    <string name="player_backup_stream">Emissão de reserva</string>
+    <string name="player_zoom">Imagem: %1$s</string>
+    <string name="player_add_favourite_short">☆  Adicionar aos favoritos</string>
+    <string name="player_remove_favourite_short">★  Favorito</string>
+    <string name="zoom_fit">Ajustar</string>
+    <string name="zoom_fill">Preencher ecrã</string>
+    <string name="zoom_stretch">Esticar</string>
+    <string name="player_next">Seguinte %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">desativada</string>
+    <string name="sources_enable">Ativar</string>
+    <string name="sources_disable">Desativar</string>
+    <string name="sources_move_up">Dar prioridade a esta fonte</string>
+    <string name="sources_delete">Remover</string>
+    <string name="sources_delete_confirm">Prima novamente para remover</string>
+    <string name="settings_title">Conteúdo</string>
+    <string name="settings_adult_off">Conteúdo para adultos: oculto</string>
+    <string name="settings_adult_on">Conteúdo para adultos: visível</string>
+
+    <!-- About -->
+    <string name="about_title">Acerca de e licenças</string>
+    <string name="about_body">O PureIPTV reproduz as fontes que adicionar. Não fornece quaisquer canais nem conteúdos. Criado com este software de código aberto:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV é software livre: pode ser partilhado e modificado nos termos da GNU General Public License, versão 3 ou (à sua escolha) qualquer versão posterior. É fornecido sem qualquer garantia. Código-fonte: %1$s</string>
+    <string name="about_privacy">O PureIPTV não recolhe dados sobre si. As suas fontes e dados de acesso ficam neste dispositivo e só são enviados aos fornecedores que adicionar. Política de privacidade: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Não foi possível contactar o servidor. Verifique o endereço e a ligação à internet.</string>
+    <string name="error_invalid_credentials">O fornecedor não aceitou estes dados de acesso. Verifique o nome de utilizador e a palavra-passe.</string>
+    <string name="error_account_expired">Esta conta expirou. Contacte o seu fornecedor para a renovar.</string>
+    <string name="error_not_a_playlist">Este endereço não leva a uma lista de reprodução nem a um acesso de fornecedor.</string>
+    <string name="error_unknown">Algo correu mal. Tente novamente.</string>
+</resources>

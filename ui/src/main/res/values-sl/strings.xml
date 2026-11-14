@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Za začetek dodajte svoj seznam predvajanja ali prijavo pri ponudniku.</string>
+    <string name="welcome_add_source">Dodaj vir</string>
+    <string name="welcome_paste_link">Prilepi povezavo do seznama predvajanja</string>
+    <string name="welcome_sign_in">Prijava s strežnikom in uporabniškim imenom</string>
+
+    <!-- Add source -->
+    <string name="add_title">Dodaj vir</string>
+    <string name="add_mode_link">Povezava do seznama</string>
+    <string name="add_mode_login">Strežnik in prijava</string>
+    <string name="add_field_link">Povezava do seznama predvajanja (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Povezava do TV-sporeda (neobvezno)</string>
+    <string name="sources_guide">Povezava do TV-sporeda</string>
+    <string name="sources_guide_body">Naslov sporeda XMLTV vašega ponudnika. Pustite prazno, če želite uporabiti spored, ki ga navaja seznam predvajanja, če ga ima.</string>
+    <string name="sources_guide_save">Shrani</string>
+    <string name="add_field_server">Strežnik</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Uporabniško ime</string>
+    <string name="add_field_password">Geslo</string>
+    <string name="add_continue">Naprej</string>
+    <string name="add_checking">Preverjanje …</string>
+    <string name="add_cancel">Prekliči</string>
+    <string name="add_missing_fields">Izpolnite vsa polja.</string>
+
+    <!-- Import -->
+    <string name="import_title">Nastavitev: %1$s</string>
+    <string name="import_connecting">Povezovanje …</string>
+    <string name="import_live">Uvažanje televizije v živo …</string>
+    <string name="import_movies">Uvažanje filmov …</string>
+    <string name="import_series">Uvažanje serij …</string>
+    <string name="import_finishing">Zaključevanje …</string>
+    <string name="import_guide">Posodabljanje televizijskega sporeda …</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s kanal v živo</item>
+        <item quantity="two">%1$s kanala v živo</item>
+        <item quantity="few">%1$s kanali v živo</item>
+        <item quantity="other">%1$s kanalov v živo</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="two">%1$s filma</item>
+        <item quantity="few">%1$s filmi</item>
+        <item quantity="other">%1$s filmov</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s serija</item>
+        <item quantity="two">%1$s seriji</item>
+        <item quantity="few">%1$s serije</item>
+        <item quantity="other">%1$s serij</item>
+    </plurals>
+    <string name="import_done">Končano</string>
+    <string name="import_continue">Naprej</string>
+    <string name="import_retry">Poskusi znova</string>
+    <string name="import_back">Nazaj</string>
+    <string name="import_failed">Nastavitve tega vira ni bilo mogoče dokončati.</string>
+
+    <!-- Library -->
+    <string name="library_title">Vaša knjižnica</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanal po združitvi dvojnikov</item>
+        <item quantity="two">%1$s kanala po združitvi dvojnikov</item>
+        <item quantity="few">%1$s kanali po združitvi dvojnikov</item>
+        <item quantity="other">%1$s kanalov po združitvi dvojnikov</item>
+    </plurals>
+    <string name="library_source_updated">Posodobljeno</string>
+    <string name="library_source_never">Še ni uvoženo</string>
+    <string name="library_refresh">Osveži</string>
+    <string name="library_add_source">Dodaj še en vir</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Nastavi s telefonom</string>
+    <string name="welcome_type_on_tv">Vnesi na televizorju</string>
+    <string name="phone_title">Nastavi s telefonom</string>
+    <string name="phone_steps">Optično preberite kodo s kamero telefona in tam vnesite povezavo do seznama predvajanja ali prijavo. Telefon mora biti v istem omrežju Wi-Fi kot televizor.</string>
+    <string name="phone_or_open">Ali odprite %1$s</string>
+    <string name="phone_no_network">Televizor ni povezan v omrežje. Povežite ga z Wi-Fi ali ethernetom ali pa vir vnesite na televizorju.</string>
+    <string name="phone_type_instead">Raje vnesi na televizorju</string>
+
+    <!-- Home -->
+    <string name="tab_live">TV v živo</string>
+    <string name="tab_movies">Filmi</string>
+    <string name="tab_series">Serije</string>
+    <string name="tab_search">Iskanje</string>
+    <string name="tab_settings">Nastavitve</string>
+    <string name="settings_general">Splošno</string>
+    <string name="settings_sources">Viri</string>
+    <string name="settings_language">Jezik vmesnika</string>
+    <string name="settings_language_device">Enako kot naprava (%1$s)</string>
+
+    <string name="tab_home">Domov</string>
+    <string name="home_continue">Nadaljuj gledanje</string>
+    <string name="home_favourite_channels">Priljubljeni kanali</string>
+    <string name="home_my_movies">Moj seznam · Filmi</string>
+    <string name="home_my_series">Moj seznam · Serije</string>
+    <string name="home_empty">Tu se prikažejo vsebine, ki jih gledate, vaš seznam in priljubljeni kanali.</string>
+    <string name="home_remove_continue">Odstrani iz Nadaljuj gledanje</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Priljubljeno</string>
+    <string name="live_recent">Nedavno gledano</string>
+    <string name="live_other">Drugi kanali</string>
+    <string name="live_empty">V vaših vklopljenih virih ni kanalov v živo.</string>
+    <string name="genre_all">Vsi kanali</string>
+    <string name="genre_news">Novice</string>
+    <string name="genre_sports">Šport</string>
+    <string name="genre_kids">Otroški</string>
+    <string name="genre_movies">Filmi</string>
+    <string name="genre_entertainment">Zabava</string>
+    <string name="genre_documentary">Dokumentarno</string>
+    <string name="genre_music">Glasba</string>
+    <string name="genre_religion">Vera</string>
+    <string name="genre_other">Drugo</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Nadaljuj gledanje</string>
+    <string name="vod_favorites">Moj seznam</string>
+    <string name="vod_recent">Nedavno dodano</string>
+    <string name="vod_empty">Tu še ni ničesar.</string>
+    <string name="vod_all_languages">Vsi jeziki</string>
+    <string name="vod_all_movies_in">Vsi filmi · %1$s</string>
+    <string name="vod_all_series_in">Vse serije · %1$s</string>
+    <string name="vod_filter">Filter</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtriraj ta seznam</string>
+    <string name="vod_no_match">Nič na tem seznamu se ne ujema z „%1$s“.</string>
+    <string name="vod_sort">Razvrsti: %1$s</string>
+    <string name="vod_sort_recent">Nedavno dodano</string>
+    <string name="vod_sort_title">A–Ž</string>
+    <string name="vod_sort_year">Najnovejše</string>
+    <string name="vod_sort_rating">Najbolje ocenjeno</string>
+    <string name="vod_language_not_stated">Jezik ni naveden</string>
+    <string name="vod_all_movies_not_stated">Vsi filmi, jezik ni naveden</string>
+    <string name="vod_all_series_not_stated">Vse serije, jezik ni naveden</string>
+    <string name="details_play">Predvajaj</string>
+    <string name="details_resume">Nadaljuj pri %1$s</string>
+    <string name="details_start_over">Od začetka</string>
+    <string name="details_play_episode">Predvajaj: %1$s</string>
+    <string name="details_resume_episode">Nadaljuj: %1$s</string>
+    <string name="details_favorite">Dodaj na moj seznam</string>
+    <string name="details_unfavorite">Odstrani z mojega seznama</string>
+    <string name="details_cast">Igrajo: %1$s</string>
+    <string name="details_season">%1$d. sezona</string>
+    <string name="details_no_episodes">Ni razpoložljivih epizod.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanali, oddaje, filmi, serije</string>
+    <string name="search_on_tv">Na televiziji</string>
+    <string name="tab_guide">Spored</string>
+    <string name="guide_search">Išči po sporedu</string>
+    <string name="guide_nothing">Ni oddaje „%1$s“ (%2$s).</string>
+    <string name="guide_no_info">Ni podatkov o sporedu</string>
+    <string name="guide_today">Danes</string>
+    <string name="guide_tomorrow">Jutri</string>
+    <string name="guide_channels">Kanali</string>
+    <string name="live_all">Vsi kanali</string>
+    <string name="guide_now_until">Zdaj · do %1$s</string>
+    <string name="guide_today_at">Danes %1$s</string>
+    <string name="guide_tomorrow_at">Jutri %1$s</string>
+    <string name="guide_watch_channel">Poglej zdaj: %1$s</string>
+    <string name="search_intro">Vnesite vsaj dve črki.</string>
+    <string name="search_nothing">Za „%1$s“ ni zadetkov.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Ta kanal trenutno ne deluje</string>
+    <string name="player_title_unavailable">Te vsebine trenutno ni mogoče predvajati</string>
+    <string name="player_offline_hint_live">Pritisnite OK za ponoven poskus ali Gor/Dol za drug kanal.</string>
+    <string name="player_offline_hint">Pritisnite OK za ponoven poskus.</string>
+    <string name="player_up_next">Naslednje: %1$s</string>
+    <string name="player_up_next_in">Začne se čez %1$d s</string>
+    <string name="player_up_next_hint">OK: predvajaj zdaj · Nazaj: ustavi</string>
+    <string name="player_still_watching">Še gledate?</string>
+    <string name="player_still_watching_hint">OK: predvajaj %1$s · Nazaj: ustavi</string>
+    <string name="player_next_episode">Naslednja epizoda  ›</string>
+    <string name="player_stop">Ustavi</string>
+    <string name="player_audio">Zvok: %1$s</string>
+    <string name="player_audio_title">Zvočna sled</string>
+    <string name="player_audio_choose">♪  Zvok: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">Kanalov: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Neznan jezik</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitna hitrost ni navedena</string>
+    <string name="track_default">privzeto</string>
+    <string name="track_forced">prisiljeno</string>
+    <string name="track_commentary">komentar</string>
+    <string name="track_audio_description">zvočni opis</string>
+    <string name="track_hard_of_hearing">za naglušne</string>
+    <string name="track_dub">sinhronizirano</string>
+    <string name="subtitles_title">Podnapisi</string>
+    <string name="subtitles_off">Izklopljeno</string>
+    <string name="player_subtitles_choose">Podnapisi: %1$s</string>
+    <string name="subtitle_image">%1$s (slika)</string>
+    <string name="subtitle_closed_captions">Skriti podnapisi</string>
+    <string name="player_offline_hint_touch">Ponudnik ne pošilja videa. Poskusite znova čez trenutek.</string>
+    <string name="player_retry">Poskusi znova</string>
+    <string name="player_hint_live">Gor/Dol: kanal  ·  Levo/Desno: seznam kanalov</string>
+    <string name="player_hint_vod">Levo/Desno: previjanje nazaj/naprej  ·  OK: premor</string>
+    <string name="player_favorite">Dodaj med priljubljene: %1$s</string>
+    <string name="player_unfavorite">Odstrani iz priljubljenih: %1$s</string>
+    <string name="player_now_playing">Zdaj se predvaja</string>
+    <string name="player_backup_stream">Rezervni tok</string>
+    <string name="player_zoom">Slika: %1$s</string>
+    <string name="player_add_favourite_short">☆  Dodaj med priljubljene</string>
+    <string name="player_remove_favourite_short">★  Priljubljeno</string>
+    <string name="zoom_fit">Prilagodi</string>
+    <string name="zoom_fill">Zapolni zaslon</string>
+    <string name="zoom_stretch">Raztegni</string>
+    <string name="player_next">Naslednji %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">izklopljeno</string>
+    <string name="sources_enable">Vklopi</string>
+    <string name="sources_disable">Izklopi</string>
+    <string name="sources_move_up">Prednostno uporabi ta vir</string>
+    <string name="sources_delete">Odstrani</string>
+    <string name="sources_delete_confirm">Pritisnite znova za odstranitev</string>
+    <string name="settings_title">Vsebina</string>
+    <string name="settings_adult_off">Vsebina za odrasle: skrita</string>
+    <string name="settings_adult_on">Vsebina za odrasle: prikazana</string>
+
+    <!-- About -->
+    <string name="about_title">O aplikaciji in licence</string>
+    <string name="about_body">PureIPTV predvaja vire, ki jih dodate sami. Ne ponuja nobenih kanalov ali vsebin. Narejeno s to odprtokodno programsko opremo:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV je prosto programje: lahko se deli in spreminja pod pogoji licence GNU General Public License, različica 3 ali (po izbiri) katera koli poznejša različica. Na voljo je brez kakršnega koli jamstva. Izvorna koda: %1$s</string>
+    <string name="about_privacy">PureIPTV ne zbira podatkov o vas. Vaši viri in prijavni podatki ostanejo v tej napravi in se pošiljajo samo ponudnikom, ki jih dodate. Pravilnik o zasebnosti: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Strežnika ni mogoče doseči. Preverite naslov in internetno povezavo.</string>
+    <string name="error_invalid_credentials">Ponudnik te prijave ni sprejel. Preverite uporabniško ime in geslo.</string>
+    <string name="error_account_expired">Ta račun je potekel. Za podaljšanje se obrnite na ponudnika.</string>
+    <string name="error_not_a_playlist">Ta naslov ne vodi do seznama predvajanja ali prijave pri ponudniku.</string>
+    <string name="error_unknown">Nekaj je šlo narobe. Poskusite znova.</string>
+</resources>

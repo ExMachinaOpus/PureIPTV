@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Backup rules for Android 12+ (cloud backup and device-to-device transfer).
+    Only the user's own data (user.db) is backed up. Once anything is <include>d, everything else is
+    left out, so these are excluded without listing them (lint rejects excludes outside includes):
+    - content.db: imported provider data, rebuilt by re-importing the sources.
+    - credentials DataStore + Tink keyset prefs: encrypted with an Android Keystore key that is never
+      backed up, so restored secrets could not be decrypted anyway. The user re-enters them.
+    user.db-wal/-shm are included so a backup taken while the database is open is consistent.
+    Keep in sync with backup_rules.xml (Android 11 and lower).
+-->
+<data-extraction-rules>
+    <cloud-backup>
+        <include domain="database" path="user.db" />
+        <include domain="database" path="user.db-wal" />
+        <include domain="database" path="user.db-shm" />
+    </cloud-backup>
+    <device-transfer>
+        <include domain="database" path="user.db" />
+        <include domain="database" path="user.db-wal" />
+        <include domain="database" path="user.db-shm" />
+    </device-transfer>
+</data-extraction-rules>

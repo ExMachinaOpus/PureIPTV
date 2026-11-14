@@ -1,0 +1,25 @@
+# Gradle / build
+.gradle/
+.kotlin/
+build/
+/captures
+.externalNativeBuild/
+.cxx/
+
+# Local config
+local.properties
+*.keystore
+*.jks
+keystore.properties
+
+# IDE
+.idea/
+*.iml
+.DS_Store
+
+# Real provider playlists for local testing. Never commit: they contain credentials.
+/fixtures-private/
+
+# Python bytecode
+__pycache__/
+*.pyc

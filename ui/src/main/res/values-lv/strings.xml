@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Lai sāktu, pievienojiet atskaņošanas sarakstu vai pakalpojuma sniedzēja pieteikšanās datus.</string>
+    <string name="welcome_add_source">Pievienot avotu</string>
+    <string name="welcome_paste_link">Ielīmēt atskaņošanas saraksta saiti</string>
+    <string name="welcome_sign_in">Pieteikties ar serveri un datiem</string>
+
+    <!-- Add source -->
+    <string name="add_title">Pievienot avotu</string>
+    <string name="add_mode_link">Atskaņošanas saraksta saite</string>
+    <string name="add_mode_login">Serveris un pieteikšanās</string>
+    <string name="add_field_link">Atskaņošanas saraksta saite (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">TV programmas saite (nav obligāta)</string>
+    <string name="sources_guide">TV programmas saite</string>
+    <string name="sources_guide_body">Jūsu pakalpojumu sniedzēja XMLTV programmas adrese. Atstājiet tukšu, lai izmantotu atskaņošanas sarakstā norādīto programmu, ja tāda ir.</string>
+    <string name="sources_guide_save">Saglabāt</string>
+    <string name="add_field_server">Serveris</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Lietotājvārds</string>
+    <string name="add_field_password">Parole</string>
+    <string name="add_continue">Turpināt</string>
+    <string name="add_checking">Notiek pārbaude…</string>
+    <string name="add_cancel">Atcelt</string>
+    <string name="add_missing_fields">Lūdzu, aizpildiet visus laukus.</string>
+
+    <!-- Import -->
+    <string name="import_title">Iestatīšana: %1$s</string>
+    <string name="import_connecting">Notiek savienošana…</string>
+    <string name="import_live">Notiek tiešraides TV importēšana…</string>
+    <string name="import_movies">Notiek filmu importēšana…</string>
+    <string name="import_series">Notiek seriālu importēšana…</string>
+    <string name="import_finishing">Notiek pabeigšana…</string>
+    <string name="import_guide">Notiek TV programmas atjaunināšana…</string>
+    <plurals name="count_live_channels">
+        <item quantity="zero">%1$s tiešraides kanālu</item>
+        <item quantity="one">%1$s tiešraides kanāls</item>
+        <item quantity="other">%1$s tiešraides kanāli</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="zero">%1$s filmu</item>
+        <item quantity="one">%1$s filma</item>
+        <item quantity="other">%1$s filmas</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="zero">%1$s seriālu</item>
+        <item quantity="one">%1$s seriāls</item>
+        <item quantity="other">%1$s seriāli</item>
+    </plurals>
+    <string name="import_done">Gatavs</string>
+    <string name="import_continue">Turpināt</string>
+    <string name="import_retry">Mēģināt vēlreiz</string>
+    <string name="import_back">Atpakaļ</string>
+    <string name="import_failed">Neizdevās pabeigt šī avota iestatīšanu.</string>
+
+    <!-- Library -->
+    <string name="library_title">Jūsu bibliotēka</string>
+    <plurals name="library_merged">
+        <item quantity="zero">%1$s kanālu pēc dublikātu apvienošanas</item>
+        <item quantity="one">%1$s kanāls pēc dublikātu apvienošanas</item>
+        <item quantity="other">%1$s kanāli pēc dublikātu apvienošanas</item>
+    </plurals>
+    <string name="library_source_updated">Atjaunināts</string>
+    <string name="library_source_never">Vēl nav importēts</string>
+    <string name="library_refresh">Atsvaidzināt</string>
+    <string name="library_add_source">Pievienot citu avotu</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Iestatīt no tālruņa</string>
+    <string name="welcome_type_on_tv">Ievadīt televizorā</string>
+    <string name="phone_title">Iestatīt no tālruņa</string>
+    <string name="phone_steps">Skenējiet kodu ar tālruņa kameru un tur ievadiet atskaņošanas saraksta saiti vai pieteikšanās datus. Tālrunim jābūt tajā pašā Wi-Fi tīklā, kurā ir šis televizors.</string>
+    <string name="phone_or_open">Vai atveriet %1$s</string>
+    <string name="phone_no_network">Šis televizors nav pieslēgts tīklam. Pievienojiet to Wi-Fi vai Ethernet, vai ievadiet avotu televizorā.</string>
+    <string name="phone_type_instead">Tā vietā ievadīt televizorā</string>
+
+    <!-- Home -->
+    <string name="tab_live">Tiešraide</string>
+    <string name="tab_movies">Filmas</string>
+    <string name="tab_series">Seriāli</string>
+    <string name="tab_search">Meklēt</string>
+    <string name="tab_settings">Iestatījumi</string>
+    <string name="settings_general">Vispārīgi</string>
+    <string name="settings_sources">Avoti</string>
+    <string name="settings_language">Saskarnes valoda</string>
+    <string name="settings_language_device">Tāpat kā ierīcē (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Sākums</string>
+    <string name="home_continue">Turpināt skatīties</string>
+    <string name="home_favourite_channels">Izlases kanāli</string>
+    <string name="home_my_movies">Mans saraksts · Filmas</string>
+    <string name="home_my_series">Mans saraksts · Seriāli</string>
+    <string name="home_empty">Šeit parādīsies tas, ko skatāties, jūsu saraksts un izlases kanāli.</string>
+    <string name="home_remove_continue">Noņemt no „Turpināt skatīties“</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Izlase</string>
+    <string name="live_recent">Nesen skatītie</string>
+    <string name="live_other">Citi kanāli</string>
+    <string name="live_empty">Jūsu ieslēgtajos avotos nav tiešraides kanālu.</string>
+    <string name="genre_all">Visi kanāli</string>
+    <string name="genre_news">Ziņas</string>
+    <string name="genre_sports">Sports</string>
+    <string name="genre_kids">Bērniem</string>
+    <string name="genre_movies">Filmas</string>
+    <string name="genre_entertainment">Izklaide</string>
+    <string name="genre_documentary">Dokumentālie</string>
+    <string name="genre_music">Mūzika</string>
+    <string name="genre_religion">Reliģija</string>
+    <string name="genre_other">Citi</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Turpināt skatīties</string>
+    <string name="vod_favorites">Mans saraksts</string>
+    <string name="vod_recent">Nesen pievienotie</string>
+    <string name="vod_empty">Šeit vēl nekā nav.</string>
+    <string name="vod_all_languages">Visas valodas</string>
+    <string name="vod_all_movies_in">Visas filmas · %1$s</string>
+    <string name="vod_all_series_in">Visi seriāli · %1$s</string>
+    <string name="vod_filter">Filtrs</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtrēt šo sarakstu</string>
+    <string name="vod_no_match">Šajā sarakstā nav nekā pēc „%1$s“.</string>
+    <string name="vod_sort">Kārtot: %1$s</string>
+    <string name="vod_sort_recent">Nesen pievienotie</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Jaunākie</string>
+    <string name="vod_sort_rating">Augstāk vērtētie</string>
+    <string name="vod_language_not_stated">Valoda nav norādīta</string>
+    <string name="vod_all_movies_not_stated">Visas filmas, valoda nav norādīta</string>
+    <string name="vod_all_series_not_stated">Visi seriāli, valoda nav norādīta</string>
+    <string name="details_play">Atskaņot</string>
+    <string name="details_resume">Turpināt no %1$s</string>
+    <string name="details_start_over">Sākt no sākuma</string>
+    <string name="details_play_episode">Atskaņot: %1$s</string>
+    <string name="details_resume_episode">Turpināt: %1$s</string>
+    <string name="details_favorite">Pievienot manam sarakstam</string>
+    <string name="details_unfavorite">Noņemt no mana saraksta</string>
+    <string name="details_cast">Lomās: %1$s</string>
+    <string name="details_season">Sezona %1$d</string>
+    <string name="details_no_episodes">Nav pieejamu epizožu.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanāli, pārraides, filmas, seriāli</string>
+    <string name="search_on_tv">Pa TV</string>
+    <string name="tab_guide">Programma</string>
+    <string name="guide_search">Meklēt programmā</string>
+    <string name="guide_nothing">Nav pārraižu pēc „%1$s“ · %2$s</string>
+    <string name="guide_no_info">Nav programmas informācijas</string>
+    <string name="guide_today">Šodien</string>
+    <string name="guide_tomorrow">Rīt</string>
+    <string name="guide_channels">Kanāli</string>
+    <string name="live_all">Visi kanāli</string>
+    <string name="guide_now_until">Tagad · līdz %1$s</string>
+    <string name="guide_today_at">Šodien %1$s</string>
+    <string name="guide_tomorrow_at">Rīt %1$s</string>
+    <string name="guide_watch_channel">Skatīties tagad: %1$s</string>
+    <string name="search_intro">Ievadiet vismaz divus burtus.</string>
+    <string name="search_nothing">Nekas netika atrasts pēc „%1$s“.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Šis kanāls pašlaik nedarbojas</string>
+    <string name="player_title_unavailable">Šo nosaukumu pašlaik nevar atskaņot</string>
+    <string name="player_offline_hint_live">Nospiediet OK, lai mēģinātu vēlreiz, vai Augšup/Lejup, lai izvēlētos citu kanālu.</string>
+    <string name="player_offline_hint">Nospiediet OK, lai mēģinātu vēlreiz.</string>
+    <string name="player_up_next">Nākamais: %1$s</string>
+    <string name="player_up_next_in">Sākas pēc %1$d s</string>
+    <string name="player_up_next_hint">OK – atskaņot tagad · Atpakaļ – apturēt</string>
+    <string name="player_still_watching">Vai vēl skatāties?</string>
+    <string name="player_still_watching_hint">OK – atskaņot: %1$s · Atpakaļ – apturēt</string>
+    <string name="player_next_episode">Nākamā sērija  ›</string>
+    <string name="player_stop">Apturēt</string>
+    <string name="player_audio">Skaņa: %1$s</string>
+    <string name="player_audio_title">Skaņas celiņš</string>
+    <string name="player_audio_choose">♪  Skaņa: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">Kanāli: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Nezināma valoda</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitu pārraides ātrums nav norādīts</string>
+    <string name="track_default">noklusējuma</string>
+    <string name="track_forced">piespiedu</string>
+    <string name="track_commentary">komentāri</string>
+    <string name="track_audio_description">audioapraksts</string>
+    <string name="track_hard_of_hearing">vājdzirdīgajiem</string>
+    <string name="track_dub">dublēts</string>
+    <string name="subtitles_title">Subtitri</string>
+    <string name="subtitles_off">Izslēgti</string>
+    <string name="player_subtitles_choose">Subtitri: %1$s</string>
+    <string name="subtitle_image">%1$s (attēls)</string>
+    <string name="subtitle_closed_captions">Slēgtie subtitri</string>
+    <string name="player_offline_hint_touch">Pakalpojuma sniedzējs nesūta video. Pēc brīža mēģiniet vēlreiz.</string>
+    <string name="player_retry">Mēģināt vēlreiz</string>
+    <string name="player_hint_live">Augšup/Lejup: kanāls  ·  Pa kreisi/Pa labi: kanālu saraksts</string>
+    <string name="player_hint_vod">Pa kreisi/Pa labi: atpakaļ/uz priekšu  ·  OK: pauze</string>
+    <string name="player_favorite">Pievienot izlasei: %1$s</string>
+    <string name="player_unfavorite">Noņemt no izlases: %1$s</string>
+    <string name="player_now_playing">Tagad atskaņo</string>
+    <string name="player_backup_stream">Rezerves straume</string>
+    <string name="player_zoom">Attēls: %1$s</string>
+    <string name="player_add_favourite_short">☆  Pievienot izlasei</string>
+    <string name="player_remove_favourite_short">★  Izlasē</string>
+    <string name="zoom_fit">Ietilpināt</string>
+    <string name="zoom_fill">Aizpildīt ekrānu</string>
+    <string name="zoom_stretch">Izstiept</string>
+    <string name="player_next">Nākamais: %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">izslēgts</string>
+    <string name="sources_enable">Ieslēgt</string>
+    <string name="sources_disable">Izslēgt</string>
+    <string name="sources_move_up">Dot priekšroku šim avotam</string>
+    <string name="sources_delete">Noņemt</string>
+    <string name="sources_delete_confirm">Nospiediet vēlreiz, lai noņemtu</string>
+    <string name="settings_title">Saturs</string>
+    <string name="settings_adult_off">Saturs pieaugušajiem: paslēpts</string>
+    <string name="settings_adult_on">Saturs pieaugušajiem: rādīts</string>
+
+    <!-- About -->
+    <string name="about_title">Par lietotni un licences</string>
+    <string name="about_body">PureIPTV atskaņo avotus, ko pievienojat paši. Tā nenodrošina nekādus kanālus vai saturu. Izveidots, izmantojot šo atvērtā koda programmatūru:</string>
+    <string name="about_license_text">Apache licence 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV ir brīva programmatūra: to drīkst izplatīt un mainīt saskaņā ar GNU General Public License 3. versijas vai (pēc izvēles) jebkuras vēlākas versijas noteikumiem. Tā tiek nodrošināta bez jebkādas garantijas. Pirmkods: %1$s</string>
+    <string name="about_privacy">PureIPTV nevāc datus par jums. Jūsu avoti un pieteikšanās dati paliek šajā ierīcē un tiek nosūtīti tikai jūsu pievienotajiem pakalpojumu sniedzējiem. Privātuma politika: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Nevar sasniegt serveri. Pārbaudiet adresi un interneta savienojumu.</string>
+    <string name="error_invalid_credentials">Pakalpojuma sniedzējs nepieņēma šos pieteikšanās datus. Pārbaudiet lietotājvārdu un paroli.</string>
+    <string name="error_account_expired">Šī konta derīguma termiņš ir beidzies. Sazinieties ar pakalpojuma sniedzēju, lai to atjaunotu.</string>
+    <string name="error_not_a_playlist">Šī adrese nenorāda uz atskaņošanas sarakstu vai pakalpojuma sniedzēja pieteikšanos.</string>
+    <string name="error_unknown">Radās kļūda. Lūdzu, mēģiniet vēlreiz.</string>
+</resources>

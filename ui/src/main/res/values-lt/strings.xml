@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Norėdami pradėti, pridėkite grojaraštį arba tiekėjo prisijungimo duomenis.</string>
+    <string name="welcome_add_source">Pridėti šaltinį</string>
+    <string name="welcome_paste_link">Įklijuoti grojaraščio nuorodą</string>
+    <string name="welcome_sign_in">Prisijungti su serveriu ir duomenimis</string>
+
+    <!-- Add source -->
+    <string name="add_title">Pridėti šaltinį</string>
+    <string name="add_mode_link">Grojaraščio nuoroda</string>
+    <string name="add_mode_login">Serveris ir prisijungimas</string>
+    <string name="add_field_link">Grojaraščio nuoroda (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">TV gido nuoroda (neprivaloma)</string>
+    <string name="sources_guide">TV gido nuoroda</string>
+    <string name="sources_guide_body">Jūsų tiekėjo XMLTV gido adresas. Palikite tuščią, kad būtų naudojamas grojaraštyje nurodytas gidas, jei jis yra.</string>
+    <string name="sources_guide_save">Išsaugoti</string>
+    <string name="add_field_server">Serveris</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Naudotojo vardas</string>
+    <string name="add_field_password">Slaptažodis</string>
+    <string name="add_continue">Tęsti</string>
+    <string name="add_checking">Tikrinama…</string>
+    <string name="add_cancel">Atšaukti</string>
+    <string name="add_missing_fields">Užpildykite visus laukus.</string>
+
+    <!-- Import -->
+    <string name="import_title">Nustatoma: %1$s</string>
+    <string name="import_connecting">Jungiamasi…</string>
+    <string name="import_live">Importuojama tiesioginė TV…</string>
+    <string name="import_movies">Importuojami filmai…</string>
+    <string name="import_series">Importuojami serialai…</string>
+    <string name="import_finishing">Baigiama…</string>
+    <string name="import_guide">Atnaujinamas TV gidas…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s tiesioginis kanalas</item>
+        <item quantity="few">%1$s tiesioginiai kanalai</item>
+        <item quantity="many">%1$s tiesioginio kanalo</item>
+        <item quantity="other">%1$s tiesioginių kanalų</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s filmas</item>
+        <item quantity="few">%1$s filmai</item>
+        <item quantity="many">%1$s filmo</item>
+        <item quantity="other">%1$s filmų</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s serialas</item>
+        <item quantity="few">%1$s serialai</item>
+        <item quantity="many">%1$s serialo</item>
+        <item quantity="other">%1$s serialų</item>
+    </plurals>
+    <string name="import_done">Atlikta</string>
+    <string name="import_continue">Tęsti</string>
+    <string name="import_retry">Bandyti dar kartą</string>
+    <string name="import_back">Atgal</string>
+    <string name="import_failed">Nepavyko baigti šio šaltinio nustatymo.</string>
+
+    <!-- Library -->
+    <string name="library_title">Jūsų biblioteka</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanalas sujungus dublikatus</item>
+        <item quantity="few">%1$s kanalai sujungus dublikatus</item>
+        <item quantity="many">%1$s kanalo sujungus dublikatus</item>
+        <item quantity="other">%1$s kanalų sujungus dublikatus</item>
+    </plurals>
+    <string name="library_source_updated">Atnaujinta</string>
+    <string name="library_source_never">Dar neimportuota</string>
+    <string name="library_refresh">Atnaujinti</string>
+    <string name="library_add_source">Pridėti kitą šaltinį</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Nustatyti telefonu</string>
+    <string name="welcome_type_on_tv">Įvesti televizoriuje</string>
+    <string name="phone_title">Nustatyti telefonu</string>
+    <string name="phone_steps">Nuskaitykite kodą telefono kamera ir ten įveskite grojaraščio nuorodą arba prisijungimo duomenis. Telefonas turi būti prijungtas prie to paties Wi-Fi tinklo kaip ir šis televizorius.</string>
+    <string name="phone_or_open">Arba atidarykite %1$s</string>
+    <string name="phone_no_network">Šis televizorius neprijungtas prie tinklo. Prijunkite jį prie Wi-Fi arba Ethernet arba įveskite šaltinį televizoriuje.</string>
+    <string name="phone_type_instead">Vietoj to įvesti televizoriuje</string>
+
+    <!-- Home -->
+    <string name="tab_live">Tiesioginė TV</string>
+    <string name="tab_movies">Filmai</string>
+    <string name="tab_series">Serialai</string>
+    <string name="tab_search">Paieška</string>
+    <string name="tab_settings">Nustatymai</string>
+    <string name="settings_general">Bendra</string>
+    <string name="settings_sources">Šaltiniai</string>
+    <string name="settings_language">Sąsajos kalba</string>
+    <string name="settings_language_device">Kaip šiame įrenginyje (%1$s)</string>
+
+    <!-- Home -->
+    <string name="tab_home">Pagrindinis</string>
+    <string name="home_continue">Tęsti žiūrėjimą</string>
+    <string name="home_favourite_channels">Mėgstami kanalai</string>
+    <string name="home_my_movies">Mano sąrašas · Filmai</string>
+    <string name="home_my_series">Mano sąrašas · Serialai</string>
+    <string name="home_empty">Čia atsiras tai, ką žiūrite, jūsų sąrašas ir mėgstami kanalai.</string>
+    <string name="home_remove_continue">Pašalinti iš „Tęsti žiūrėjimą“</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Mėgstami</string>
+    <string name="live_recent">Neseniai žiūrėti</string>
+    <string name="live_other">Kiti kanalai</string>
+    <string name="live_empty">Jūsų įjungtuose šaltiniuose nėra tiesioginių kanalų.</string>
+    <string name="genre_all">Visi kanalai</string>
+    <string name="genre_news">Naujienos</string>
+    <string name="genre_sports">Sportas</string>
+    <string name="genre_kids">Vaikams</string>
+    <string name="genre_movies">Filmai</string>
+    <string name="genre_entertainment">Pramogos</string>
+    <string name="genre_documentary">Dokumentika</string>
+    <string name="genre_music">Muzika</string>
+    <string name="genre_religion">Religija</string>
+    <string name="genre_other">Kita</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Tęsti žiūrėjimą</string>
+    <string name="vod_favorites">Mano sąrašas</string>
+    <string name="vod_recent">Neseniai pridėta</string>
+    <string name="vod_empty">Čia kol kas nieko nėra.</string>
+    <string name="vod_all_languages">Visos kalbos</string>
+    <string name="vod_all_movies_in">Visi filmai · %1$s</string>
+    <string name="vod_all_series_in">Visi serialai · %1$s</string>
+    <string name="vod_filter">Filtras</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filtruoti šį sąrašą</string>
+    <string name="vod_no_match">Šiame sąraše nėra nieko pagal „%1$s“.</string>
+    <string name="vod_sort">Rūšiuoti: %1$s</string>
+    <string name="vod_sort_recent">Neseniai pridėta</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Naujausi</string>
+    <string name="vod_sort_rating">Aukščiausiai įvertinti</string>
+    <string name="vod_language_not_stated">Kalba nenurodyta</string>
+    <string name="vod_all_movies_not_stated">Visi filmai, kalba nenurodyta</string>
+    <string name="vod_all_series_not_stated">Visi serialai, kalba nenurodyta</string>
+    <string name="details_play">Paleisti</string>
+    <string name="details_resume">Tęsti nuo %1$s</string>
+    <string name="details_start_over">Pradėti iš pradžių</string>
+    <string name="details_play_episode">Paleisti: %1$s</string>
+    <string name="details_resume_episode">Tęsti: %1$s</string>
+    <string name="details_favorite">Pridėti į mano sąrašą</string>
+    <string name="details_unfavorite">Pašalinti iš mano sąrašo</string>
+    <string name="details_cast">Vaidina: %1$s</string>
+    <string name="details_season">Sezonas %1$d</string>
+    <string name="details_no_episodes">Epizodų nėra.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanalai, laidos, filmai, serialai</string>
+    <string name="search_on_tv">Per TV</string>
+    <string name="tab_guide">Gidas</string>
+    <string name="guide_search">Ieškoti gide</string>
+    <string name="guide_nothing">Laidų pagal „%1$s“ nerasta · %2$s</string>
+    <string name="guide_no_info">Nėra gido informacijos</string>
+    <string name="guide_today">Šiandien</string>
+    <string name="guide_tomorrow">Rytoj</string>
+    <string name="guide_channels">Kanalai</string>
+    <string name="live_all">Visi kanalai</string>
+    <string name="guide_now_until">Dabar · iki %1$s</string>
+    <string name="guide_today_at">Šiandien %1$s</string>
+    <string name="guide_tomorrow_at">Rytoj %1$s</string>
+    <string name="guide_watch_channel">Žiūrėti dabar: %1$s</string>
+    <string name="search_intro">Įveskite bent dvi raides.</string>
+    <string name="search_nothing">Pagal „%1$s“ nieko nerasta.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Šis kanalas šiuo metu neveikia</string>
+    <string name="player_title_unavailable">Šios laidos šiuo metu paleisti nepavyksta</string>
+    <string name="player_offline_hint_live">Paspauskite OK, kad bandytumėte dar kartą, arba Aukštyn/Žemyn, kad pasirinktumėte kitą kanalą.</string>
+    <string name="player_offline_hint">Paspauskite OK, kad bandytumėte dar kartą.</string>
+    <string name="player_up_next">Toliau: %1$s</string>
+    <string name="player_up_next_in">Prasideda po %1$d s</string>
+    <string name="player_up_next_hint">OK – paleisti dabar · Atgal – sustabdyti</string>
+    <string name="player_still_watching">Vis dar žiūrite?</string>
+    <string name="player_still_watching_hint">OK – paleisti: %1$s · Atgal – sustabdyti</string>
+    <string name="player_next_episode">Kita serija  ›</string>
+    <string name="player_stop">Stabdyti</string>
+    <string name="player_audio">Garsas: %1$s</string>
+    <string name="player_audio_title">Garso takelis</string>
+    <string name="player_audio_choose">♪  Garsas: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">Kanalų: %1$d</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Nežinoma kalba</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitų sparta nenurodyta</string>
+    <string name="track_default">numatytasis</string>
+    <string name="track_forced">priverstiniai</string>
+    <string name="track_commentary">komentaras</string>
+    <string name="track_audio_description">garso aprašymas</string>
+    <string name="track_hard_of_hearing">neprigirdintiesiems</string>
+    <string name="track_dub">dubliuota</string>
+    <string name="subtitles_title">Subtitrai</string>
+    <string name="subtitles_off">Išjungta</string>
+    <string name="player_subtitles_choose">Subtitrai: %1$s</string>
+    <string name="subtitle_image">%1$s (vaizdas)</string>
+    <string name="subtitle_closed_captions">Uždarieji subtitrai</string>
+    <string name="player_offline_hint_touch">Tiekėjas nesiunčia vaizdo. Pabandykite dar kartą po akimirkos.</string>
+    <string name="player_retry">Bandyti dar kartą</string>
+    <string name="player_hint_live">Aukštyn/Žemyn: kanalas  ·  Kairėn/Dešinėn: kanalų sąrašas</string>
+    <string name="player_hint_vod">Kairėn/Dešinėn: atgal/pirmyn  ·  OK: pauzė</string>
+    <string name="player_favorite">Pridėti prie mėgstamų: %1$s</string>
+    <string name="player_unfavorite">Pašalinti iš mėgstamų: %1$s</string>
+    <string name="player_now_playing">Dabar rodoma</string>
+    <string name="player_backup_stream">Atsarginė transliacija</string>
+    <string name="player_zoom">Vaizdas: %1$s</string>
+    <string name="player_add_favourite_short">☆  Pridėti prie mėgstamų</string>
+    <string name="player_remove_favourite_short">★  Mėgstamas</string>
+    <string name="zoom_fit">Pritaikyti</string>
+    <string name="zoom_fill">Užpildyti ekraną</string>
+    <string name="zoom_stretch">Ištempti</string>
+    <string name="player_next">Toliau: %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">išjungta</string>
+    <string name="sources_enable">Įjungti</string>
+    <string name="sources_disable">Išjungti</string>
+    <string name="sources_move_up">Teikti pirmenybę šiam šaltiniui</string>
+    <string name="sources_delete">Pašalinti</string>
+    <string name="sources_delete_confirm">Paspauskite dar kartą, kad pašalintumėte</string>
+    <string name="settings_title">Turinys</string>
+    <string name="settings_adult_off">Turinys suaugusiesiems: paslėptas</string>
+    <string name="settings_adult_on">Turinys suaugusiesiems: rodomas</string>
+
+    <!-- About -->
+    <string name="about_title">Apie ir licencijos</string>
+    <string name="about_body">PureIPTV groja jūsų pačių pridėtus šaltinius. Ji nesiūlo jokių kanalų ar turinio. Sukurta naudojant šią atvirojo kodo programinę įrangą:</string>
+    <string name="about_license_text">Apache licencija 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV yra laisvoji programinė įranga: ją galima platinti ir keisti pagal GNU General Public License 3 versijos arba (pasirinktinai) bet kurios vėlesnės versijos sąlygas. Ji teikiama be jokių garantijų. Pirminis kodas: %1$s</string>
+    <string name="about_privacy">PureIPTV nerenka jokių duomenų apie jus. Jūsų šaltiniai ir prisijungimo duomenys lieka šiame įrenginyje ir siunčiami tik jūsų pridėtiems tiekėjams. Privatumo politika: %1$s</string>
+
+    <!-- Errors: plain language, no technical details -->
+    <string name="error_unreachable">Nepavyksta prisijungti prie serverio. Patikrinkite adresą ir interneto ryšį.</string>
+    <string name="error_invalid_credentials">Tiekėjas nepriėmė šių prisijungimo duomenų. Patikrinkite naudotojo vardą ir slaptažodį.</string>
+    <string name="error_account_expired">Ši paskyra nebegalioja. Kreipkitės į tiekėją, kad ją pratęstų.</string>
+    <string name="error_not_a_playlist">Šis adresas nenurodo į grojaraštį ar tiekėjo prisijungimą.</string>
+    <string name="error_unknown">Kažkas nepavyko. Bandykite dar kartą.</string>
+</resources>

@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Tambahkan playlist atau login penyedia Anda untuk memulai.</string>
+    <string name="welcome_add_source">Tambah sumber</string>
+    <string name="welcome_paste_link">Tempel tautan playlist</string>
+    <string name="welcome_sign_in">Masuk dengan server dan login</string>
+
+    <!-- Add source -->
+    <string name="add_title">Tambah sumber</string>
+    <string name="add_mode_link">Tautan playlist</string>
+    <string name="add_mode_login">Server dan login</string>
+    <string name="add_field_link">Tautan playlist (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Tautan panduan TV (opsional)</string>
+    <string name="sources_guide">Tautan panduan TV</string>
+    <string name="sources_guide_body">Alamat panduan XMLTV dari penyedia Anda. Biarkan kosong untuk memakai panduan yang disebut playlist, jika ada.</string>
+    <string name="sources_guide_save">Simpan</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Nama pengguna</string>
+    <string name="add_field_password">Kata sandi</string>
+    <string name="add_continue">Lanjutkan</string>
+    <string name="add_checking">Memeriksa…</string>
+    <string name="add_cancel">Batal</string>
+    <string name="add_missing_fields">Harap isi semua kolom.</string>
+
+    <!-- Import -->
+    <string name="import_title">Menyiapkan %1$s</string>
+    <string name="import_connecting">Menghubungkan…</string>
+    <string name="import_live">Mengimpor TV langsung…</string>
+    <string name="import_movies">Mengimpor film…</string>
+    <string name="import_series">Mengimpor serial…</string>
+    <string name="import_finishing">Menyelesaikan…</string>
+    <string name="import_guide">Memperbarui panduan TV…</string>
+    <plurals name="count_live_channels">
+        <item quantity="other">%1$s saluran langsung</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="other">%1$s film</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="other">%1$s serial</item>
+    </plurals>
+    <string name="import_done">Selesai</string>
+    <string name="import_continue">Lanjutkan</string>
+    <string name="import_retry">Coba lagi</string>
+    <string name="import_back">Kembali</string>
+    <string name="import_failed">Penyiapan sumber ini tidak dapat diselesaikan.</string>
+
+    <!-- Library -->
+    <string name="library_title">Pustaka Anda</string>
+    <plurals name="library_merged">
+        <item quantity="other">%1$s saluran setelah duplikat digabungkan</item>
+    </plurals>
+    <string name="library_source_updated">Terbaru</string>
+    <string name="library_source_never">Belum diimpor</string>
+    <string name="library_refresh">Segarkan</string>
+    <string name="library_add_source">Tambah sumber lain</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Siapkan dari ponsel</string>
+    <string name="welcome_type_on_tv">Ketik di TV</string>
+    <string name="phone_title">Siapkan dari ponsel</string>
+    <string name="phone_steps">Pindai kode dengan kamera ponsel Anda, lalu masukkan tautan playlist atau login Anda di sana. Ponsel harus terhubung ke Wi-Fi yang sama dengan TV ini.</string>
+    <string name="phone_or_open">Atau buka %1$s</string>
+    <string name="phone_no_network">TV ini tidak terhubung ke jaringan. Hubungkan ke Wi-Fi atau Ethernet, atau ketik sumber di TV.</string>
+    <string name="phone_type_instead">Ketik di TV saja</string>
+
+    <!-- Home -->
+    <string name="tab_live">TV Langsung</string>
+    <string name="tab_movies">Film</string>
+    <string name="tab_series">Serial</string>
+    <string name="tab_search">Cari</string>
+    <string name="tab_settings">Pengaturan</string>
+    <string name="settings_general">Umum</string>
+    <string name="settings_sources">Sumber</string>
+    <string name="settings_language">Bahasa antarmuka</string>
+    <string name="settings_language_device">Sama dengan perangkat (%1$s)</string>
+
+    <string name="tab_home">Beranda</string>
+    <string name="home_continue">Lanjutkan menonton</string>
+    <string name="home_favourite_channels">Saluran favorit</string>
+    <string name="home_my_movies">Daftar saya · Film</string>
+    <string name="home_my_series">Daftar saya · Serial</string>
+    <string name="home_empty">Tontonan, daftar, dan saluran favorit Anda akan muncul di sini.</string>
+    <string name="home_remove_continue">Hapus dari Lanjutkan menonton</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favorit</string>
+    <string name="live_recent">Baru ditonton</string>
+    <string name="live_other">Saluran lain</string>
+    <string name="live_empty">Tidak ada saluran langsung di sumber yang aktif.</string>
+    <string name="genre_all">Semua saluran</string>
+    <string name="genre_news">Berita</string>
+    <string name="genre_sports">Olahraga</string>
+    <string name="genre_kids">Anak-anak</string>
+    <string name="genre_movies">Film</string>
+    <string name="genre_entertainment">Hiburan</string>
+    <string name="genre_documentary">Dokumenter</string>
+    <string name="genre_music">Musik</string>
+    <string name="genre_religion">Agama</string>
+    <string name="genre_other">Lainnya</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Lanjutkan menonton</string>
+    <string name="vod_favorites">Daftar saya</string>
+    <string name="vod_recent">Baru ditambahkan</string>
+    <string name="vod_empty">Belum ada apa pun di sini.</string>
+    <string name="vod_all_languages">Semua bahasa</string>
+    <string name="vod_all_movies_in">Semua film · %1$s</string>
+    <string name="vod_all_series_in">Semua serial · %1$s</string>
+    <string name="vod_filter">Filter</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Filter daftar ini</string>
+    <string name="vod_no_match">Tidak ada yang cocok dengan “%1$s” di daftar ini.</string>
+    <string name="vod_sort">Urutkan: %1$s</string>
+    <string name="vod_sort_recent">Baru ditambahkan</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Terbaru</string>
+    <string name="vod_sort_rating">Rating tertinggi</string>
+    <string name="vod_language_not_stated">Bahasa tidak disebutkan</string>
+    <string name="vod_all_movies_not_stated">Semua film, bahasa tidak disebutkan</string>
+    <string name="vod_all_series_not_stated">Semua serial, bahasa tidak disebutkan</string>
+    <string name="details_play">Putar</string>
+    <string name="details_resume">Lanjutkan dari %1$s</string>
+    <string name="details_start_over">Mulai dari awal</string>
+    <string name="details_play_episode">Putar %1$s</string>
+    <string name="details_resume_episode">Lanjutkan %1$s</string>
+    <string name="details_favorite">Tambahkan ke daftar saya</string>
+    <string name="details_unfavorite">Hapus dari daftar saya</string>
+    <string name="details_cast">Pemeran: %1$s</string>
+    <string name="details_season">Musim %1$d</string>
+    <string name="details_no_episodes">Tidak ada episode tersedia.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Saluran, acara, film, serial</string>
+    <string name="search_on_tv">Di TV</string>
+    <string name="tab_guide">Panduan</string>
+    <string name="guide_search">Cari di panduan</string>
+    <string name="guide_nothing">Tidak ada acara yang cocok dengan “%1$s” di %2$s.</string>
+    <string name="guide_no_info">Tidak ada informasi panduan</string>
+    <string name="guide_today">Hari ini</string>
+    <string name="guide_tomorrow">Besok</string>
+    <string name="guide_channels">Saluran</string>
+    <string name="live_all">Semua saluran</string>
+    <string name="guide_now_until">Sekarang · hingga %1$s</string>
+    <string name="guide_today_at">Hari ini %1$s</string>
+    <string name="guide_tomorrow_at">Besok %1$s</string>
+    <string name="guide_watch_channel">Tonton %1$s sekarang</string>
+    <string name="search_intro">Ketik minimal dua huruf.</string>
+    <string name="search_nothing">Tidak ditemukan hasil untuk “%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Saluran ini sedang tidak berfungsi</string>
+    <string name="player_title_unavailable">Judul ini tidak dapat diputar saat ini</string>
+    <string name="player_offline_hint_live">Tekan OK untuk mencoba lagi, atau Atas/Bawah untuk saluran lain.</string>
+    <string name="player_offline_hint">Tekan OK untuk mencoba lagi.</string>
+    <string name="player_up_next">Berikutnya: %1$s</string>
+    <string name="player_up_next_in">Dimulai dalam %1$d dtk</string>
+    <string name="player_up_next_hint">OK untuk putar sekarang · Kembali untuk berhenti</string>
+    <string name="player_still_watching">Masih menonton?</string>
+    <string name="player_still_watching_hint">OK untuk memutar %1$s · Kembali untuk berhenti</string>
+    <string name="player_next_episode">Episode berikutnya  ›</string>
+    <string name="player_stop">Berhenti</string>
+    <string name="player_audio">Audio: %1$s</string>
+    <string name="player_audio_title">Trek audio</string>
+    <string name="player_audio_choose">♪  Audio: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">%1$d saluran</string>
+    <string name="audio_kbps">%1$d kbit/dtk</string>
+    <string name="audio_unknown_language">Bahasa tidak diketahui</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitrate tidak disebutkan</string>
+    <string name="track_default">bawaan</string>
+    <string name="track_forced">paksa</string>
+    <string name="track_commentary">komentar</string>
+    <string name="track_audio_description">deskripsi audio</string>
+    <string name="track_hard_of_hearing">untuk tunarungu</string>
+    <string name="track_dub">dubbing</string>
+    <string name="subtitles_title">Subtitel</string>
+    <string name="subtitles_off">Mati</string>
+    <string name="player_subtitles_choose">Subtitel: %1$s</string>
+    <string name="subtitle_image">%1$s (gambar)</string>
+    <string name="subtitle_closed_captions">Teks tertutup</string>
+    <string name="player_offline_hint_touch">Penyedia tidak mengirim video. Coba lagi sebentar lagi.</string>
+    <string name="player_retry">Coba lagi</string>
+    <string name="player_hint_live">Atas/Bawah: saluran  ·  Kiri/Kanan: daftar saluran</string>
+    <string name="player_hint_vod">Kiri/Kanan: mundur/maju  ·  OK: jeda</string>
+    <string name="player_favorite">Tambahkan %1$s ke favorit</string>
+    <string name="player_unfavorite">Hapus %1$s dari favorit</string>
+    <string name="player_now_playing">Sedang diputar</string>
+    <string name="player_backup_stream">Stream cadangan</string>
+    <string name="player_zoom">Gambar: %1$s</string>
+    <string name="player_add_favourite_short">☆  Tambah ke favorit</string>
+    <string name="player_remove_favourite_short">★  Favorit</string>
+    <string name="zoom_fit">Sesuaikan</string>
+    <string name="zoom_fill">Penuhi layar</string>
+    <string name="zoom_stretch">Regangkan</string>
+    <string name="player_next">Berikutnya %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">dimatikan</string>
+    <string name="sources_enable">Aktifkan</string>
+    <string name="sources_disable">Matikan</string>
+    <string name="sources_move_up">Utamakan sumber ini</string>
+    <string name="sources_delete">Hapus</string>
+    <string name="sources_delete_confirm">Tekan lagi untuk menghapus</string>
+    <string name="settings_title">Konten</string>
+    <string name="settings_adult_off">Konten dewasa: disembunyikan</string>
+    <string name="settings_adult_on">Konten dewasa: ditampilkan</string>
+
+    <!-- About -->
+    <string name="about_title">Tentang dan lisensi</string>
+    <string name="about_body">PureIPTV memutar sumber yang Anda tambahkan sendiri. Aplikasi ini tidak menyediakan saluran atau konten apa pun. Dibuat dengan perangkat lunak sumber terbuka ini:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV adalah perangkat lunak bebas: boleh dibagikan dan diubah berdasarkan ketentuan GNU General Public License, versi 3 atau (sesuai pilihan) versi yang lebih baru. Perangkat lunak ini diberikan tanpa jaminan apa pun. Kode sumber: %1$s</string>
+    <string name="about_privacy">PureIPTV tidak mengumpulkan data tentang Anda. Sumber dan login Anda tetap berada di perangkat ini dan hanya dikirim ke penyedia yang Anda tambahkan. Kebijakan privasi: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">Server tidak dapat dijangkau. Periksa alamat dan koneksi internet Anda.</string>
+    <string name="error_invalid_credentials">Penyedia tidak menerima login ini. Periksa nama pengguna dan kata sandi.</string>
+    <string name="error_account_expired">Akun ini telah kedaluwarsa. Hubungi penyedia Anda untuk memperpanjang.</string>
+    <string name="error_not_a_playlist">Alamat ini tidak mengarah ke playlist atau login penyedia.</string>
+    <string name="error_unknown">Terjadi kesalahan. Silakan coba lagi.</string>
+</resources>

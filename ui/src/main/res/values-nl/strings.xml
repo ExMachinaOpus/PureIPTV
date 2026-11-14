@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Welcome -->
+    <string name="welcome_subtitle">Voeg je afspeellijst of de inloggegevens van je aanbieder toe om te beginnen.</string>
+    <string name="welcome_add_source">Een bron toevoegen</string>
+    <string name="welcome_paste_link">Een link naar een afspeellijst plakken</string>
+    <string name="welcome_sign_in">Inloggen met server en inloggegevens</string>
+
+    <!-- Add source -->
+    <string name="add_title">Een bron toevoegen</string>
+    <string name="add_mode_link">Link naar afspeellijst</string>
+    <string name="add_mode_login">Server en inloggegevens</string>
+    <string name="add_field_link">Link naar afspeellijst (M3U)</string>
+    <string name="add_field_link_hint">http://example.com/playlist.m3u</string>
+    <string name="add_field_guide">Link naar tv-gids (optioneel)</string>
+    <string name="sources_guide">Link naar tv-gids</string>
+    <string name="sources_guide_body">Het adres van een XMLTV-gids van je provider. Laat leeg om de gids te gebruiken die de afspeellijst noemt, als die er een heeft.</string>
+    <string name="sources_guide_save">Opslaan</string>
+    <string name="add_field_server">Server</string>
+    <string name="add_field_server_hint">http://example.com:8080</string>
+    <string name="add_field_username">Gebruikersnaam</string>
+    <string name="add_field_password">Wachtwoord</string>
+    <string name="add_continue">Doorgaan</string>
+    <string name="add_checking">Controleren…</string>
+    <string name="add_cancel">Annuleren</string>
+    <string name="add_missing_fields">Vul alle velden in.</string>
+
+    <!-- Import -->
+    <string name="import_title">%1$s wordt ingesteld</string>
+    <string name="import_connecting">Verbinden…</string>
+    <string name="import_live">Live-tv importeren…</string>
+    <string name="import_movies">Films importeren…</string>
+    <string name="import_series">Series importeren…</string>
+    <string name="import_finishing">Afronden…</string>
+    <string name="import_guide">Tv-gids bijwerken…</string>
+    <plurals name="count_live_channels">
+        <item quantity="one">%1$s livekanaal</item>
+        <item quantity="other">%1$s livekanalen</item>
+    </plurals>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s films</item>
+    </plurals>
+    <plurals name="count_series">
+        <item quantity="one">%1$s serie</item>
+        <item quantity="other">%1$s series</item>
+    </plurals>
+    <string name="import_done">Klaar</string>
+    <string name="import_continue">Doorgaan</string>
+    <string name="import_retry">Opnieuw proberen</string>
+    <string name="import_back">Terug</string>
+    <string name="import_failed">Het instellen van deze bron is niet gelukt.</string>
+
+    <!-- Library -->
+    <string name="library_title">Je bibliotheek</string>
+    <plurals name="library_merged">
+        <item quantity="one">%1$s kanaal na het samenvoegen van dubbelen</item>
+        <item quantity="other">%1$s kanalen na het samenvoegen van dubbelen</item>
+    </plurals>
+    <string name="library_source_updated">Bijgewerkt</string>
+    <string name="library_source_never">Nog niet geïmporteerd</string>
+    <string name="library_refresh">Vernieuwen</string>
+    <string name="library_add_source">Nog een bron toevoegen</string>
+
+    <!-- Set up from your phone -->
+    <string name="welcome_phone">Instellen via je telefoon</string>
+    <string name="welcome_type_on_tv">Typ het op de tv</string>
+    <string name="phone_title">Instellen via je telefoon</string>
+    <string name="phone_steps">Scan de code met de camera van je telefoon en voer daar de link naar je afspeellijst of je inloggegevens in. Je telefoon moet op hetzelfde wifi-netwerk zitten als deze tv.</string>
+    <string name="phone_or_open">Of open %1$s</string>
+    <string name="phone_no_network">Deze tv is niet met een netwerk verbonden. Verbind hem met wifi of ethernet, of typ de bron op de tv.</string>
+    <string name="phone_type_instead">Typ het liever op de tv</string>
+
+    <!-- Home -->
+    <string name="tab_live">Live-tv</string>
+    <string name="tab_movies">Films</string>
+    <string name="tab_series">Series</string>
+    <string name="tab_search">Zoeken</string>
+    <string name="tab_settings">Instellingen</string>
+    <string name="settings_general">Algemeen</string>
+    <string name="settings_sources">Bronnen</string>
+    <string name="settings_language">Taal van de app</string>
+    <string name="settings_language_device">Zelfde als dit apparaat (%1$s)</string>
+
+    <string name="tab_home">Home</string>
+    <string name="home_continue">Verder kijken</string>
+    <string name="home_favourite_channels">Favoriete kanalen</string>
+    <string name="home_my_movies">Mijn lijst · Films</string>
+    <string name="home_my_series">Mijn lijst · Series</string>
+    <string name="home_empty">Wat je kijkt, je lijst en je favoriete kanalen verschijnen hier.</string>
+    <string name="home_remove_continue">Verwijderen uit Verder kijken</string>
+
+    <!-- Live TV -->
+    <string name="live_favorites">Favorieten</string>
+    <string name="live_recent">Recent bekeken</string>
+    <string name="live_other">Overige kanalen</string>
+    <string name="live_empty">Geen livekanalen in je ingeschakelde bronnen.</string>
+    <string name="genre_all">Alle kanalen</string>
+    <string name="genre_news">Nieuws</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_kids">Kinderen</string>
+    <string name="genre_movies">Films</string>
+    <string name="genre_entertainment">Entertainment</string>
+    <string name="genre_documentary">Documentaires</string>
+    <string name="genre_music">Muziek</string>
+    <string name="genre_religion">Religie</string>
+    <string name="genre_other">Overig</string>
+
+    <!-- Movies & series -->
+    <string name="vod_continue">Verder kijken</string>
+    <string name="vod_favorites">Mijn lijst</string>
+    <string name="vod_recent">Recent toegevoegd</string>
+    <string name="vod_empty">Hier staat nog niets.</string>
+    <string name="vod_all_languages">Alle talen</string>
+    <string name="vod_all_movies_in">Alle films · %1$s</string>
+    <string name="vod_all_series_in">Alle series · %1$s</string>
+    <string name="vod_filter">Filteren</string>
+    <string name="vod_filter_value">%1$s</string>
+    <string name="vod_filter_hint">Deze lijst filteren</string>
+    <string name="vod_no_match">Niets in deze lijst komt overeen met “%1$s”.</string>
+    <string name="vod_sort">Sorteren: %1$s</string>
+    <string name="vod_sort_recent">Recent toegevoegd</string>
+    <string name="vod_sort_title">A–Z</string>
+    <string name="vod_sort_year">Nieuwste</string>
+    <string name="vod_sort_rating">Hoogst beoordeeld</string>
+    <string name="vod_language_not_stated">Taal niet opgegeven</string>
+    <string name="vod_all_movies_not_stated">Alle films, taal niet opgegeven</string>
+    <string name="vod_all_series_not_stated">Alle series, taal niet opgegeven</string>
+    <string name="details_play">Afspelen</string>
+    <string name="details_resume">Hervatten vanaf %1$s</string>
+    <string name="details_start_over">Opnieuw beginnen</string>
+    <string name="details_play_episode">%1$s afspelen</string>
+    <string name="details_resume_episode">%1$s hervatten</string>
+    <string name="details_favorite">Toevoegen aan mijn lijst</string>
+    <string name="details_unfavorite">Verwijderen uit mijn lijst</string>
+    <string name="details_cast">Met %1$s</string>
+    <string name="details_season">Seizoen %1$d</string>
+    <string name="details_no_episodes">Geen afleveringen beschikbaar.</string>
+
+    <!-- Search -->
+    <string name="search_hint">Kanalen, programma\'s, films, series</string>
+    <string name="search_on_tv">Op tv</string>
+    <string name="tab_guide">Tv-gids</string>
+    <string name="guide_search">Zoeken in de tv-gids</string>
+    <string name="guide_nothing">Geen programma gevonden voor “%1$s” in %2$s.</string>
+    <string name="guide_no_info">Geen gidsinformatie</string>
+    <string name="guide_today">Vandaag</string>
+    <string name="guide_tomorrow">Morgen</string>
+    <string name="guide_channels">Kanalen</string>
+    <string name="live_all">Alle kanalen</string>
+    <string name="guide_now_until">Nu · tot %1$s</string>
+    <string name="guide_today_at">Vandaag %1$s</string>
+    <string name="guide_tomorrow_at">Morgen %1$s</string>
+    <string name="guide_watch_channel">%1$s nu kijken</string>
+    <string name="search_intro">Typ minstens twee letters.</string>
+    <string name="search_nothing">Niets gevonden voor “%1$s”.</string>
+
+    <!-- Player -->
+    <string name="player_channel_offline">Dit kanaal werkt op dit moment niet</string>
+    <string name="player_title_unavailable">Deze titel kan nu niet worden afgespeeld</string>
+    <string name="player_offline_hint_live">Druk op OK om het opnieuw te proberen, of op Omhoog/Omlaag voor een ander kanaal.</string>
+    <string name="player_offline_hint">Druk op OK om het opnieuw te proberen.</string>
+    <string name="player_up_next">Volgende: %1$s</string>
+    <string name="player_up_next_in">Begint over %1$d s</string>
+    <string name="player_up_next_hint">OK om nu af te spelen · Terug om te stoppen</string>
+    <string name="player_still_watching">Kijk je nog?</string>
+    <string name="player_still_watching_hint">OK om %1$s af te spelen · Terug om te stoppen</string>
+    <string name="player_next_episode">Volgende aflevering  ›</string>
+    <string name="player_stop">Stoppen</string>
+    <string name="player_audio">Audio: %1$s</string>
+    <string name="player_audio_title">Audiospoor</string>
+    <string name="player_audio_choose">♪  Audio: %1$s</string>
+    <string name="audio_mono">mono</string>
+    <string name="audio_stereo">stereo</string>
+    <string name="audio_channels">%1$d kanalen</string>
+    <string name="audio_kbps">%1$d kbit/s</string>
+    <string name="audio_unknown_language">Onbekende taal</string>
+    <string name="audio_khz">%1$s kHz</string>
+    <string name="audio_bitrate_unknown">bitrate niet opgegeven</string>
+    <string name="track_default">standaard</string>
+    <string name="track_forced">geforceerd</string>
+    <string name="track_commentary">commentaar</string>
+    <string name="track_audio_description">audiodescriptie</string>
+    <string name="track_hard_of_hearing">voor slechthorenden</string>
+    <string name="track_dub">nagesynchroniseerd</string>
+    <string name="subtitles_title">Ondertitels</string>
+    <string name="subtitles_off">Uit</string>
+    <string name="player_subtitles_choose">Ondertitels: %1$s</string>
+    <string name="subtitle_image">%1$s (afbeelding)</string>
+    <string name="subtitle_closed_captions">Ondertiteling voor doven en slechthorenden</string>
+    <string name="player_offline_hint_touch">De aanbieder stuurt geen video. Probeer het zo meteen opnieuw.</string>
+    <string name="player_retry">Opnieuw proberen</string>
+    <string name="player_hint_live">Omhoog/Omlaag: kanaal  ·  Links/Rechts: kanaallijst</string>
+    <string name="player_hint_vod">Links/Rechts: terug-/vooruitspoelen  ·  OK: pauzeren</string>
+    <string name="player_favorite">%1$s toevoegen aan favorieten</string>
+    <string name="player_unfavorite">%1$s verwijderen uit favorieten</string>
+    <string name="player_now_playing">Nu aan het afspelen</string>
+    <string name="player_backup_stream">Back-upstream</string>
+    <string name="player_zoom">Beeld: %1$s</string>
+    <string name="player_add_favourite_short">☆  Toevoegen aan favorieten</string>
+    <string name="player_remove_favourite_short">★  Favoriet</string>
+    <string name="zoom_fit">Passend</string>
+    <string name="zoom_fill">Scherm vullen</string>
+    <string name="zoom_stretch">Uitrekken</string>
+    <string name="player_next">Volgende %1$s  %2$s</string>
+
+    <!-- Sources -->
+    <string name="sources_disabled">uitgeschakeld</string>
+    <string name="sources_enable">Inschakelen</string>
+    <string name="sources_disable">Uitschakelen</string>
+    <string name="sources_move_up">Deze bron voorrang geven</string>
+    <string name="sources_delete">Verwijderen</string>
+    <string name="sources_delete_confirm">Druk nogmaals om te verwijderen</string>
+    <string name="settings_title">Inhoud</string>
+    <string name="settings_adult_off">Inhoud voor volwassenen: verborgen</string>
+    <string name="settings_adult_on">Inhoud voor volwassenen: zichtbaar</string>
+
+    <!-- About -->
+    <string name="about_title">Info en licenties</string>
+    <string name="about_body">PureIPTV speelt bronnen af die je zelf toevoegt. De app levert geen kanalen of andere inhoud. Gebouwd met deze opensourcesoftware:</string>
+    <string name="about_license_text">Apache License 2.0: https://www.apache.org/licenses/LICENSE-2.0</string>
+    <string name="about_app_license">PureIPTV is vrije software: het mag worden gedeeld en aangepast onder de voorwaarden van de GNU General Public License, versie 3 of (naar keuze) een latere versie. Het wordt geleverd zonder enige garantie. Broncode: %1$s</string>
+    <string name="about_privacy">PureIPTV verzamelt geen gegevens over jou. Je bronnen en inloggegevens blijven op dit apparaat en worden alleen verzonden naar de aanbieders die je toevoegt. Privacybeleid: %1$s</string>
+
+    <!-- Errors -->
+    <string name="error_unreachable">De server is niet bereikbaar. Controleer het adres en je internetverbinding.</string>
+    <string name="error_invalid_credentials">De aanbieder heeft deze inloggegevens niet geaccepteerd. Controleer je gebruikersnaam en wachtwoord.</string>
+    <string name="error_account_expired">Dit account is verlopen. Neem contact op met je aanbieder om het te verlengen.</string>
+    <string name="error_not_a_playlist">Dit adres verwijst niet naar een afspeellijst of inloggegevens van een aanbieder.</string>
+    <string name="error_unknown">Er is iets misgegaan. Probeer het opnieuw.</string>
+</resources>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Google TV / Android TV home-screen banner (320x180dp): the app mark on the app background. -->
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    android:width="320dp"
+    android:height="180dp"
+    android:viewportWidth="320"
+    android:viewportHeight="180">
+    <path android:fillColor="#FF0E0F13" android:pathData="M0,0h320v180h-320z" />
+    <path
+        android:fillColor="#00000000"
+        android:strokeColor="#FF8AB4FF"
+        android:strokeWidth="6"
+        android:pathData="M118,52h84a10,10 0 0 1 10,10v56a10,10 0 0 1 -10,10h-84a10,10 0 0 1 -10,-10v-56a10,10 0 0 1 10,-10z" />
+    <path android:fillColor="#FFECEDEF" android:pathData="M148,70l30,20l-30,20z" />
+</vector>
