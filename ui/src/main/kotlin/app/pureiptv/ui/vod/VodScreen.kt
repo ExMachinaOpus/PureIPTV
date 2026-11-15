@@ -282,7 +282,10 @@ fun VodScreen(
                     }
                     .focusGroup(),
             ) {
-                Row(
+                // Only in the full-width view: with the lists showing, the remote can't reach the bar
+                // (Right from the categories goes to the posters and widens them), so the posters get the
+                // space instead. An active filter keeps it visible, so a filtered grid always says so.
+                if (postersOnly || filter.isNotEmpty()) Row(
                     Modifier.fillMaxWidth().padding(start = 8.dp, end = 8.dp, bottom = 6.dp),
                     verticalAlignment = Alignment.CenterVertically,
                     horizontalArrangement = Arrangement.spacedBy(10.dp),
