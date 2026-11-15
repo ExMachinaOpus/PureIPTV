@@ -1,0 +1,1 @@
+Player pentru propriile liste IPTV. Nu include canale sau abonamente.

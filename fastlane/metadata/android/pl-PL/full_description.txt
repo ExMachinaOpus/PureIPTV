@@ -1,0 +1,22 @@
+PureIPTV to wyłącznie odtwarzacz. Nie zawiera, nie sprzedaje i nie poleca żadnych kanałów, playlist ani subskrypcji: dodajesz źródło, które już masz.
+
+Podaj jedną rzecz, link do playlisty albo adres serwera z nazwą użytkownika i hasłem, a aplikacja zajmie się resztą: które pozycje to kanały na żywo, filmy lub seriale, które kanały się powtarzają i jak pokazać dziesiątki tysięcy pozycji jako bibliotekę, którą naprawdę da się przeglądać.
+
+Stworzony przede wszystkim dla Google TV i Android TV, z pełną obsługą telefonów i tabletów.
+
+• Konfiguracja w jednym kroku: wpisz dane na telewizorze albo zeskanuj kod QR i wpisz je na telefonie
+• Wiele źródeł w jednej bibliotece: włączaj je i wyłączaj, a ten sam kanał z dwóch źródeł pojawia się raz, z automatycznym przełączeniem, gdy strumień zawiedzie
+• Telewizja na żywo w kategoriach i program TV z wyszukiwaniem
+• Filmy i seriale z plakatami, opisami, sezonami i odcinkami; wznawiaj tam, gdzie skończyłeś, i przechodź od razu do następnego odcinka
+• Ekran główny z Kontynuuj oglądanie, ulubionymi kanałami i Twoją listą
+• Wyszukiwanie wśród kanałów, programów, filmów i seriali
+• Wybór ścieżki dźwiękowej i napisów, rozmiar obrazu dla każdego strumienia, dźwięk przestrzenny na urządzeniach bez własnego dekodera i obraz w obrazie na telefonach
+• Wszystko działa ze strzałkami, OK i Wstecz na pilocie
+• Zbudowany dla bardzo dużych playlist: ponad 50 000 kanałów i ponad 100 000 filmów
+• Jasne komunikaty, gdy strumień nie działa, nigdy kody błędów
+• Treści dla dorosłych ukryte, dopóki ich nie włączysz
+• 35 języków
+
+Prywatność: bez konta, bez analityki, bez reklam. Twoje źródła i dane logowania zostają na urządzeniu i są wysyłane tylko do dostawców, których dodasz.
+
+Otwarte oprogramowanie na licencji GPL 3.0.

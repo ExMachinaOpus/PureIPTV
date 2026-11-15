@@ -1,0 +1,22 @@
+PureIPTV je samo predvajalnik. Aplikacija ne vsebuje, ne prodaja in ne priporoča kanalov, seznamov predvajanja ali naročnin: dodate vir, ki ga že imate.
+
+Vnesite eno stvar, povezavo do seznama ali naslov strežnika z uporabniškim imenom in geslom, za ostalo pa poskrbi sama: kateri vnosi so kanali v živo, filmi ali serije, kateri kanali se ponavljajo in kako desettisoče vnosov prikazati kot knjižnico, po kateri lahko res brskate.
+
+Narejena predvsem za Google TV in Android TV, s polno podporo za telefone in tablice.
+
+• Nastavitev v enem koraku: podatke vnesite na televizorju ali skenirajte kodo QR in jih vnesite na telefonu
+• Več virov v eni knjižnici: vklapljajte in izklapljajte jih, isti kanal iz dveh virov pa se prikaže enkrat, s samodejnim preklopom, ko pretok odpove
+• TV v živo po kategorijah in TV-spored z iskanjem
+• Filmi in serije s plakati, opisi, sezonami in epizodami; nadaljujte, kjer ste končali, in pojdite neposredno na naslednjo epizodo
+• Začetni zaslon z Nadaljuj gledanje, priljubljenimi kanali in vašim seznamom
+• Iskanje po kanalih, oddajah, filmih in serijah
+• Izbira zvoka in podnapisov, velikost slike za vsak pretok, prostorski zvok na napravah brez lastnega dekodirnika in slika v sliki na telefonih
+• Vse deluje s puščicami, OK in Nazaj na daljinskem upravljalniku
+• Narejena za zelo velike sezname: več kot 50.000 kanalov in več kot 100.000 filmov
+• Jasna sporočila, ko pretok ne deluje, nikoli kode napak
+• Vsebina za odrasle skrita, dokler je ne vklopite
+• 35 jezikov
+
+Zasebnost: brez računa, brez analitike, brez oglasov. Vaši viri in podatki za prijavo ostanejo v napravi in se pošiljajo samo ponudnikom, ki jih dodate.
+
+Odprta koda pod licenco GPL 3.0.

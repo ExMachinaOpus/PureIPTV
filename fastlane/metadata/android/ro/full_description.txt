@@ -1,0 +1,22 @@
+PureIPTV este doar un player. Nu include, nu vinde și nu recomandă canale, liste sau abonamente: adaugi o sursă pe care o ai deja.
+
+Dă-i un singur lucru, un link către o listă sau adresa unui server cu nume de utilizator și parolă, iar el se ocupă de rest: care intrări sunt canale în direct, filme sau seriale, care canale sunt duplicate și cum să arate zeci de mii de intrări ca o bibliotecă prin care chiar poți naviga.
+
+Făcut în primul rând pentru Google TV și Android TV, cu suport complet pentru telefoane și tablete.
+
+• Configurare într-un singur pas: introdu datele pe televizor sau scanează un cod QR și introdu-le pe telefon
+• Mai multe surse într-o singură bibliotecă: pornește-le și oprește-le, iar același canal din două surse apare o singură dată, cu comutare automată când un stream nu merge
+• TV în direct pe categorii și un ghid TV cu căutare
+• Filme și seriale cu postere, rezumate, sezoane și episoade; continuă de unde ai rămas și treci direct la episodul următor
+• Ecran principal cu Continuă vizionarea, canale favorite și lista ta
+• Căutare în canale, emisiuni, filme și seriale
+• Alegerea sunetului și a subtitrărilor, dimensiunea imaginii pentru fiecare stream, sunet surround pe dispozitivele fără decodor propriu și imagine în imagine pe telefoane
+• Totul funcționează cu săgețile, OK și Înapoi de pe telecomandă
+• Construit pentru liste foarte mari: peste 50.000 de canale și peste 100.000 de filme
+• Mesaje clare când un stream nu funcționează, niciodată coduri de eroare
+• Conținut pentru adulți ascuns până îl activezi
+• 35 de limbi
+
+Privat: fără cont, fără analize, fără reclame. Sursele și datele tale de conectare rămân pe dispozitiv și sunt trimise doar furnizorilor pe care îi adaugi.
+
+Open source sub licența GPL 3.0.

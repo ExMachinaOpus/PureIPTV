@@ -1,0 +1,22 @@
+PureIPTV je iba prehrávač. Neobsahuje, nepredáva ani neodporúča žiadne kanály, playlisty ani predplatné: pridáte zdroj, ktorý už máte.
+
+Zadajte jednu vec, odkaz na playlist alebo adresu servera s používateľským menom a heslom, a o zvyšok sa postará sám: ktoré položky sú živé kanály, filmy alebo seriály, ktoré kanály sú duplicitné a ako zobraziť desaťtisíce položiek ako knižnicu, v ktorej sa dá naozaj prehliadať.
+
+Vytvorený predovšetkým pre Google TV a Android TV, s plnou podporou telefónov a tabletov.
+
+• Nastavenie v jednom kroku: zadajte údaje na televízore, alebo naskenujte QR kód a zadajte ich v telefóne
+• Viac zdrojov v jednej knižnici: zapínajte ich a vypínajte, rovnaký kanál z dvoch zdrojov sa zobrazí len raz, s automatickým prepnutím, keď stream zlyhá
+• Živé vysielanie podľa kategórií a TV program s vyhľadávaním
+• Filmy a seriály s plagátmi, popismi, sériami a epizódami; pokračujte tam, kde ste skončili, a prejdite rovno na ďalšiu epizódu
+• Domovská obrazovka s Pokračovať v sledovaní, obľúbenými kanálmi a vaším zoznamom
+• Vyhľadávanie v kanáloch, reláciách, filmoch a seriáloch
+• Voľba zvuku a titulkov, veľkosť obrazu pre každý stream, priestorový zvuk na zariadeniach bez vlastného dekodéra a obraz v obraze na telefónoch
+• Všetko funguje so šípkami, OK a Späť na diaľkovom ovládači
+• Navrhnutý pre veľmi veľké playlisty: viac ako 50 000 kanálov a viac ako 100 000 filmov
+• Zrozumiteľné správy, keď stream nefunguje, nikdy chybové kódy
+• Obsah pre dospelých skrytý, kým ho nezapnete
+• 35 jazykov
+
+Súkromie: žiadny účet, žiadna analytika, žiadne reklamy. Vaše zdroje a prihlasovacie údaje zostávajú vo vašom zariadení a odosielajú sa len poskytovateľom, ktorých pridáte.
+
+Otvorený softvér pod licenciou GPL 3.0.

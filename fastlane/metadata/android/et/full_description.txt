@@ -1,0 +1,22 @@
+PureIPTV on ainult mängija. Rakendus ei sisalda, müü ega soovita kanaleid, esitusloendeid ega tellimusi: lisad allika, mis sul juba on.
+
+Anna sellele üks asi, esitusloendi link või serveri aadress koos kasutajanime ja parooliga, ning see teeb ülejäänu ise: millised kirjed on otsekanalid, filmid või sarjad, millised kanalid korduvad ja kuidas näidata kümneid tuhandeid kirjeid teegina, mida saab päriselt sirvida.
+
+Tehtud eelkõige Google TV ja Android TV jaoks, telefonide ja tahvelarvutite täieliku toega.
+
+• Seadistamine ühe sammuga: sisesta andmed teleris või skanni QR-kood ja sisesta need telefonis
+• Mitu allikat ühes teegis: lülita neid sisse ja välja; sama kanal kahest allikast kuvatakse üks kord ning voo katkemisel minnakse automaatselt üle teisele
+• Otse-TV kategooriate kaupa ja telekava otsinguga
+• Filmid ja sarjad koos plakatite, sisukirjelduste, hooaegade ja osadega; jätka sealt, kus pooleli jäid, ja liigu otse järgmise osa juurde
+• Avaleht jaotistega Jätka vaatamist, lemmikkanalid ja sinu loend
+• Otsing kanalite, saadete, filmide ja sarjade seast
+• Heli ja subtiitrite valik, pildi suurus iga voo jaoks, ruumiline heli ilma oma dekoodrita seadmetes ja pilt pildis telefonides
+• Kõik töötab puldi noolte, OK ja Tagasi nupuga
+• Loodud väga suurte esitusloendite jaoks: üle 50 000 kanali ja üle 100 000 filmi
+• Selged teated, kui voog ei tööta, mitte kunagi veakoodid
+• Täiskasvanutele mõeldud sisu on peidetud, kuni selle sisse lülitad
+• 35 keelt
+
+Privaatsus: konto puudub, analüütika puudub, reklaamid puuduvad. Sinu allikad ja sisselogimisandmed jäävad sinu seadmesse ja saadetakse ainult sinu lisatud teenusepakkujatele.
+
+Avatud lähtekood litsentsiga GPL 3.0.

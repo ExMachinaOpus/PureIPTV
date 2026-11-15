@@ -54,6 +54,10 @@ IPTV players are removed for their listing far more often than for their code.
 The listing lives in the repo in fastlane's layout, which F-Droid reads as well:
 `fastlane/metadata/android/en-GB/` holds `title.txt`, `short_description.txt`, `full_description.txt`
 and `images/` (`icon.png`, `featureGraphic.png`, `tvBanner.png`, `phoneScreenshots/`, `tvScreenshots/`).
+The other locale folders (Play's locale codes: `de-DE`, `no-NO`, `pt-BR`, ...) hold the translated text
+only; Play and F-Droid fall back to the en-GB images. Play has no Swiss/Austrian German or Nynorsk
+listings, so `de-DE` and `no-NO` cover those app languages. Change the en-GB text and the translations
+together; Play limits: title 30, short description 80, full description 4000 characters.
 `python3 scripts/store-graphics.py` redraws the icon, feature graphic and banner from the app mark.
 Screenshots come from the release build with the fake provider: TV at 1920×1080 on the Google TV
 emulator, phone at 1080×1920 (`adb shell wm size 1080x1920`; Play rejects taller than 2:1) with the

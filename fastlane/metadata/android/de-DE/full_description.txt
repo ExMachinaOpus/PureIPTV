@@ -1,0 +1,22 @@
+PureIPTV ist nur ein Player. Die App enthält, verkauft oder empfiehlt keine Sender, Playlists oder Abos: Du fügst eine Quelle hinzu, die du bereits hast.
+
+Gib ihr eine Sache, einen Playlist-Link oder eine Serveradresse mit Benutzername und Passwort, und sie erledigt den Rest: welche Einträge Live-Sender, Filme oder Serien sind, welche Sender doppelt vorkommen und wie sich Zehntausende Einträge als Mediathek zeigen lassen, in der man wirklich stöbern kann.
+
+In erster Linie für Google TV und Android TV gemacht, mit voller Unterstützung für Smartphones und Tablets.
+
+• Einrichtung in einem Schritt: auf dem Fernseher eingeben oder einen QR-Code scannen und auf dem Handy eingeben
+• Mehrere Quellen in einer Mediathek: ein- und ausschalten, derselbe Sender aus zwei Quellen erscheint nur einmal, mit automatischem Wechsel, wenn ein Stream ausfällt
+• Live-TV nach Kategorien und ein TV-Programm mit Suche
+• Filme und Serien mit Postern, Inhaltsangaben, Staffeln und Folgen; dort weiterschauen, wo du aufgehört hast, und direkt zur nächsten Folge
+• Startseite mit Weiterschauen, Lieblingssendern und deiner Liste
+• Suche über Sender, Sendungen, Filme und Serien
+• Auswahl von Tonspur und Untertiteln, Bildgröße pro Stream, Surround-Ton auf Geräten ohne eigenen Decoder und Bild-im-Bild auf Smartphones
+• Alles lässt sich mit den Pfeiltasten, OK und Zurück der Fernbedienung bedienen
+• Gebaut für sehr große Playlists: über 50.000 Sender und über 100.000 Filme
+• Verständliche Meldungen, wenn ein Stream nicht funktioniert, nie Fehlercodes
+• Inhalte für Erwachsene ausgeblendet, bis du sie einschaltest
+• 35 Sprachen
+
+Privat: kein Konto, keine Analyse, keine Werbung. Deine Quellen und Zugangsdaten bleiben auf deinem Gerät und werden nur an die Anbieter gesendet, die du hinzufügst.
+
+Open Source unter der Lizenz GPL 3.0.

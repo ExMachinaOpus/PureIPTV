@@ -1,0 +1,22 @@
+PureIPTV hanyalah pemutar. Aplikasi ini tidak menyertakan, menjual, atau merekomendasikan saluran, playlist, atau langganan apa pun: Anda menambahkan sumber yang sudah Anda miliki.
+
+Berikan satu hal, tautan playlist atau alamat server dengan nama pengguna dan sandi, dan aplikasi mengurus sisanya: entri mana yang merupakan saluran langsung, film, atau serial, saluran mana yang duplikat, dan cara menampilkan puluhan ribu entri sebagai pustaka yang benar-benar bisa dijelajahi.
+
+Dibuat terutama untuk Google TV dan Android TV, dengan dukungan penuh untuk ponsel dan tablet.
+
+• Penyiapan satu langkah: ketik di TV, atau pindai kode QR dan ketik di ponsel
+• Beberapa sumber dalam satu pustaka: aktifkan dan nonaktifkan, dan saluran yang sama dari dua sumber hanya muncul sekali, dengan peralihan otomatis saat streaming gagal
+• TV langsung per kategori dan panduan acara dengan pencarian
+• Film dan serial dengan poster, sinopsis, musim, dan episode; lanjutkan dari terakhir kali Anda berhenti dan langsung ke episode berikutnya
+• Beranda dengan Lanjutkan menonton, saluran favorit, dan daftar Anda
+• Cari di saluran, acara, film, dan serial
+• Pilihan audio dan subtitel, ukuran gambar per streaming, audio surround di perangkat tanpa dekoder sendiri, dan picture-in-picture di ponsel
+• Semua berfungsi dengan tombol panah, OK, dan Kembali di remote
+• Dibuat untuk playlist yang sangat besar: lebih dari 50.000 saluran dan lebih dari 100.000 film
+• Pesan yang jelas saat streaming tidak berfungsi, tidak pernah kode error
+• Konten dewasa tersembunyi sampai Anda mengaktifkannya
+• 35 bahasa
+
+Privat: tanpa akun, tanpa analitik, tanpa iklan. Sumber dan info login Anda tetap di perangkat dan hanya dikirim ke penyedia yang Anda tambahkan.
+
+Sumber terbuka dengan lisensi GPL 3.0.

@@ -1,0 +1,22 @@
+A PureIPTV csak egy lejátszó. Nem tartalmaz, nem árul és nem ajánl csatornákat, lejátszási listákat vagy előfizetéseket: Ön ad hozzá egy forrást, amely már megvan.
+
+Adjon meg egyetlen dolgot, egy lejátszási lista linkjét vagy egy szerver címét felhasználónévvel és jelszóval, és az alkalmazás elintézi a többit: mely tételek élő csatornák, filmek vagy sorozatok, mely csatornák ismétlődnek, és hogyan jelenjen meg több tízezer tétel olyan könyvtárként, amelyben tényleg lehet böngészni.
+
+Elsősorban Google TV-re és Android TV-re készült, telefonok és táblagépek teljes támogatásával.
+
+• Beállítás egyetlen lépésben: írja be a tévén, vagy olvasson be egy QR-kódot, és írja be a telefonján
+• Több forrás egy könyvtárban: kapcsolja ki-be őket, és ugyanaz a csatorna két forrásból csak egyszer jelenik meg, automatikus váltással, ha egy adás leáll
+• Élő TV kategóriák szerint és műsorújság kereséssel
+• Filmek és sorozatok plakátokkal, tartalommal, évadokkal és epizódokkal; folytassa ott, ahol abbahagyta, és lépjen egyenesen a következő epizódra
+• Kezdőlap Megtekintés folytatása, kedvenc csatornák és a saját listája résszel
+• Keresés csatornák, műsorok, filmek és sorozatok között
+• Hangsáv és felirat választása, képméret adásonként, térhatású hang saját dekóder nélküli eszközökön és kép a képben mód telefonon
+• Minden működik a távirányító nyilaival, az OK és a Vissza gombbal
+• Nagyon nagy lejátszási listákhoz készült: több mint 50 000 csatorna és több mint 100 000 film
+• Érthető üzenetek, ha egy adás nem működik, soha nem hibakódok
+• Felnőtt tartalom elrejtve, amíg be nem kapcsolja
+• 35 nyelv
+
+Adatvédelem: nincs fiók, nincs elemzés, nincs reklám. A forrásai és bejelentkezési adatai az eszközén maradnak, és csak az Ön által hozzáadott szolgáltatóknak lesznek elküldve.
+
+Nyílt forráskódú, GPL 3.0 licenc alatt.

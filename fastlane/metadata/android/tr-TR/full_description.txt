@@ -1,0 +1,22 @@
+PureIPTV yalnızca bir oynatıcıdır. Hiçbir kanal, oynatma listesi veya abonelik içermez, satmaz ya da önermez: zaten sahip olduğunuz bir kaynağı eklersiniz.
+
+Ona tek bir şey verin, bir oynatma listesi bağlantısı ya da kullanıcı adı ve şifreyle bir sunucu adresi; gerisini o halleder: hangi kayıtların canlı kanal, film veya dizi olduğunu, hangi kanalların yinelendiğini ve on binlerce kaydın gerçekten göz atılabilen bir kitaplık olarak nasıl gösterileceğini.
+
+Öncelikle Google TV ve Android TV için yapıldı; telefonlar ve tabletler de tam olarak desteklenir.
+
+• Tek adımda kurulum: bilgileri TV'de yazın ya da bir QR kodu tarayıp telefonunuzda yazın
+• Tek kitaplıkta birden çok kaynak: açıp kapatın; iki kaynaktaki aynı kanal bir kez görünür ve bir yayın çalışmazsa otomatik olarak diğerine geçilir
+• Kategorilere ayrılmış canlı TV ve aramalı yayın rehberi
+• Afiş, özet, sezon ve bölümleriyle filmler ve diziler; kaldığınız yerden devam edin ve doğrudan sonraki bölüme geçin
+• İzlemeye devam et, favori kanallar ve listenizle ana ekran
+• Kanallar, programlar, filmler ve diziler arasında arama
+• Ses ve altyazı seçimi, yayın başına görüntü boyutu, kendi kod çözücüsü olmayan cihazlarda çevresel ses ve telefonlarda pencere içinde pencere
+• Her şey kumandanın okları, OK ve Geri tuşlarıyla çalışır
+• Çok büyük oynatma listeleri için yapıldı: 50.000'den fazla kanal ve 100.000'den fazla film
+• Bir yayın çalışmadığında anlaşılır mesajlar, asla hata kodları değil
+• Yetişkin içeriği siz açana kadar gizli
+• 35 dil
+
+Gizlilik: hesap yok, analiz yok, reklam yok. Kaynaklarınız ve giriş bilgileriniz cihazınızda kalır ve yalnızca eklediğiniz sağlayıcılara gönderilir.
+
+GPL 3.0 lisansıyla açık kaynak.

@@ -1,0 +1,22 @@
+PureIPTV ir tikai atskaņotājs. Lietotne nesatur, nepārdod un neiesaka kanālus, atskaņošanas sarakstus vai abonementus: tu pievieno avotu, kas tev jau ir.
+
+Norādi vienu lietu, saiti uz atskaņošanas sarakstu vai servera adresi ar lietotājvārdu un paroli, un lietotne parūpēsies par pārējo: kuri ieraksti ir tiešraides kanāli, filmas vai seriāli, kuri kanāli atkārtojas un kā desmitiem tūkstošu ierakstu parādīt kā bibliotēku, kurā tiešām var pārlūkot.
+
+Veidota galvenokārt Google TV un Android TV, ar pilnu atbalstu tālruņiem un planšetdatoriem.
+
+• Iestatīšana vienā solī: ievadi datus televizorā vai noskenē QR kodu un ievadi tos tālrunī
+• Vairāki avoti vienā bibliotēkā: ieslēdz un izslēdz tos, un viens un tas pats kanāls no diviem avotiem tiek rādīts vienreiz, ar automātisku pārslēgšanos, ja straume pārtrūkst
+• Tiešraide pa kategorijām un TV programma ar meklēšanu
+• Filmas un seriāli ar plakātiem, aprakstiem, sezonām un sērijām; turpini tur, kur apstājies, un pārej uzreiz uz nākamo sēriju
+• Sākuma ekrāns ar Turpināt skatīties, izlases kanāliem un tavu sarakstu
+• Meklēšana kanālos, raidījumos, filmās un seriālos
+• Skaņas un subtitru izvēle, attēla izmērs katrai straumei, telpiskā skaņa ierīcēs bez sava dekodera un attēls attēlā tālruņos
+• Viss darbojas ar pults bultiņām, OK un Atpakaļ
+• Veidota ļoti lieliem sarakstiem: vairāk nekā 50 000 kanālu un vairāk nekā 100 000 filmu
+• Skaidri ziņojumi, ja straume nedarbojas, nekad kļūdu kodi
+• Saturs pieaugušajiem paslēpts, līdz tu to ieslēdz
+• 35 valodas
+
+Privātums: bez konta, bez analītikas, bez reklāmām. Tavi avoti un pieteikšanās dati paliek tavā ierīcē un tiek nosūtīti tikai tevis pievienotajiem pakalpojumu sniedzējiem.
+
+Atvērtā pirmkoda programmatūra ar licenci GPL 3.0.

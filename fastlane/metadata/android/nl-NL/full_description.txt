@@ -1,0 +1,22 @@
+PureIPTV is alleen een speler. De app bevat, verkoopt of beveelt geen zenders, playlists of abonnementen aan: je voegt een bron toe die je al hebt.
+
+Geef één ding op, een playlistlink of een serveradres met gebruikersnaam en wachtwoord, en de app regelt de rest: welke items livezenders, films of series zijn, welke zenders dubbel zijn en hoe tienduizenden items worden getoond als een bibliotheek waar je echt in kunt bladeren.
+
+In de eerste plaats gemaakt voor Google TV en Android TV, met volledige ondersteuning voor telefoons en tablets.
+
+• Instellen in één stap: typ het op de tv, of scan een QR-code en typ het op je telefoon
+• Meerdere bronnen in één bibliotheek: zet ze aan en uit, en dezelfde zender uit twee bronnen verschijnt één keer, met automatisch overschakelen als een stream uitvalt
+• Live-tv per categorie en een tv-gids met zoekfunctie
+• Films en series met posters, samenvattingen, seizoenen en afleveringen; ga verder waar je gebleven was en ga direct naar de volgende aflevering
+• Startpagina met Verder kijken, favoriete zenders en je lijst
+• Zoeken in zenders, programma's, films en series
+• Keuze van audio en ondertitels, beeldformaat per stream, surroundgeluid op apparaten zonder eigen decoder en beeld-in-beeld op telefoons
+• Alles werkt met de pijltjes, OK en Terug van de afstandsbediening
+• Gemaakt voor zeer grote playlists: meer dan 50.000 zenders en meer dan 100.000 films
+• Duidelijke meldingen als een stream niet werkt, nooit foutcodes
+• Inhoud voor volwassenen verborgen tot je die aanzet
+• 35 talen
+
+Privé: geen account, geen analyse, geen advertenties. Je bronnen en inloggegevens blijven op je apparaat en worden alleen verstuurd naar de aanbieders die je toevoegt.
+
+Open source onder de licentie GPL 3.0.

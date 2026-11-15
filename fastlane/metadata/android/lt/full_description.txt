@@ -1,0 +1,22 @@
+PureIPTV yra tik grotuvas. Programėlė neturi, neparduoda ir nerekomenduoja jokių kanalų, grojaraščių ar prenumeratų: jūs pridedate šaltinį, kurį jau turite.
+
+Nurodykite vieną dalyką, grojaraščio nuorodą arba serverio adresą su naudotojo vardu ir slaptažodžiu, o programėlė pasirūpins likusiu: kurie įrašai yra tiesioginiai kanalai, filmai ar serialai, kurie kanalai kartojasi ir kaip dešimtis tūkstančių įrašų parodyti kaip biblioteką, kurioje iš tiesų patogu naršyti.
+
+Sukurta pirmiausia Google TV ir Android TV, visiškai palaikomi telefonai ir planšetiniai kompiuteriai.
+
+• Nustatymas vienu žingsniu: įveskite duomenis televizoriuje arba nuskaitykite QR kodą ir įveskite juos telefone
+• Keli šaltiniai vienoje bibliotekoje: įjunkite ir išjunkite juos, o tas pats kanalas iš dviejų šaltinių rodomas vieną kartą, automatiškai perjungiant, kai srautas nutrūksta
+• Tiesioginė TV pagal kategorijas ir TV programa su paieška
+• Filmai ir serialai su plakatais, aprašymais, sezonais ir serijomis; tęskite ten, kur baigėte, ir pereikite tiesiai prie kitos serijos
+• Pradžios ekranas su Tęsti žiūrėjimą, mėgstamais kanalais ir jūsų sąrašu
+• Paieška tarp kanalų, laidų, filmų ir serialų
+• Garso ir subtitrų pasirinkimas, vaizdo dydis kiekvienam srautui, erdvinis garsas įrenginiuose be savo dekoderio ir vaizdas vaizde telefonuose
+• Viskas veikia su pulto rodyklėmis, OK ir Atgal
+• Sukurta labai dideliems grojaraščiams: daugiau nei 50 000 kanalų ir daugiau nei 100 000 filmų
+• Aiškūs pranešimai, kai srautas neveikia, niekada klaidų kodai
+• Turinys suaugusiesiems paslėptas, kol jo neįjungiate
+• 35 kalbos
+
+Privatumas: jokios paskyros, jokios analitikos, jokių reklamų. Jūsų šaltiniai ir prisijungimo duomenys lieka jūsų įrenginyje ir siunčiami tik jūsų pridėtiems teikėjams.
+
+Atvirasis kodas pagal GPL 3.0 licenciją.

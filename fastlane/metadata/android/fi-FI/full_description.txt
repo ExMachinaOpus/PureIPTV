@@ -1,0 +1,22 @@
+PureIPTV on pelkkä soitin. Sovellus ei sisällä, myy eikä suosittele kanavia, soittolistoja tai tilauksia: lisäät lähteen, joka sinulla jo on.
+
+Anna sille yksi asia, soittolistan linkki tai palvelimen osoite käyttäjänimen ja salasanan kanssa, niin se hoitaa loput: mitkä kohteet ovat suoria kanavia, elokuvia tai sarjoja, mitkä kanavat ovat kaksoiskappaleita ja miten kymmenet tuhannet kohteet näytetään kirjastona, jota voi oikeasti selata.
+
+Tehty ensisijaisesti Google TV:lle ja Android TV:lle, täydellä tuella puhelimille ja tableteille.
+
+• Käyttöönotto yhdellä askeleella: kirjoita tiedot televisiossa tai skannaa QR-koodi ja kirjoita ne puhelimella
+• Useita lähteitä yhdessä kirjastossa: ota niitä käyttöön ja pois, ja sama kanava kahdesta lähteestä näkyy kerran, automaattisella varalähteellä, jos lähetys katkeaa
+• Suora tv luokiteltuna ja ohjelmaopas haulla
+• Elokuvat ja sarjat julisteineen, juonineen, kausineen ja jaksoineen; jatka siitä, mihin jäit, ja siirry suoraan seuraavaan jaksoon
+• Aloitusnäkymä, jossa Jatka katselua, suosikkikanavat ja oma listasi
+• Haku kanavista, ohjelmista, elokuvista ja sarjoista
+• Ääniraidan ja tekstityksen valinta, kuvakoko lähetyksittäin, tilaääni laitteilla, joissa ei ole omaa dekooderia, ja kuva kuvassa -tila puhelimissa
+• Kaikki toimii kaukosäätimen nuolilla, OK:lla ja Takaisin-painikkeella
+• Rakennettu erittäin suurille soittolistoille: yli 50 000 kanavaa ja yli 100 000 elokuvaa
+• Selkeät viestit, kun lähetys ei toimi, ei koskaan virhekoodeja
+• Aikuisille tarkoitettu sisältö piilotettu, kunnes otat sen käyttöön
+• 35 kieltä
+
+Yksityinen: ei tiliä, ei analytiikkaa, ei mainoksia. Lähteesi ja kirjautumistietosi pysyvät laitteellasi, ja ne lähetetään vain lisäämillesi palveluntarjoajille.
+
+Avointa lähdekoodia GPL 3.0 -lisenssillä.

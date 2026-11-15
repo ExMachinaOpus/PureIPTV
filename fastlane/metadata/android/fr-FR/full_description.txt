@@ -1,0 +1,22 @@
+PureIPTV est uniquement un lecteur. L'application ne contient, ne vend et ne recommande aucune chaîne, playlist ou abonnement : vous ajoutez une source que vous avez déjà.
+
+Donnez-lui une seule chose, un lien de playlist ou une adresse de serveur avec nom d'utilisateur et mot de passe, et elle s'occupe du reste : quelles entrées sont des chaînes en direct, des films ou des séries, quelles chaînes sont des doublons, et comment présenter des dizaines de milliers d'entrées sous forme de bibliothèque que l'on peut vraiment parcourir.
+
+Conçue d'abord pour Google TV et Android TV, avec une prise en charge complète des téléphones et des tablettes.
+
+• Configuration en une étape : saisissez-la sur la TV, ou scannez un QR code et saisissez-la sur votre téléphone
+• Plusieurs sources dans une seule bibliothèque : activez-les ou désactivez-les, et une même chaîne présente dans deux sources n'apparaît qu'une fois, avec bascule automatique quand un flux échoue
+• TV en direct classée par catégorie et guide des programmes avec recherche
+• Films et séries avec affiches, résumés, saisons et épisodes ; reprenez là où vous vous étiez arrêté et passez directement à l'épisode suivant
+• Accueil avec Reprendre la lecture, chaînes favorites et votre liste
+• Recherche parmi les chaînes, programmes, films et séries
+• Choix de l'audio et des sous-titres, taille de l'image par flux, son surround sur les appareils sans décodeur intégré et image dans l'image sur téléphone
+• Tout fonctionne avec les flèches, OK et Retour de la télécommande
+• Conçue pour les très grandes playlists : plus de 50 000 chaînes et plus de 100 000 films
+• Des messages clairs quand un flux ne fonctionne pas, jamais de codes d'erreur
+• Contenu pour adultes masqué tant que vous ne l'activez pas
+• 35 langues
+
+Confidentialité : pas de compte, pas d'analyse, pas de publicité. Vos sources et identifiants restent sur votre appareil et ne sont envoyés qu'aux fournisseurs que vous ajoutez.
+
+Open source sous licence GPL 3.0.

@@ -1,0 +1,22 @@
+O PureIPTV é apenas um leitor. Não inclui, vende nem recomenda canais, listas ou subscrições: adiciona uma fonte que já tem.
+
+Indique uma única coisa, uma ligação para uma lista ou o endereço de um servidor com nome de utilizador e palavra-passe, e ele trata do resto: que entradas são canais em direto, filmes ou séries, que canais estão duplicados e como mostrar dezenas de milhares de entradas como uma biblioteca que se pode realmente explorar.
+
+Feito primeiro para Google TV e Android TV, com suporte total para telemóveis e tablets.
+
+• Configuração num só passo: escreva-a na televisão, ou leia um código QR e escreva-a no telemóvel
+• Várias fontes numa só biblioteca: ative-as e desative-as, e o mesmo canal de duas fontes aparece uma só vez, com mudança automática quando uma emissão falha
+• TV em direto por categoria e um guia de programação com pesquisa
+• Filmes e séries com cartazes, sinopses, temporadas e episódios; continue onde parou e passe diretamente para o episódio seguinte
+• Início com Continuar a ver, canais favoritos e a sua lista
+• Pesquisa em canais, programas, filmes e séries
+• Escolha de áudio e legendas, tamanho da imagem por emissão, som surround em dispositivos sem descodificador próprio e imagem na imagem no telemóvel
+• Tudo funciona com as setas, OK e Voltar do comando
+• Feito para listas muito grandes: mais de 50 000 canais e mais de 100 000 filmes
+• Mensagens claras quando uma emissão não funciona, nunca códigos de erro
+• Conteúdo para adultos oculto até o ativar
+• 35 idiomas
+
+Privado: sem conta, sem análises, sem anúncios. As suas fontes e credenciais ficam no seu dispositivo e só são enviadas aos fornecedores que adicionar.
+
+Código aberto sob a licença GPL 3.0.

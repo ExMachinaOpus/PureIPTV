@@ -1,0 +1,22 @@
+PureIPTV är bara en spelare. Appen innehåller, säljer eller rekommenderar inga kanaler, spellistor eller abonnemang: du lägger till en källa som du redan har.
+
+Ge den en sak, en länk till en spellista eller en serveradress med användarnamn och lösenord, så sköter den resten: vilka poster som är livekanaler, filmer eller serier, vilka kanaler som är dubbletter och hur tiotusentals poster visas som ett bibliotek du faktiskt kan bläddra i.
+
+Gjord i första hand för Google TV och Android TV, med fullt stöd för mobiler och surfplattor.
+
+• Konfigurering i ett steg: skriv in det på tv:n, eller skanna en QR-kod och skriv på mobilen
+• Flera källor i ett bibliotek: slå på och av dem, och samma kanal från två källor visas en gång, med automatisk reserv när en ström slutar fungera
+• Live-tv sorterad i kategorier och en tv-tablå med sökning
+• Filmer och serier med affischer, handling, säsonger och avsnitt; fortsätt där du slutade och gå direkt till nästa avsnitt
+• Startsida med Fortsätt titta, favoritkanaler och din lista
+• Sök bland kanaler, program, filmer och serier
+• Val av ljudspår och undertexter, bildstorlek per ström, surroundljud på enheter utan egen avkodare och bild-i-bild på mobiler
+• Allt fungerar med fjärrkontrollens pilar, OK och Tillbaka
+• Byggd för mycket stora spellistor: över 50 000 kanaler och över 100 000 filmer
+• Tydliga meddelanden när en ström inte fungerar, aldrig felkoder
+• Vuxeninnehåll dolt tills du slår på det
+• 35 språk
+
+Privat: inget konto, ingen analys, ingen reklam. Dina källor och inloggningar stannar på din enhet och skickas bara till de leverantörer du lägger till.
+
+Öppen källkod under licensen GPL 3.0.
