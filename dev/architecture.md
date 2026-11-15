@@ -245,6 +245,9 @@ Rules:
 
 ## 9. Distribution
 
-Google Play (see `dev/publishing.md`); sideloaded APK during development (wireless ADB, see
-`dev/dev-setup.md`). No bundled content, neutral wording. Public pages (privacy policy, support,
+Google Play; sideloaded APK during development (wireless ADB, see `dev/dev-setup.md`). No bundled
+content, neutral wording. The store listing (text per language, graphics, screenshots) is in
+`fastlane/metadata/android/` (fastlane's layout, which F-Droid reads too); `scripts/store-graphics.py`
+draws the icon, feature graphic and TV banner from the app mark. Every Play build is tagged
+`v<versionName>` on the commit it was built from. Public pages (privacy policy, support,
 legal) are in `docs/`, published by GitHub Pages.
