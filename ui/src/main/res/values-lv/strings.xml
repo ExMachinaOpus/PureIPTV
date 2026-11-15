@@ -99,6 +99,9 @@
     <string name="live_favorites">Izlase</string>
     <string name="live_recent">Nesen skatītie</string>
     <string name="live_other">Citi kanāli</string>
+    <string name="live_order_name">Kārtot: A–Z</string>
+    <string name="live_order_count">Kārtot: visvairāk kanālu</string>
+    <string name="vod_order_count">Kārtot: visvairāk nosaukumu</string>
     <string name="live_empty">Jūsu ieslēgtajos avotos nav tiešraides kanālu.</string>
     <string name="genre_all">Visi kanāli</string>
     <string name="genre_news">Ziņas</string>

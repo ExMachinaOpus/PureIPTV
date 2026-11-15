@@ -95,6 +95,9 @@
     <string name="live_favorites">Любими</string>
     <string name="live_recent">Наскоро гледани</string>
     <string name="live_other">Други канали</string>
+    <string name="live_order_name">Подреждане: А–Я</string>
+    <string name="live_order_count">Подреждане: най-много канали</string>
+    <string name="vod_order_count">Подреждане: най-много заглавия</string>
     <string name="live_empty">Няма канали на живо във вашите включени източници.</string>
     <string name="genre_all">Всички канали</string>
     <string name="genre_news">Новини</string>

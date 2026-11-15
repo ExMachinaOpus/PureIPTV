@@ -102,6 +102,9 @@
     <string name="live_favorites">Obľúbené</string>
     <string name="live_recent">Naposledy sledované</string>
     <string name="live_other">Ostatné kanály</string>
+    <string name="live_order_name">Zoradiť: A–Z</string>
+    <string name="live_order_count">Zoradiť: najviac kanálov</string>
+    <string name="vod_order_count">Zoradiť: najviac titulov</string>
     <string name="live_empty">Vo vašich zapnutých zdrojoch nie sú žiadne živé kanály.</string>
     <string name="genre_all">Všetky kanály</string>
     <string name="genre_news">Správy</string>

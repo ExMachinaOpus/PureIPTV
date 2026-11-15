@@ -110,6 +110,9 @@
     <string name="live_favorites">المفضّلة</string>
     <string name="live_recent">شوهدت مؤخرًا</string>
     <string name="live_other">قنوات أخرى</string>
+    <string name="live_order_name">الترتيب: أبجدي</string>
+    <string name="live_order_count">الترتيب: الأكثر قنوات</string>
+    <string name="vod_order_count">الترتيب: الأكثر عناوين</string>
     <string name="live_empty">لا توجد قنوات مباشرة في المصادر المفعّلة.</string>
     <string name="genre_all">كل القنوات</string>
     <string name="genre_news">الأخبار</string>

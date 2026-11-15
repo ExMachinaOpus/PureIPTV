@@ -57,6 +57,7 @@ import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.graphics.Shape
 import androidx.compose.ui.graphics.graphicsLayer
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
 import androidx.compose.ui.text.style.TextOverflow
@@ -64,6 +65,7 @@ import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import app.pureiptv.core.model.Quality
+import app.pureiptv.ui.R
 import coil3.compose.SubcomposeAsyncImage
 
 /** Shared colours for focus/selection, readable from 3 m. */
@@ -420,4 +422,18 @@ fun rememberListEntry(state: LazyListState, key: Any?, initial: Int = -1): ListE
 @Composable
 fun rememberGridEntry(state: LazyGridState, key: Any?, initial: Int = -1): ListEntry = remember(state, key) {
     ListEntry({ state.firstVisibleItemIndex }, { state.layoutInfo.visibleItemsInfo.lastOrNull()?.index ?: 0 }).also { it.last = initial }
+}
+
+/**
+ * Switches a country/language list between A–Z and biggest first; shows the current order.
+ * [countLabel]: the "biggest first" wording ("most channels", "most titles").
+ */
+@Composable
+fun GroupOrderTile(byName: Boolean, onToggle: () -> Unit, modifier: Modifier = Modifier, countLabel: Int = R.string.live_order_count) {
+    ListTile(
+        text = stringResource(if (byName) R.string.live_order_name else countLabel),
+        onClick = onToggle,
+        modifier = modifier,
+        trailing = "⇅",
+    )
 }

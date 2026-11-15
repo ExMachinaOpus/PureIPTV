@@ -79,6 +79,7 @@ import app.pureiptv.core.data.library.LiveFilter
 import app.pureiptv.core.data.library.LiveGroup
 import app.pureiptv.ui.R
 import app.pureiptv.ui.components.ChannelLogo
+import app.pureiptv.ui.components.GroupOrderTile
 import app.pureiptv.ui.components.ListTile
 import app.pureiptv.ui.components.RemoteTextField
 import app.pureiptv.ui.components.Tile
@@ -117,7 +118,7 @@ fun GuideScreen(onPlay: (PlayRequest) -> Unit, modifier: Modifier = Modifier, vi
     val query by viewModel.query.collectAsStateWithLifecycle()
     val results by viewModel.results.collectAsStateWithLifecycle()
     val group by viewModel.group.collectAsStateWithLifecycle()
-    val groups by viewModel.groups.collectAsStateWithLifecycle()
+    val groupList by viewModel.groups.collectAsStateWithLifecycle()
     var picking by remember { mutableStateOf(false) }
     var details by remember { mutableStateOf<ProgrammeHit?>(null) }
 
@@ -129,7 +130,7 @@ fun GuideScreen(onPlay: (PlayRequest) -> Unit, modifier: Modifier = Modifier, vi
 
     details?.let { hit -> ProgrammeDialog(hit, onWatch = { play(hit.channelId) }, onDismiss = { details = null }) }
     if (picking) {
-        GroupPicker(groups.orEmpty().map { it.group to it.count }, group, onPick = {
+        GroupPicker(groupList?.items.orEmpty().map { it.group to it.count }, group, groupList?.takeIf { it.sortable }?.byName, viewModel::toggleGroupOrder, onPick = {
             viewModel.selectGroup(it)
             picking = false
         }, onDismiss = { picking = false })
@@ -500,7 +501,15 @@ private fun Cell(title: String, subtitle: String?, focused: Boolean, past: Boole
 }
 
 @Composable
-private fun GroupPicker(groups: List<Pair<LiveGroup, Int>>, current: LiveGroup?, onPick: (LiveGroup) -> Unit, onDismiss: () -> Unit) {
+private fun GroupPicker(
+    groups: List<Pair<LiveGroup, Int>>,
+    current: LiveGroup?,
+    /** Null: too few groups for the sort tile. */
+    byName: Boolean?,
+    onToggleOrder: () -> Unit,
+    onPick: (LiveGroup) -> Unit,
+    onDismiss: () -> Unit,
+) {
     val focus = remember { FocusRequester() }
     PureDialog(onDismissRequest = onDismiss) {
         Column(
@@ -509,6 +518,7 @@ private fun GroupPicker(groups: List<Pair<LiveGroup, Int>>, current: LiveGroup?,
         ) {
             Text(stringResource(R.string.guide_channels), style = MaterialTheme.typography.titleLarge)
             LazyColumn(verticalArrangement = Arrangement.spacedBy(4.dp), modifier = Modifier.height(420.dp)) {
+                if (byName != null) item(key = "order") { GroupOrderTile(byName, onToggleOrder) }
                 items(groups, key = { it.first.toString() }) { (g, count) ->
                     ListTile(
                         g.label(),

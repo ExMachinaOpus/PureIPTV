@@ -79,9 +79,15 @@ Built (first version):
   `res/values-xx` folder plus an entry in `APP_LANGUAGES`. Right-to-left languages (Arabic, Persian)
   mirror the app, except the player and guide (`KeepLeftToRight`): there Left means back in time.
 - Live TV = three columns: group (Favorites, Recently watched, then country/language with the device's
-  country first) → genre → channels. Selection follows focus; queries are debounced. Channels are ordered
-  by how many streams/providers carry them (a proxy for popularity), then provider order. Each row
-  shows what's on now when the guide has it.
+  country first, then biggest first) → genre → channels. A "Sort" tile above the groups switches the
+  countries to A–Z in the interface language and back. The guide's group picker and the Films/Series
+  language list have the same tile and share the one choice (`groups_by_name` in settings). The tile
+  shows only above more than 8 entries (`MIN_ENTRIES_TO_SORT`): a short list is easy to scan either way.
+  Why an option: reviewers found the size order hard to scan for one country in a list of 100+, while
+  biggest-first is still the right start for most users.
+  Selection follows focus; queries are debounced. Channels are ordered by how many streams/providers
+  carry them (a proxy for popularity), then provider order. Each row shows what's on now when the guide
+  has it.
 - Language of a title or channel: a language stated in a defined field wins (M3U `tvg-language`, read by
   `DeclaredLanguage`); otherwise it is deduced from the title's label, its prefix, then the category name.
   The Xtream lists have no such field. It never affects channel matching. The same rule everywhere: a typed

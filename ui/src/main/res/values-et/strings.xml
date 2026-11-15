@@ -95,6 +95,9 @@
     <string name="live_favorites">Lemmikud</string>
     <string name="live_recent">Hiljuti vaadatud</string>
     <string name="live_other">Muud kanalid</string>
+    <string name="live_order_name">Järjestus: A–Ü</string>
+    <string name="live_order_count">Järjestus: enim kanaleid</string>
+    <string name="vod_order_count">Järjestus: enim pealkirju</string>
     <string name="live_empty">Teie sisselülitatud allikates pole otsekanaleid.</string>
     <string name="genre_all">Kõik kanalid</string>
     <string name="genre_news">Uudised</string>

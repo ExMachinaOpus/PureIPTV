@@ -90,6 +90,9 @@
     <string name="live_favorites">Favorit</string>
     <string name="live_recent">Baru ditonton</string>
     <string name="live_other">Saluran lain</string>
+    <string name="live_order_name">Urutkan: A–Z</string>
+    <string name="live_order_count">Urutkan: saluran terbanyak</string>
+    <string name="vod_order_count">Urutkan: judul terbanyak</string>
     <string name="live_empty">Tidak ada saluran langsung di sumber yang aktif.</string>
     <string name="genre_all">Semua saluran</string>
     <string name="genre_news">Berita</string>

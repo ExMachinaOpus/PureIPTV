@@ -95,6 +95,9 @@
     <string name="live_favorites">Αγαπημένα</string>
     <string name="live_recent">Πρόσφατα</string>
     <string name="live_other">Άλλα κανάλια</string>
+    <string name="live_order_name">Ταξινόμηση: Α–Ω</string>
+    <string name="live_order_count">Ταξινόμηση: περισσότερα κανάλια</string>
+    <string name="vod_order_count">Ταξινόμηση: περισσότεροι τίτλοι</string>
     <string name="live_empty">Δεν υπάρχουν ζωντανά κανάλια στις ενεργές πηγές σας.</string>
     <string name="genre_all">Όλα τα κανάλια</string>
     <string name="genre_news">Ειδήσεις</string>

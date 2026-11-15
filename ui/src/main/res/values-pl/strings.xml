@@ -103,6 +103,9 @@
     <string name="live_favorites">Ulubione</string>
     <string name="live_recent">Ostatnio oglądane</string>
     <string name="live_other">Inne kanały</string>
+    <string name="live_order_name">Sortuj: A–Z</string>
+    <string name="live_order_count">Sortuj: najwięcej kanałów</string>
+    <string name="vod_order_count">Sortuj: najwięcej tytułów</string>
     <string name="live_empty">Brak kanałów na żywo we włączonych źródłach.</string>
     <string name="genre_all">Wszystkie kanały</string>
     <string name="genre_news">Wiadomości</string>

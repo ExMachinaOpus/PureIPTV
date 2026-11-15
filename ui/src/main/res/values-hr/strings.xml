@@ -98,6 +98,9 @@
     <string name="live_favorites">Omiljeno</string>
     <string name="live_recent">Nedavno gledano</string>
     <string name="live_other">Ostali kanali</string>
+    <string name="live_order_name">Poredak: A–Ž</string>
+    <string name="live_order_count">Poredak: najviše kanala</string>
+    <string name="vod_order_count">Poredak: najviše naslova</string>
     <string name="live_empty">U vašim uključenim izvorima nema kanala uživo.</string>
     <string name="genre_all">Svi kanali</string>
     <string name="genre_news">Vijesti</string>

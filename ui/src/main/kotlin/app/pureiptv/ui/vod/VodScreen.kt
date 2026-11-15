@@ -75,6 +75,7 @@ import app.pureiptv.ui.components.PosterTile
 import app.pureiptv.ui.components.Tile
 import app.pureiptv.ui.components.formatted
 import app.pureiptv.ui.components.isTv
+import app.pureiptv.ui.components.GroupOrderTile
 import app.pureiptv.ui.components.languageName
 import app.pureiptv.ui.components.rememberFocus
 import app.pureiptv.ui.components.rememberGridEntry
@@ -94,7 +95,10 @@ fun VodScreen(
     val viewModel = hiltViewModel<VodViewModel, VodViewModel.Factory>(key = kind.name, creationCallback = { it.create(kind) })
     val groups by viewModel.groups.collectAsStateWithLifecycle()
     val group by viewModel.group.collectAsStateWithLifecycle()
-    val languages by viewModel.languages.collectAsStateWithLifecycle()
+    val languageList by viewModel.languages.collectAsStateWithLifecycle()
+    val languages = languageList?.items.orEmpty()
+    // Null: too few languages for the sort tile.
+    val languagesByName = languageList?.takeIf { it.sortable }?.byName
     val language by viewModel.language.collectAsStateWithLifecycle()
     val progress by viewModel.progress.collectAsStateWithLifecycle()
     val filter by viewModel.filter.collectAsStateWithLifecycle()
@@ -203,6 +207,9 @@ fun VodScreen(
                     verticalArrangement = Arrangement.spacedBy(4.dp),
                     contentPadding = PaddingValues(vertical = 8.dp),
                 ) {
+                    if (languagesByName != null) item(key = "order") {
+                        GroupOrderTile(languagesByName, viewModel::toggleLanguageOrder, countLabel = R.string.vod_order_count)
+                    }
                     item(key = "all") {
                         ListTile(
                             text = allLanguages,
@@ -362,6 +369,9 @@ fun VodScreen(
         if (pickingLanguage) {
             PureDialog(onDismissRequest = { pickingLanguage = false }) {
                 LazyColumn(Modifier.fillMaxWidth().fillMaxHeight(0.8f), verticalArrangement = Arrangement.spacedBy(4.dp)) {
+                    if (languagesByName != null) item(key = "order") {
+                        GroupOrderTile(languagesByName, viewModel::toggleLanguageOrder, countLabel = R.string.vod_order_count)
+                    }
                     item(key = "all") {
                         ListTile(allLanguages, selected = language == null, onClick = {
                             viewModel.selectLanguage(null)

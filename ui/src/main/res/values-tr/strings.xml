@@ -95,6 +95,9 @@
     <string name="live_favorites">Favoriler</string>
     <string name="live_recent">Son izlenenler</string>
     <string name="live_other">Diğer kanallar</string>
+    <string name="live_order_name">Sırala: A–Z</string>
+    <string name="live_order_count">Sırala: en çok kanal</string>
+    <string name="vod_order_count">Sırala: en çok içerik</string>
     <string name="live_empty">Etkin kaynaklarınızda canlı kanal yok.</string>
     <string name="genre_all">Tüm kanallar</string>
     <string name="genre_news">Haberler</string>

@@ -94,6 +94,9 @@
     <string name="live_favorites">Favoriten</string>
     <string name="live_recent">Zuletzt gesehen</string>
     <string name="live_other">Weitere Sender</string>
+    <string name="live_order_name">Sortierung: A–Z</string>
+    <string name="live_order_count">Sortierung: meiste Sender</string>
+    <string name="vod_order_count">Sortierung: meiste Titel</string>
     <string name="live_empty">Keine Live-Sender in deinen aktivierten Quellen.</string>
     <string name="genre_all">Alle Sender</string>
     <string name="genre_news">Nachrichten</string>

@@ -111,6 +111,15 @@ class UserRepository @Inject constructor(private val dao: UserDao) {
 
     suspend fun setShowAdult(show: Boolean) = dao.putSetting(SettingEntity(KEY_SHOW_ADULT, show.toString()))
 
+    /** Countries and languages in Live TV and the guide: A–Z when true, else most channels first. */
+    val groupsByName: Flow<Boolean> = dao.setting(KEY_GROUPS_BY_NAME).map { it == "true" }.distinctUntilChanged()
+
+    /** Flips the saved order. Reads the stored value, so two quick presses always cancel out. */
+    suspend fun toggleGroupsByName() {
+        if (dao.setting(KEY_GROUPS_BY_NAME).first() == "true") dao.deleteSetting(KEY_GROUPS_BY_NAME)
+        else dao.putSetting(SettingEntity(KEY_GROUPS_BY_NAME, "true"))
+    }
+
     /** The interface language the user picked (BCP 47 tag), or null to follow the device. */
     val uiLanguage: Flow<String?> = dao.setting(KEY_UI_LANGUAGE).distinctUntilChanged()
 
@@ -143,6 +152,7 @@ class UserRepository @Inject constructor(private val dao: UserDao) {
         const val KEY_ZOOM_PREFIX = "zoom:"
         const val KEY_SHOW_ADULT = "show_adult"
         const val KEY_UI_LANGUAGE = "ui_language"
+        const val KEY_GROUPS_BY_NAME = "groups_by_name"
     }
 }
 

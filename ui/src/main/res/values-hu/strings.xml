@@ -94,6 +94,9 @@
     <string name="live_favorites">Kedvencek</string>
     <string name="live_recent">Nemrég nézett</string>
     <string name="live_other">További csatornák</string>
+    <string name="live_order_name">Rendezés: A–Z</string>
+    <string name="live_order_count">Rendezés: legtöbb csatorna</string>
+    <string name="vod_order_count">Rendezés: legtöbb cím</string>
     <string name="live_empty">A bekapcsolt forrásaidban nincsenek élő csatornák.</string>
     <string name="genre_all">Összes csatorna</string>
     <string name="genre_news">Hírek</string>

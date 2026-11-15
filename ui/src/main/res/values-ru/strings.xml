@@ -103,6 +103,9 @@
     <string name="live_favorites">Избранное</string>
     <string name="live_recent">Недавно просмотренные</string>
     <string name="live_other">Другие каналы</string>
+    <string name="live_order_name">Сортировка: А–Я</string>
+    <string name="live_order_count">Сортировка: больше каналов</string>
+    <string name="vod_order_count">Сортировка: больше названий</string>
     <string name="live_empty">В включённых источниках нет ТВ-каналов.</string>
     <string name="genre_all">Все каналы</string>
     <string name="genre_news">Новости</string>

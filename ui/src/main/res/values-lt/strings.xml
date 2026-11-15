@@ -103,6 +103,9 @@
     <string name="live_favorites">Mėgstami</string>
     <string name="live_recent">Neseniai žiūrėti</string>
     <string name="live_other">Kiti kanalai</string>
+    <string name="live_order_name">Rūšiuoti: A–Ž</string>
+    <string name="live_order_count">Rūšiuoti: daugiausia kanalų</string>
+    <string name="vod_order_count">Rūšiuoti: daugiausia pavadinimų</string>
     <string name="live_empty">Jūsų įjungtuose šaltiniuose nėra tiesioginių kanalų.</string>
     <string name="genre_all">Visi kanalai</string>
     <string name="genre_news">Naujienos</string>

@@ -94,6 +94,9 @@
     <string name="live_favorites">Favoritter</string>
     <string name="live_recent">Nylig sett</string>
     <string name="live_other">Andre kanaler</string>
+    <string name="live_order_name">Sorter: A–Å</string>
+    <string name="live_order_count">Sorter: flest kanaler</string>
+    <string name="vod_order_count">Sorter: flest titler</string>
     <string name="live_empty">Ingen direktekanaler i de aktiverte kildene dine.</string>
     <string name="genre_all">Alle kanaler</string>
     <string name="genre_news">Nyheter</string>

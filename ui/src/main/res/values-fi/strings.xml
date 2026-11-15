@@ -94,6 +94,9 @@
     <string name="live_favorites">Suosikit</string>
     <string name="live_recent">Äskettäin katsotut</string>
     <string name="live_other">Muut kanavat</string>
+    <string name="live_order_name">Lajittelu: A–Ö</string>
+    <string name="live_order_count">Lajittelu: eniten kanavia</string>
+    <string name="vod_order_count">Lajittelu: eniten nimikkeitä</string>
     <string name="live_empty">Käytössä olevissa lähteissä ei ole suoria kanavia.</string>
     <string name="genre_all">Kaikki kanavat</string>
     <string name="genre_news">Uutiset</string>

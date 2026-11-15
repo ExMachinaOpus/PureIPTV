@@ -59,6 +59,7 @@ import app.pureiptv.ui.components.label
 import app.pureiptv.ui.components.regionName
 import app.pureiptv.ui.components.rememberFocus
 import app.pureiptv.ui.components.restoringFocus
+import app.pureiptv.ui.components.GroupOrderTile
 import app.pureiptv.ui.components.rememberListEntry
 
 /** Live TV tab. TV: three columns (group | genre | channels). Touch: pickers on top of the list. */
@@ -68,7 +69,8 @@ fun LiveScreen(
     modifier: Modifier = Modifier,
     viewModel: LiveViewModel = hiltViewModel(),
 ) {
-    val groups by viewModel.groups.collectAsStateWithLifecycle()
+    val groupList by viewModel.groups.collectAsStateWithLifecycle()
+    val groups = groupList?.items
     val group by viewModel.group.collectAsStateWithLifecycle()
     val genres by viewModel.genres.collectAsStateWithLifecycle()
     val genre by viewModel.genre.collectAsStateWithLifecycle()
@@ -101,6 +103,9 @@ fun LiveScreen(
                 verticalArrangement = Arrangement.spacedBy(4.dp),
                 contentPadding = PaddingValues(vertical = 8.dp),
             ) {
+                // Above the groups, so it's one Up away from the top and never between them. Focusing it
+                // doesn't change the selection; the group keys keep the selected one in place when re-sorted.
+                groupList?.takeIf { it.sortable }?.let { list -> item(key = "order") { GroupOrderTile(list.byName, viewModel::toggleGroupOrder) } }
                 items(groups.orEmpty(), key = { it.group.toString() }) { item ->
                     ListTile(
                         text = item.group.label(),
@@ -144,7 +149,7 @@ fun LiveScreen(
             ChannelList(channels, favorites, viewModel, play, showRegion = group !is LiveGroup.Region, modifier = Modifier.weight(1f))
         }
     } else {
-        TouchLive(groups.orEmpty(), group, genres.map { it.key }, genre, viewModel, channels, favorites, play, modifier)
+        TouchLive(groups.orEmpty(), groupList?.takeIf { it.sortable }?.byName, group, genres.map { it.key }, genre, viewModel, channels, favorites, play, modifier)
     }
 }
 
@@ -200,6 +205,8 @@ fun ChannelTile(channel: ChannelRow, favorite: Boolean, onClick: () -> Unit, mod
 @Composable
 private fun TouchLive(
     groups: List<GroupItem>,
+    /** Null: too few groups for the sort tile. */
+    groupsByName: Boolean?,
     group: LiveGroup?,
     genres: List<String>,
     genre: String?,
@@ -244,6 +251,7 @@ private fun TouchLive(
                     Modifier.fillMaxSize(),
                     verticalArrangement = Arrangement.spacedBy(4.dp),
                 ) {
+                    if (groupsByName != null) item(key = "order") { GroupOrderTile(groupsByName, viewModel::toggleGroupOrder) }
                     items(groups, key = { it.group.toString() }) { item ->
                         ListTile(
                             item.group.label(),

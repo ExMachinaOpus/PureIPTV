@@ -1,5 +1,6 @@
 package app.pureiptv.ui.vod
 
+import androidx.compose.runtime.snapshotFlow
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
@@ -13,6 +14,9 @@ import app.pureiptv.core.data.library.VodKind
 import app.pureiptv.core.data.library.VodSort
 import app.pureiptv.core.model.ItemKeys
 import app.pureiptv.ui.components.FocusMemory
+import app.pureiptv.ui.components.MIN_ENTRIES_TO_SORT
+import app.pureiptv.ui.components.sortLanguages
+import app.pureiptv.ui.components.uiLocale
 import dagger.assisted.Assisted
 import dagger.assisted.AssistedFactory
 import dagger.assisted.AssistedInject
@@ -29,9 +33,17 @@ import kotlinx.coroutines.flow.distinctUntilChanged
 import kotlinx.coroutines.flow.filterNotNull
 import kotlinx.coroutines.flow.flatMapLatest
 import kotlinx.coroutines.flow.stateIn
+import kotlinx.coroutines.launch
 import kotlinx.coroutines.flow.map
 import app.pureiptv.core.data.db.GroupCount
 import app.pureiptv.core.data.library.NO_LANGUAGE
+
+
+/** Film/series languages and the order they are in: one value, so the sort tile and the list agree. */
+data class LanguageList(val items: List<GroupCount>, val byName: Boolean) {
+    /** Enough languages for the sort tile. */
+    val sortable: Boolean get() = items.size > MIN_ENTRIES_TO_SORT
+}
 
 /** Movies or Series tab: groups on the left (continue, favorites, recent, categories), posters on the right. */
 @OptIn(ExperimentalCoroutinesApi::class, FlowPreview::class)
@@ -39,7 +51,7 @@ import app.pureiptv.core.data.library.NO_LANGUAGE
 class VodViewModel @AssistedInject constructor(
     @Assisted val kind: VodKind,
     private val browse: BrowseRepository,
-    user: UserRepository,
+    private val user: UserRepository,
 ) : ViewModel() {
 
     @AssistedFactory
@@ -65,17 +77,22 @@ class VodViewModel @AssistedInject constructor(
     /** Chosen language; null = all languages (the default: nothing is hidden). */
     private val _language = MutableStateFlow<String?>(null)
 
-    /** Languages with titles: the device language first, then by number of titles. */
-    val languages: StateFlow<List<GroupCount>> = browse.vodLanguages(kind)
-        .map { list ->
-            val home = java.util.Locale.getDefault().language
-            list.sortedWith(compareBy<GroupCount>({ it.key == NO_LANGUAGE }, { it.key != home }, { -it.count }))
-        }
-        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), emptyList())
+    /**
+     * Languages with titles, in the order picked with the sort tile (shared with Live TV's countries):
+     * the device language first and then the most titles, or A–Z. Null until loaded.
+     */
+    val languages: StateFlow<LanguageList?> = combine(browse.vodLanguages(kind), user.groupsByName, snapshotFlow { uiLocale }) { list, byName, locale ->
+        LanguageList(sortLanguages(list, byName, locale, NO_LANGUAGE), byName)
+    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
 
     /** Effective language: falls back to all languages when the chosen one is gone (source turned off). */
-    val language: StateFlow<String?> = combine(_language, languages) { chosen, all -> chosen?.takeIf { c -> all.any { it.key == c } } }
-        .stateIn(viewModelScope, SharingStarted.Eagerly, null)
+    val language: StateFlow<String?> = combine(_language, languages) { chosen, all ->
+        chosen?.takeIf { c -> all?.items.orEmpty().any { it.key == c } }
+    }.stateIn(viewModelScope, SharingStarted.Eagerly, null)
+
+    fun toggleLanguageOrder() {
+        viewModelScope.launch { user.toggleGroupsByName() }
+    }
 
     val groups: StateFlow<List<VodGroup>?> = language.debounce(150).flatMapLatest { browse.vodGroups(kind, it) }
         .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)

@@ -94,6 +94,9 @@
     <string name="live_favorites">مورد علاقه‌ها</string>
     <string name="live_recent">اخیراً تماشا شده</string>
     <string name="live_other">کانال‌های دیگر</string>
+    <string name="live_order_name">مرتب‌سازی: الفبایی</string>
+    <string name="live_order_count">مرتب‌سازی: بیشترین کانال</string>
+    <string name="vod_order_count">مرتب‌سازی: بیشترین عنوان</string>
     <string name="live_empty">هیچ کانال زنده‌ای در منبع‌های فعال شما نیست.</string>
     <string name="genre_all">همه کانال‌ها</string>
     <string name="genre_news">اخبار</string>

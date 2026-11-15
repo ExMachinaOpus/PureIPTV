@@ -94,6 +94,9 @@
     <string name="live_favorites">पसंदीदा</string>
     <string name="live_recent">हाल ही में देखे गए</string>
     <string name="live_other">अन्य चैनल</string>
+    <string name="live_order_name">क्रम: वर्णानुक्रम</string>
+    <string name="live_order_count">क्रम: सबसे ज़्यादा चैनल</string>
+    <string name="vod_order_count">क्रम: सबसे ज़्यादा शीर्षक</string>
     <string name="live_empty">आपके चालू स्रोतों में कोई लाइव चैनल नहीं है।</string>
     <string name="genre_all">सभी चैनल</string>
     <string name="genre_news">समाचार</string>

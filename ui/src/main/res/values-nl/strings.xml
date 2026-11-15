@@ -94,6 +94,9 @@
     <string name="live_favorites">Favorieten</string>
     <string name="live_recent">Recent bekeken</string>
     <string name="live_other">Overige kanalen</string>
+    <string name="live_order_name">Sorteren: A–Z</string>
+    <string name="live_order_count">Sorteren: meeste kanalen</string>
+    <string name="vod_order_count">Sorteren: meeste titels</string>
     <string name="live_empty">Geen livekanalen in je ingeschakelde bronnen.</string>
     <string name="genre_all">Alle kanalen</string>
     <string name="genre_news">Nieuws</string>

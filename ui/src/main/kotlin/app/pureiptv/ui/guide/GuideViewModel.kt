@@ -9,14 +9,15 @@ import androidx.lifecycle.viewModelScope
 import androidx.paging.PagingData
 import androidx.paging.cachedIn
 import app.pureiptv.core.data.db.ChannelRow
-import app.pureiptv.core.data.db.GroupCount
 import app.pureiptv.core.data.db.ProgrammeEntity
 import app.pureiptv.core.data.db.ProgrammeHit
 import app.pureiptv.core.data.library.BrowseRepository
 import app.pureiptv.core.data.library.LiveFilter
 import app.pureiptv.core.data.library.LiveGroup
+import app.pureiptv.core.data.library.UserRepository
 import app.pureiptv.ui.components.FocusMemory
-import app.pureiptv.ui.live.GroupItem
+import app.pureiptv.ui.live.GroupList
+import app.pureiptv.ui.live.groupItems
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.ExperimentalCoroutinesApi
 import kotlinx.coroutines.FlowPreview
@@ -35,7 +36,6 @@ import kotlinx.coroutines.flow.map
 import kotlinx.coroutines.flow.mapLatest
 import kotlinx.coroutines.flow.stateIn
 import kotlinx.coroutines.launch
-import java.util.Locale
 import javax.inject.Inject
 
 /**
@@ -44,7 +44,10 @@ import javax.inject.Inject
  */
 @OptIn(ExperimentalCoroutinesApi::class, FlowPreview::class)
 @HiltViewModel
-class GuideViewModel @Inject constructor(private val browse: BrowseRepository) : ViewModel() {
+class GuideViewModel @Inject constructor(
+    private val browse: BrowseRepository,
+    private val user: UserRepository,
+) : ViewModel() {
 
     val rowFocus = FocusMemory()
 
@@ -53,24 +56,17 @@ class GuideViewModel @Inject constructor(private val browse: BrowseRepository) :
 
     private val chosenGroup = MutableStateFlow<LiveGroup?>(null)
 
-    val groups: StateFlow<List<GroupItem>?> = combine(
-        browse.regions(),
-        browse.favoriteChannels().map { it.size },
-        browse.recentChannels().map { it.size },
-    ) { regions, favorites, recent ->
-        val home = Locale.getDefault().country
-        buildList {
-            if (favorites > 0) add(GroupItem(LiveGroup.Favorites, favorites))
-            if (recent > 0) add(GroupItem(LiveGroup.Recent, recent))
-            add(GroupItem(LiveGroup.All, regions.sumOf { it.count }))
-            regions
-                .sortedWith(compareBy<GroupCount>({ it.key != home }, { it.key.isEmpty() }, { -it.count }))
-                .forEach { add(GroupItem(LiveGroup.Region(it.key), it.count)) }
-        }
-    }.stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+    /** Countries and languages in the order picked in Live TV or here (one shared setting). */
+    val groups: StateFlow<GroupList?> = groupItems(browse, user, all = true)
+        .stateIn(viewModelScope, SharingStarted.WhileSubscribed(5_000), null)
+
+    fun toggleGroupOrder() {
+        viewModelScope.launch { user.toggleGroupsByName() }
+    }
 
     /** Favourites by default, else all channels. */
-    val group: StateFlow<LiveGroup?> = combine(chosenGroup, groups) { chosen, all ->
+    val group: StateFlow<LiveGroup?> = combine(chosenGroup, groups) { chosen, list ->
+        val all = list?.items
         when {
             all.isNullOrEmpty() -> chosen
             chosen != null && all.any { it.group == chosen } -> chosen
