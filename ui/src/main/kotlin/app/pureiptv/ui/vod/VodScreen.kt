@@ -199,7 +199,12 @@ fun VodScreen(
                 runCatching { selectedGroupFocus.requestFocus() }
             }
         }
-        Row(modifier.fillMaxSize(), horizontalArrangement = Arrangement.spacedBy(if (postersOnly) 0.dp else 16.dp)) {
+        // Coming in from the tabs lands on the selected category, whichever tab it came from: left to
+        // geometry, Down from a tab above the posters (Series) would open the full-width view instead.
+        Row(
+            modifier.fillMaxSize().enterOn(selectedGroupFocus).focusGroup(),
+            horizontalArrangement = Arrangement.spacedBy(if (postersOnly) 0.dp else 16.dp),
+        ) {
             if (languages.isNotEmpty() && !postersOnly) {
                 LazyColumn(
                     state = languageListState,
