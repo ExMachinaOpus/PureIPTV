@@ -5,6 +5,8 @@
     <!-- Imports keep running when the user leaves the app (ImportKeepAliveWorker). -->
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
     <uses-permission android:name="android.permission.FOREGROUND_SERVICE_DATA_SYNC" />
+    <!-- Its "Updating your channels" notification; without it Android 13+ hides the notification. -->
+    <uses-permission android:name="android.permission.POST_NOTIFICATIONS" />
 
     <application>
         <!-- WorkManager's foreground service, typed for imports (ImportKeepAliveWorker). -->

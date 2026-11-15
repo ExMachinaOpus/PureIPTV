@@ -1,5 +1,7 @@
 package app.pureiptv
 
+import android.Manifest
+import android.content.pm.PackageManager
 import android.os.Build
 import android.os.Bundle
 import android.os.SystemClock
@@ -12,18 +14,35 @@ import android.graphics.Color
 import androidx.activity.ComponentActivity
 import androidx.activity.SystemBarStyle
 import androidx.activity.compose.setContent
+import androidx.activity.result.contract.ActivityResultContracts
 import androidx.activity.enableEdgeToEdge
 import androidx.core.splashscreen.SplashScreen.Companion.installSplashScreen
+import androidx.lifecycle.Lifecycle
+import androidx.lifecycle.lifecycleScope
+import androidx.lifecycle.repeatOnLifecycle
+import app.pureiptv.core.data.source.SourceManager
+import app.pureiptv.core.data.work.ImportKeepAliveWorker
 import app.pureiptv.ui.FormFactor
 import app.pureiptv.ui.PureApp
 import app.pureiptv.ui.detectFormFactor
 import app.pureiptv.ui.theme.PureTheme
 import dagger.hilt.android.AndroidEntryPoint
+import javax.inject.Inject
+import kotlinx.coroutines.flow.first
+import kotlinx.coroutines.launch
 
 private const val STRAY_KEYS_BEFORE_RESET = 5
+private const val KEY_ASKED_NOTIFICATIONS = "asked_notifications"
 
 @AndroidEntryPoint
 class MainActivity : ComponentActivity() {
+
+    @Inject lateinit var sources: SourceManager
+
+    private val notificationPermission = registerForActivityResult(ActivityResultContracts.RequestPermission()) { granted ->
+        // The import that triggered the request is already running: show its notification now.
+        if (granted) lifecycleScope.launch { if (sources.busy.first()) ImportKeepAliveWorker.showNotification(this@MainActivity) }
+    }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         installSplashScreen()
@@ -37,6 +56,27 @@ class MainActivity : ComponentActivity() {
         setContent {
             PureTheme(formFactor) {
                 PureApp()
+            }
+        }
+        if (formFactor == FormFactor.Touch && Build.VERSION.SDK_INT >= 33) askForImportNotification()
+    }
+
+    /**
+     * Phones and tablets (Android 13+) show an import's progress notification only with the
+     * notification permission. Asked once, when the first import starts (adding or refreshing a
+     * source), so the request comes with the thing it is for. TVs have no notification shade: not asked.
+     */
+    private fun askForImportNotification() {
+        val prefs = getPreferences(MODE_PRIVATE)
+        if (prefs.getBoolean(KEY_ASKED_NOTIFICATIONS, false)) return
+        lifecycleScope.launch {
+            repeatOnLifecycle(Lifecycle.State.STARTED) {
+                sources.busy.first { it }
+                if (prefs.getBoolean(KEY_ASKED_NOTIFICATIONS, false)) return@repeatOnLifecycle
+                prefs.edit().putBoolean(KEY_ASKED_NOTIFICATIONS, true).apply()
+                if (checkSelfPermission(Manifest.permission.POST_NOTIFICATIONS) != PackageManager.PERMISSION_GRANTED) {
+                    notificationPermission.launch(Manifest.permission.POST_NOTIFICATIONS)
+                }
             }
         }
     }
