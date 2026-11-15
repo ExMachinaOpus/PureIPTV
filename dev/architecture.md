@@ -76,7 +76,10 @@ Built (first version):
   interface language: the device's when the app has that translation, else English (UK), unless the
   viewer picked one. It is applied by replacing Compose's context/resources (`ProvideAppLanguage`), so
   a change is instant and keeps focus; `PureDialog` windows re-provide it. A new translation is a
-  `res/values-xx` folder plus an entry in `APP_LANGUAGES`. Right-to-left languages (Arabic, Persian)
+  `res/values-xx` folder plus an entry in `APP_LANGUAGES`. English (UK) in `res/values` is what every
+  English gets except the US: `res/values-en-rUS` overrides only the 18 strings that differ
+  ("Movies", "Favorites", "program"). `res/values-en-rGB` repeats those 18 in UK wording, because
+  Android 7+ otherwise resolves en-GB (and en-AU, en-IN...) to the closest English folder, the US one. Right-to-left languages (Arabic, Persian)
   mirror the app, except the player and guide (`KeepLeftToRight`): there Left means back in time.
 - Live TV = three columns: group (Favorites, Recently watched, then country/language with the device's
   country first, then biggest first) → genre → channels. A "Sort" tile above the groups switches the

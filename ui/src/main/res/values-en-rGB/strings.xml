@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  UK English for the strings US English words differently (copies of res/values). Without this
+  folder Android 7+ picks values-en-rUS for en-GB (closest English) instead of the default
+  res/values. Australian, Indian and other English share en-GB's parent locale, so they land here too.
+  Keep in sync with values-en-rUS: same strings, UK wording.
+-->
+<resources>
+    <string name="import_movies">Importing films…</string>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s films</item>
+    </plurals>
+    <string name="tab_movies">Films</string>
+    <string name="home_favourite_channels">Favourite channels</string>
+    <string name="home_my_movies">My list · Films</string>
+    <string name="home_empty">What you watch, your list and your favourite channels will show up here.</string>
+    <string name="live_favorites">Favourites</string>
+    <string name="genre_sports">Sport</string>
+    <string name="genre_movies">Films</string>
+    <string name="vod_all_movies_in">All %1$s films</string>
+    <string name="vod_all_movies_not_stated">All films, language not stated</string>
+    <string name="search_hint">Channels, programmes, films, series</string>
+    <string name="guide_nothing">No programme matching “%1$s” in %2$s.</string>
+    <string name="player_favorite">Add %1$s to favourites</string>
+    <string name="player_unfavorite">Remove %1$s from favourites</string>
+    <string name="player_add_favourite_short">☆  Add to favourites</string>
+    <string name="player_remove_favourite_short">★  Favourite</string>
+    <string name="about_title">About and licences</string>
+</resources>

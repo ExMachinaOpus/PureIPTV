@@ -105,8 +105,10 @@ No per-feature modules. Every module using Hilt applies the Hilt plugin.
 - DB: all DAO functions `suspend` or `Flow` (bundled driver).
 - Never log credentials or full stream URLs (they contain username/password). Use `redact()` helpers.
 - Never commit real playlists or credentials. Private test files go in `fixtures-private/` (gitignored).
-- User-visible strings in `strings.xml`, in **British English** ("favourites", "colour"). Code
-  identifiers stay as they are.
+- User-visible strings in `strings.xml`, in **British English** ("favourites", "colour", "films"). Code
+  identifiers stay as they are. US English (`values-en-rUS/`) holds only the strings whose wording
+  differs, and `values-en-rGB/` the same strings in UK wording (without it Android picks the US
+  folder for en-GB). A string with a UK/US difference goes in both.
 
 ## Commands
 

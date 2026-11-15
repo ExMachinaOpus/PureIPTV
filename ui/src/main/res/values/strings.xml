@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<resources>
+<!-- English (UK); values-en-rUS overrides the few strings US English words differently. -->
+<resources xmlns:tools="http://schemas.android.com/tools" tools:locale="en">
     <string name="app_name" translatable="false">PureIPTV</string>
 
     <!-- Welcome -->
@@ -32,7 +33,7 @@
     <string name="import_title">Setting up %1$s</string>
     <string name="import_connecting">Connecting…</string>
     <string name="import_live">Importing live TV…</string>
-    <string name="import_movies">Importing movies…</string>
+    <string name="import_movies">Importing films…</string>
     <string name="import_series">Importing series…</string>
     <string name="import_finishing">Finishing up…</string>
     <string name="import_guide">Updating the TV guide…</string>
@@ -41,8 +42,8 @@
         <item quantity="other">%1$s live channels</item>
     </plurals>
     <plurals name="count_movies">
-        <item quantity="one">%1$s movie</item>
-        <item quantity="other">%1$s movies</item>
+        <item quantity="one">%1$s film</item>
+        <item quantity="other">%1$s films</item>
     </plurals>
     <plurals name="count_series">
         <item quantity="one">%1$s series</item>
@@ -76,7 +77,7 @@
 
     <!-- Home -->
     <string name="tab_live">Live TV</string>
-    <string name="tab_movies">Movies</string>
+    <string name="tab_movies">Films</string>
     <string name="tab_series">Series</string>
     <string name="tab_search">Search</string>
     <string name="tab_settings">Settings</string>
@@ -89,7 +90,7 @@
     <string name="tab_home">Home</string>
     <string name="home_continue">Continue watching</string>
     <string name="home_favourite_channels">Favourite channels</string>
-    <string name="home_my_movies">My list · Movies</string>
+    <string name="home_my_movies">My list · Films</string>
     <string name="home_my_series">My list · Series</string>
     <string name="home_empty">What you watch, your list and your favourite channels will show up here.</string>
     <string name="home_remove_continue">Remove from Continue watching</string>
@@ -104,22 +105,22 @@
     <string name="live_empty">No live channels in your enabled sources.</string>
     <string name="genre_all">All channels</string>
     <string name="genre_news">News</string>
-    <string name="genre_sports">Sports</string>
+    <string name="genre_sports">Sport</string>
     <string name="genre_kids">Kids</string>
-    <string name="genre_movies">Movies</string>
+    <string name="genre_movies">Films</string>
     <string name="genre_entertainment">Entertainment</string>
     <string name="genre_documentary">Documentary</string>
     <string name="genre_music">Music</string>
     <string name="genre_religion">Religion</string>
     <string name="genre_other">Other</string>
 
-    <!-- Movies & series -->
+    <!-- Films & series -->
     <string name="vod_continue">Continue watching</string>
     <string name="vod_favorites">My list</string>
     <string name="vod_recent">Recently added</string>
     <string name="vod_empty">Nothing here yet.</string>
     <string name="vod_all_languages">All languages</string>
-    <string name="vod_all_movies_in">All %1$s movies</string>
+    <string name="vod_all_movies_in">All %1$s films</string>
     <string name="vod_all_series_in">All %1$s series</string>
     <string name="vod_filter">Filter</string>
     <string name="vod_filter_value">%1$s</string>
@@ -131,7 +132,7 @@
     <string name="vod_sort_year">Newest</string>
     <string name="vod_sort_rating">Top rated</string>
     <string name="vod_language_not_stated">Language not stated</string>
-    <string name="vod_all_movies_not_stated">All movies, language not stated</string>
+    <string name="vod_all_movies_not_stated">All films, language not stated</string>
     <string name="vod_all_series_not_stated">All series, language not stated</string>
     <string name="details_play">Play</string>
     <string name="details_resume">Resume from %1$s</string>
@@ -145,7 +146,7 @@
     <string name="details_no_episodes">No episodes available.</string>
 
     <!-- Search -->
-    <string name="search_hint">Channels, programmes, movies, series</string>
+    <string name="search_hint">Channels, programmes, films, series</string>
     <string name="search_on_tv">On TV</string>
     <string name="tab_guide">Guide</string>
     <string name="guide_search">Search the guide</string>

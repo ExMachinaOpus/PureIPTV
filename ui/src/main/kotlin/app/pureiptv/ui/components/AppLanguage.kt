@@ -27,7 +27,9 @@ data class AppLanguage(val tag: String, val name: String) {
 }
 
 /**
- * The translations the app ships (`res/values-xx`; English (UK) is `res/values` and the fallback), in
+ * The translations the app ships (`res/values-xx`; English (UK) is `res/values` and the fallback; English
+ * (US) is `res/values-en-rUS`, only the strings that differ from UK English, with `res/values-en-rGB`
+ * repeating those in UK wording so Android doesn't pick the US folder for en-GB), in
  * the order the picker shows them: by name, Latin script first. Where a language has several variants
  * the first one is what other regions get (Portuguese in Angola gets Portugal's, German in Luxembourg
  * gets Germany's).
@@ -41,6 +43,7 @@ val APP_LANGUAGES = listOf(
     AppLanguage("de-CH", "Deutsch (Schweiz)"),
     AppLanguage("et", "Eesti"),
     AppLanguage("en-GB", "English (UK)"),
+    AppLanguage("en-US", "English (US)"),
     AppLanguage("es", "Español"),
     AppLanguage("fr", "Français"),
     AppLanguage("hr", "Hrvatski"),

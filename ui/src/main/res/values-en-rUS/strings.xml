@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  US English: only the strings whose wording differs from UK English (res/values). Everything not
+  listed here comes from there. values-en-rGB holds the same strings in UK wording; keep both in sync.
+-->
+<resources>
+    <string name="import_movies">Importing movies…</string>
+    <plurals name="count_movies">
+        <item quantity="one">%1$s movie</item>
+        <item quantity="other">%1$s movies</item>
+    </plurals>
+    <string name="tab_movies">Movies</string>
+    <string name="home_favourite_channels">Favorite channels</string>
+    <string name="home_my_movies">My list · Movies</string>
+    <string name="home_empty">What you watch, your list and your favorite channels will show up here.</string>
+    <string name="live_favorites">Favorites</string>
+    <string name="genre_sports">Sports</string>
+    <string name="genre_movies">Movies</string>
+    <string name="vod_all_movies_in">All %1$s movies</string>
+    <string name="vod_all_movies_not_stated">All movies, language not stated</string>
+    <string name="search_hint">Channels, programs, movies, series</string>
+    <string name="guide_nothing">No program matching “%1$s” in %2$s.</string>
+    <string name="player_favorite">Add %1$s to favorites</string>
+    <string name="player_unfavorite">Remove %1$s from favorites</string>
+    <string name="player_add_favourite_short">☆  Add to favorites</string>
+    <string name="player_remove_favourite_short">★  Favorite</string>
+    <string name="about_title">About and licenses</string>
+</resources>
