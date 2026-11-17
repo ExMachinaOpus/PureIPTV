@@ -128,6 +128,9 @@ class PlayerViewModel @AssistedInject constructor(
     private val pure = factory.create()
     val player: Player get() = pure.player
 
+    /** The film's or episode's frame rate, for [MatchFrameRate]; null for live TV. */
+    val frameRate: StateFlow<Float?> get() = pure.frameRate
+
     /** Media session: system "now playing", play/pause from the remote, Google Assistant. */
     private val session = MediaSession.Builder(context, pure.player).setId("player-${System.nanoTime()}").build()
 

@@ -226,6 +226,17 @@ Rules:
   one renderer, so in an HLS stream whose AAC and AC3 renditions share a group the platform renderer
   wins and AC3 shows as unplayable; files (MKV/MP4/TS) have one group per track and are unaffected.
   The NextLib version must match Media3's (`nextlib` in `libs.versions.toml`).
+- **Frame rate matching** (films and episodes): 24 fps film on a 60 Hz output judders (frames alternate
+  between 2 and 3 refreshes). `FrameRateDetector` takes the rate the container declares (MP4) or measures
+  it from the frame timestamps (MKV and TS rarely declare one; about 2.5 s of video), and
+  `MatchFrameRate` asks for a display mode at the same resolution whose refresh rate is a whole multiple
+  of it (24 Hz for 23.976/24 fps, 50 Hz for 25 fps). Rates that already fit (30 fps on 60 Hz) don't
+  switch. A switch blanks the screen for a second or two on most TVs, so it is not our setting: the
+  system's "Match content frame rate" (Android 12+) decides, as for every streaming app, and we switch
+  only when it is "Always" (Media3 itself handles "Seamless only"). Decided per episode; the display
+  keeps its mode until the next episode's rate is known, so a series at one rate doesn't blank between
+  episodes. Leaving the player returns to the display's own mode. Live TV is left alone: zapping must
+  never blank the screen, and European channels are 50 Hz, close enough on 60 Hz (revisit if needed).
 - **Picture-in-picture** (phones and tablets only): leaving the app while something plays continues
   in a small window with the video only (`rememberPictureInPicture`); a paused player, or any other
   screen, goes to the background as usual. Closing the window stops playback (the player pauses on

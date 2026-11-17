@@ -170,6 +170,8 @@ fun PlayerScreen(request: PlayRequest, onExit: () -> Unit) {
     LifecycleEventEffect(Lifecycle.Event.ON_STOP) { viewModel.onBackground() }
     LifecycleEventEffect(Lifecycle.Event.ON_RESUME) { viewModel.onForeground() }
 
+    MatchFrameRate(viewModel.frameRate.collectAsStateWithLifecycle().value)
+
     val view = LocalView.current
     DisposableEffect(view) {
         view.keepScreenOn = true
@@ -793,7 +795,7 @@ private fun zoomLabel(zoom: Zoom): String = stringResource(
     },
 )
 
-private fun Context.findActivity(): Activity? = when (this) {
+internal fun Context.findActivity(): Activity? = when (this) {
     is Activity -> this
     is ContextWrapper -> baseContext.findActivity()
     else -> null

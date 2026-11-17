@@ -16,8 +16,11 @@ import androidx.media3.exoplayer.DefaultLoadControl
 import androidx.media3.exoplayer.DefaultRenderersFactory
 import androidx.media3.exoplayer.ExoPlayer
 import androidx.media3.exoplayer.source.DefaultMediaSourceFactory
-import io.github.anilbeesetti.nextlib.media3ext.ffdecoder.FfmpegAudioRenderer
 import dagger.hilt.android.qualifiers.ApplicationContext
+import io.github.anilbeesetti.nextlib.media3ext.ffdecoder.FfmpegAudioRenderer
+import kotlinx.coroutines.flow.MutableStateFlow
+import kotlinx.coroutines.flow.StateFlow
+import kotlinx.coroutines.flow.asStateFlow
 import okhttp3.OkHttpClient
 import java.util.concurrent.atomic.AtomicReference
 import javax.inject.Inject
@@ -28,10 +31,29 @@ import javax.inject.Singleton
  * their own User-Agent/Referer (from the playlist); Media3 has no per-item headers, so every
  * request is resolved against [headers] at load time.
  */
+@OptIn(UnstableApi::class)
 class PurePlayer internal constructor(
     val player: ExoPlayer,
     private val headers: AtomicReference<Map<String, String>>,
 ) {
+    private val detector = FrameRateDetector()
+    private val _frameRate = MutableStateFlow<Float?>(null)
+
+    /**
+     * The frame rate of the film or episode playing, for matching the display to it. Null for live TV
+     * and for video without a fixed rate. Keeps the previous value until the next video's rate is known,
+     * so episodes at the same rate don't switch the display back and forth.
+     */
+    val frameRate: StateFlow<Float?> = _frameRate.asStateFlow()
+
+    init {
+        player.setVideoFrameMetadataListener { presentationTimeUs, _, format, _ ->
+            detector.onFrame(presentationTimeUs, format.frameRate)?.let { fps ->
+                _frameRate.value = fps.takeIf { it != FrameRateDetector.UNKNOWN }
+            }
+        }
+    }
+
     /**
      * Plays [url]. [asHls] forces HLS for URLs without a recognizable extension (a fallback when
      * container sniffing fails). [startMs] resumes VOD.
@@ -65,6 +87,13 @@ class PurePlayer internal constructor(
                     .build(),
             )
             .build()
+        // Live TV keeps the display's own rate: a switch blanks the screen, and zapping must not.
+        if (live) {
+            detector.stop()
+            _frameRate.value = null
+        } else {
+            detector.restart()
+        }
         player.setMediaItem(item, if (live) C.TIME_UNSET else startMs)
         player.prepare()
         player.playWhenReady = true
