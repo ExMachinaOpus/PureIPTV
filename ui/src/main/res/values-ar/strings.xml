@@ -216,6 +216,7 @@
     <string name="player_now_playing">قيد التشغيل الآن</string>
     <string name="player_backup_stream">بث احتياطي</string>
     <string name="player_zoom">الصورة: %1$s</string>
+    <string name="player_version">الإصدار: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  إضافة إلى المفضّلة</string>
     <string name="player_remove_favourite_short">★  مفضّلة</string>
     <string name="zoom_fit">ملاءمة</string>

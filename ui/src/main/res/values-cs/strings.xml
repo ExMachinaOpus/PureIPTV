@@ -208,6 +208,7 @@
     <string name="player_now_playing">Právě hraje</string>
     <string name="player_backup_stream">Záložní stream</string>
     <string name="player_zoom">Obraz: %1$s</string>
+    <string name="player_version">Verze: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Přidat do oblíbených</string>
     <string name="player_remove_favourite_short">★  Oblíbené</string>
     <string name="zoom_fit">Přizpůsobit</string>

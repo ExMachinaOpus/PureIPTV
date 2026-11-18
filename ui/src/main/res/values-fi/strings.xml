@@ -200,6 +200,7 @@
     <string name="player_now_playing">Nyt toistetaan</string>
     <string name="player_backup_stream">Varalähetys</string>
     <string name="player_zoom">Kuva: %1$s</string>
+    <string name="player_version">Versio: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Lisää suosikkeihin</string>
     <string name="player_remove_favourite_short">★  Suosikki</string>
     <string name="zoom_fit">Sovita</string>

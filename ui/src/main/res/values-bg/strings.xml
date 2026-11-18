@@ -201,6 +201,7 @@
     <string name="player_now_playing">Сега върви</string>
     <string name="player_backup_stream">Резервен поток</string>
     <string name="player_zoom">Картина: %1$s</string>
+    <string name="player_version">Версия: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Добавяне в любими</string>
     <string name="player_remove_favourite_short">★  Любим</string>
     <string name="zoom_fit">Побиране</string>

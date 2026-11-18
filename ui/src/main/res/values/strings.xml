@@ -205,6 +205,7 @@
     <string name="player_now_playing">Now playing</string>
     <string name="player_backup_stream">Backup stream</string>
     <string name="player_zoom">Picture: %1$s</string>
+    <string name="player_version">Version: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Add to favourites</string>
     <string name="player_remove_favourite_short">★  Favourite</string>
     <string name="zoom_fit">Fit</string>

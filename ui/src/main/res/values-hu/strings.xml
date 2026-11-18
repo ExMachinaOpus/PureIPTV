@@ -200,6 +200,7 @@
     <string name="player_now_playing">Most megy</string>
     <string name="player_backup_stream">Tartalék adatfolyam</string>
     <string name="player_zoom">Kép: %1$s</string>
+    <string name="player_version">Verzió: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Kedvencekhez adás</string>
     <string name="player_remove_favourite_short">★  Kedvenc</string>
     <string name="zoom_fit">Illesztés</string>

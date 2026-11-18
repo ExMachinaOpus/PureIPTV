@@ -435,6 +435,16 @@ interface BrowseDao {
     @Query("SELECT COUNT(*) FROM episode WHERE series_id = :seriesId")
     suspend fun episodeCount(seriesId: Long): Int
 
+    /** All copies of a series across enabled sources (qualities, sources, one row per season), for versions. */
+    @Query("SELECT * FROM series WHERE item_key = :key AND source_id IN (:src) ORDER BY id")
+    suspend fun seriesCopies(key: String, src: List<Long>): List<SeriesEntity>
+
+    @Query("SELECT * FROM episode WHERE series_id = :seriesId AND season = :season AND episode = :episode LIMIT 1")
+    suspend fun episodeAt(seriesId: Long, season: Int, episode: Int): EpisodeEntity?
+
+    @Query("SELECT name FROM category WHERE id = :id")
+    suspend fun categoryName(id: Long): String?
+
     @Query("SELECT * FROM episode WHERE id = :id")
     suspend fun episode(id: Long): EpisodeEntity?
 

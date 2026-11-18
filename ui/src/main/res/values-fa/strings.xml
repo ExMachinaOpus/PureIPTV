@@ -200,6 +200,7 @@
     <string name="player_now_playing">در حال پخش</string>
     <string name="player_backup_stream">پخش پشتیبان</string>
     <string name="player_zoom">تصویر: %1$s</string>
+    <string name="player_version">نسخه: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  افزودن به مورد علاقه‌ها</string>
     <string name="player_remove_favourite_short">★  مورد علاقه</string>
     <string name="zoom_fit">متناسب</string>

@@ -204,6 +204,7 @@
     <string name="player_now_playing">A reproduzir</string>
     <string name="player_backup_stream">Emissão de reserva</string>
     <string name="player_zoom">Imagem: %1$s</string>
+    <string name="player_version">Versão: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Adicionar aos favoritos</string>
     <string name="player_remove_favourite_short">★  Favorito</string>
     <string name="zoom_fit">Ajustar</string>

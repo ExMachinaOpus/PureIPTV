@@ -237,6 +237,18 @@ Rules:
   keeps its mode until the next episode's rate is known, so a series at one rate doesn't blank between
   episodes. Leaving the player returns to the display's own mode. Live TV is left alone: zapping must
   never blank the screen, and European channels are 50 Hz, close enough on 60 Hz (revisit if needed).
+- **Versions** (channels, films, episodes): merged titles hide their other copies (another quality,
+  source, encoding or category: one provider has an HD and a 4K copy of a subtitled series, and the
+  4K one is a badly converted 30 fps file). The player's version button cycles through them, labelled
+  with the provider's stream name (live) or category (VOD), plus the source when there are several,
+  and the position ("NORDIC SERIES (2/3)"). The order is fixed (best-first for channels, import order
+  for copies) so a round always visits each once. Films and episodes continue at the same position;
+  an episode switches to the same season/episode in the other copy of the series (copies' episode
+  lists are loaded in the background while it plays). The last pick is remembered per channel, film
+  or series (`version:<item key>` in settings) and plays first next time; the others stay behind it
+  as failover. An episode that fails in every stream of its copy continues with the same episode in
+  the next copy not tried yet. When something other than the remembered pick plays because the pick
+  failed, the pick is forgotten, so a dead version isn't tried (and waited for) first every time.
 - **Picture-in-picture** (phones and tablets only): leaving the app while something plays continues
   in a small window with the video only (`rememberPictureInPicture`); a paused player, or any other
   screen, goes to the background as usual. Closing the window stops playback (the player pauses on

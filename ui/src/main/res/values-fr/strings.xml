@@ -204,6 +204,7 @@
     <string name="player_now_playing">En cours de lecture</string>
     <string name="player_backup_stream">Flux de secours</string>
     <string name="player_zoom">Image : %1$s</string>
+    <string name="player_version">Version : %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Ajouter aux favoris</string>
     <string name="player_remove_favourite_short">★  Favori</string>
     <string name="zoom_fit">Ajuster</string>

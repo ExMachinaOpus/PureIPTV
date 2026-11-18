@@ -209,6 +209,7 @@
     <string name="player_now_playing">Teraz odtwarzane</string>
     <string name="player_backup_stream">Strumień zapasowy</string>
     <string name="player_zoom">Obraz: %1$s</string>
+    <string name="player_version">Wersja: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Dodaj do ulubionych</string>
     <string name="player_remove_favourite_short">★  Ulubiony</string>
     <string name="zoom_fit">Dopasuj</string>

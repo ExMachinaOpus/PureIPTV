@@ -204,6 +204,7 @@
     <string name="player_now_playing">Trenutno se reproducira</string>
     <string name="player_backup_stream">Rezervni stream</string>
     <string name="player_zoom">Slika: %1$s</string>
+    <string name="player_version">Verzija: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Dodaj u omiljene</string>
     <string name="player_remove_favourite_short">★  Omiljeno</string>
     <string name="zoom_fit">Prilagodi</string>

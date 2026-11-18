@@ -200,6 +200,7 @@
     <string name="player_now_playing">Spelas nu</string>
     <string name="player_backup_stream">Reservström</string>
     <string name="player_zoom">Bild: %1$s</string>
+    <string name="player_version">Version: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Lägg till i favoriter</string>
     <string name="player_remove_favourite_short">★  Favorit</string>
     <string name="zoom_fit">Anpassad</string>

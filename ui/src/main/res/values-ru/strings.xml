@@ -209,6 +209,7 @@
     <string name="player_now_playing">Сейчас в эфире</string>
     <string name="player_backup_stream">Резервный поток</string>
     <string name="player_zoom">Изображение: %1$s</string>
+    <string name="player_version">Версия: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  В избранное</string>
     <string name="player_remove_favourite_short">★  В избранном</string>
     <string name="zoom_fit">По размеру</string>

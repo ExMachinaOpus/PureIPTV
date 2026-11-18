@@ -49,7 +49,17 @@ import kotlinx.coroutines.launch
 sealed interface PlayRequest {
     data class Channel(val channelId: Long, val filter: LiveFilter?) : PlayRequest
     data class Movie(val movieId: Long, val fromStart: Boolean = false) : PlayRequest
-    data class Episode(val episodeId: Long, val fromStart: Boolean = false) : PlayRequest
+    /**
+     * [startMs]: start there (switching versions mid-episode). [exact]: this episode row, not the copy
+     * picked for its series. [fallback]: another copy after this one failed (keeps what was tried).
+     */
+    data class Episode(
+        val episodeId: Long,
+        val fromStart: Boolean = false,
+        val startMs: Long? = null,
+        val exact: Boolean = false,
+        val fallback: Boolean = false,
+    ) : PlayRequest
 }
 
 data class PlayerUi(
@@ -78,7 +88,15 @@ data class PlayerUi(
     val audio: List<TrackInfo> = emptyList(),
     /** Subtitle tracks; none selected = off (the default). */
     val subtitles: List<TrackInfo> = emptyList(),
-)
+) {
+    /** Position of what plays in item.versions, or -1. */
+    val versionIndex: Int
+        get() {
+            val item = item ?: return -1
+            val key = item.streams.getOrNull(streamIndex)?.streamKey ?: return -1
+            return item.versions.indexOfFirst { it.streamKey == key }
+        }
+}
 
 /**
  * One audio or subtitle track, with everything the stream says about it. [codec] is the MIME type,
@@ -152,6 +170,12 @@ class PlayerViewModel @AssistedInject constructor(
     private var watchdog: Job? = null
     private var favoriteJob: Job? = null
 
+    /** Versions (choice keys) that failed for what the user opened; kept across episode fallbacks. */
+    private val failedChoices = mutableSetOf<String>()
+
+    /** Episodes (in other copies of the series) already tried for what the user opened. */
+    private val triedEpisodes = mutableSetOf<Long>()
+
     init {
         pure.player.addListener(object : Player.Listener {
             override fun onPlayerError(error: PlaybackException) = onStreamFailed(error)
@@ -166,6 +190,7 @@ class PlayerViewModel @AssistedInject constructor(
                             startedOnce = true
                             val item = _ui.value.item ?: return
                             viewModelScope.launch { user.recordWatched(*listOfNotNull(item.itemKey, item.parentKey).toTypedArray()) }
+                            forgetDeadPick(item)
                         }
                     }
                     Player.STATE_ENDED -> onEnded()
@@ -187,11 +212,21 @@ class PlayerViewModel @AssistedInject constructor(
             .setTrackTypeDisabled(C.TRACK_TYPE_TEXT, true)
             .build()
         retriedSame = false
+        if (!(request is PlayRequest.Episode && request.fallback)) {
+            failedChoices.clear()
+            triedEpisodes.clear()
+        }
         viewModelScope.launch {
             val item = when (request) {
                 is PlayRequest.Channel -> playback.channel(request.channelId, factory.hevcSupported)
                 is PlayRequest.Movie -> playback.movie(request.movieId)?.let { if (request.fromStart) it.copy(resumeMs = 0) else it }
-                is PlayRequest.Episode -> playback.episode(request.episodeId)?.let { if (request.fromStart) it.copy(resumeMs = 0) else it }
+                is PlayRequest.Episode -> playback.episode(request.episodeId, preferred = !request.exact)?.let {
+                    when {
+                        request.startMs != null -> it.copy(resumeMs = request.startMs)
+                        request.fromStart -> it.copy(resumeMs = 0)
+                        else -> it
+                    }
+                }
             }
             if (item == null) {
                 _ui.update { it.copy(notFound = true) }
@@ -213,13 +248,63 @@ class PlayerViewModel @AssistedInject constructor(
             firstStart = true
             _ui.update { it.copy(item = item, streamIndex = 0, failed = item.streams.isEmpty(), notFound = false) }
             observeFavorite(item.itemKey)
+            // The episode that plays (the series' picked copy can differ from the one asked for).
+            item.versions.firstOrNull { it.streamKey == item.streams.firstOrNull()?.streamKey }?.episodeId?.let { triedEpisodes += it }
             if (request is PlayRequest.Channel) {
                 updateChannelNumber(request)
                 watchGuide(request.channelId)
             }
             playStream(0)
+            if (request is PlayRequest.Episode) findEpisodeVersions(item)
         }
     }
+
+    private var versionsJob: Job? = null
+
+    /**
+     * Copies of the series whose episodes weren't loaded yet may hold this episode too: load them
+     * while it plays (one request per copy) and add what they have to the versions.
+     */
+    private fun findEpisodeVersions(item: PlayItem) {
+        val key = item.streams.firstOrNull()?.streamKey ?: return
+        val episodeId = item.versions.firstOrNull { it.streamKey == key }?.episodeId ?: return
+        versionsJob?.cancel()
+        versionsJob = viewModelScope.launch {
+            val versions = runCatching { playback.episodeVersions(episodeId, fetch = true) }.getOrNull() ?: return@launch
+            _ui.update { ui -> if (ui.item?.streams?.firstOrNull()?.streamKey == key) ui.copy(item = ui.item.copy(versions = versions)) else ui }
+        }
+    }
+
+    /**
+     * The next version of what plays (another copy, quality or source), remembered for this
+     * channel, film or series. Films and episodes continue where they were.
+     */
+    fun nextVersion() {
+        val ui = _ui.value
+        val item = ui.item ?: return
+        if (item.versions.size < 2) return
+        val next = item.versions[(ui.versionIndex + 1).mod(item.versions.size)]
+        val position = pure.player.currentPosition
+        viewModelScope.launch {
+            // Saved before switching: an episode in another copy is loaded by looking the choice up.
+            user.setVersionChoice(versionMemoryKey(item), next.choiceKey)
+            val episodeId = next.episodeId
+            if (episodeId != null) {
+                saveProgressNow()
+                load(PlayRequest.Episode(episodeId, startMs = position, exact = true))
+            } else {
+                // The picked one first; the others stay behind it for failover.
+                val streams = item.streams.sortedBy { if (it.streamKey == next.streamKey) 0 else 1 }
+                _ui.update { it.copy(item = item.copy(streams = streams)) }
+                retriedSame = false
+                startedOnce = false
+                playStream(0)
+            }
+        }
+    }
+
+    /** Where the picked version is kept: per channel, film or series (all its episodes). */
+    private fun versionMemoryKey(item: PlayItem): String = item.parentKey ?: item.itemKey
 
     private var guideJob: Job? = null
 
@@ -295,8 +380,49 @@ class PlayerViewModel @AssistedInject constructor(
                 startedOnce = false
                 playStream(index, asHls = triedAsHls)
             }
-            // Next alternative (other source/quality); after the last one, show the message.
-            else -> playStream(index + 1)
+            // Next alternative (other source/quality); after the last one, an episode tries the
+            // other copies of its series, then the message shows.
+            else -> {
+                val item = _ui.value.item ?: return
+                item.streams.getOrNull(index)?.let { failedChoices += choiceKeyOf(item, it.streamKey) }
+                if (index + 1 < item.streams.size || request !is PlayRequest.Episode) playStream(index + 1)
+                else viewModelScope.launch { if (!playOtherCopy(item)) playStream(index + 1) }
+            }
+        }
+    }
+
+    /** The key a version is remembered by (an episode: its series copy; otherwise the stream). */
+    private fun choiceKeyOf(item: PlayItem, streamKey: String): String =
+        item.versions.firstOrNull { it.streamKey == streamKey }?.choiceKey ?: streamKey
+
+    /**
+     * The episode failed in this copy of the series: plays the same episode from the next copy not
+     * tried yet, from the same point. False when there is none left.
+     */
+    private suspend fun playOtherCopy(item: PlayItem): Boolean {
+        val episodeId = (request as? PlayRequest.Episode)?.episodeId ?: return false
+        val versions = runCatching { playback.episodeVersions(episodeId, fetch = true) }.getOrNull() ?: return false
+        val failed = item.streams.firstOrNull()?.streamKey
+        versions.firstOrNull { it.streamKey == failed }?.let { failedChoices += it.choiceKey }
+        val next = versions.firstOrNull { it.episodeId != null && it.episodeId !in triedEpisodes } ?: return false
+        val position = pure.player.currentPosition.takeIf { it > 0 } ?: item.resumeMs
+        saveProgressNow()
+        load(PlayRequest.Episode(next.episodeId!!, startMs = position, exact = true, fallback = true))
+        return true
+    }
+
+    /**
+     * Something other than the remembered version plays because that one failed: forget the pick,
+     * so it isn't tried (and waited for) first every time. Picking it again remembers it again.
+     */
+    private fun forgetDeadPick(item: PlayItem) {
+        if (failedChoices.isEmpty()) return
+        val key = versionMemoryKey(item)
+        val playing = item.streams.getOrNull(_ui.value.streamIndex)?.streamKey ?: return
+        val now = choiceKeyOf(item, playing)
+        viewModelScope.launch {
+            val pick = user.versionChoice(key) ?: return@launch
+            if (pick != now && pick in failedChoices) user.clearVersionChoice(key)
         }
     }
 

@@ -15,7 +15,9 @@ From an Android emulator the host is 10.0.2.2:
 
 Test cases on purpose: a backup stream that refuses connections (failover), a channel without a
 guide id (guide matched by name), a separator row, an adult category, a 4K and a +1 channel, and a
-season-only copy of a series (merged by its TMDB id). Guide times are relative to "now".
+season-only copy of a series (merged by its TMDB id), and 4K copies of a film and a series (versions).
+Guide times are relative to "now". FAKE_DEAD=<stream ids, comma-separated> makes those streams refuse
+connections too (e.g. FAKE_DEAD=1009,90201 for a version that stopped working).
 """
 import json
 import os
@@ -81,7 +83,7 @@ GUIDE_TITLES = {
     "zwielichtnachrichten.de": ["Nachrichten am Morgen", "Mittagsjournal", "Wirtschaft kompakt", "Tagesblick", "Wetter"],
 }
 
-VOD_CATEGORIES = [("10", "Movies | Drama"), ("11", "Movies | Sci-Fi"), ("12", "Movies | Family")]
+VOD_CATEGORIES = [("10", "Movies | Drama"), ("11", "Movies | Sci-Fi"), ("12", "Movies | Family"), ("13", "Movies | 4K")]
 # (id, name, category, tmdb id, clip, rating, plot, palette). TMDB ids are far beyond real ones.
 VOD = [
     (1001, "The Quiet Orbit (2021)", "11", "99000101", "aurora", 7.4,
@@ -100,8 +102,11 @@ VOD = [
      "Neighbours compete for the town's vegetable prize while something eats the giant marrows.", ("#2d6a4f", "#d8f3dc")),
     (1008, "Ember & Ash (2017)", "11", "99000108", "dusk", 7.2,
      "Two rival inventors are forced to share a workshop during the longest winter in a century.", ("#370617", "#ff7b00")),
+    # A second copy of 1001 (same TMDB id): another version of the same film.
+    (1009, "The Quiet Orbit (2021)", "13", "99000101", "dusk", 7.4,
+     "A lone engineer keeps a fading space station running and starts hearing a signal nobody else can.", ("#0b3d5c", "#8ab4ff")),
 ]
-SERIES_CATEGORIES = [("20", "Series | Drama"), ("21", "Series | Comedy")]
+SERIES_CATEGORIES = [("20", "Series | Drama"), ("21", "Series | Comedy"), ("22", "Series | 4K")]
 # (id, name, category, tmdb id, plot, palette). 5002 is a season-only copy of 5001 (same TMDB id),
 # as real providers list them.
 SERIES = [
@@ -111,6 +116,9 @@ SERIES = [
      "A family inherits a remote lighthouse and the strange logbook that comes with it.", ("#003049", "#fcbf49")),
     (5003, "Small Town Signals", "21", "99000202",
      "A community radio station with four listeners becomes the most important thing in town.", ("#6d597a", "#eaac8b")),
+    # A 4K copy of 5001 with season 1 only: another version of its episodes.
+    (5004, "The Lighthouse Keepers", "22", "99000201",
+     "A family inherits a remote lighthouse and the strange logbook that comes with it.", ("#003049", "#fcbf49")),
 ]
 EPISODES = {
     5001: {
@@ -118,6 +126,7 @@ EPISODES = {
         2: [(90004, 1, "The Second Log", "dusk"), (90005, 2, "Keeper's Night", "aurora")],
     },
     5002: {2: [(90004, 1, "The Second Log", "dusk")]},
+    5004: {1: [(90201, 1, "The Inheritance", "dusk"), (90202, 2, "Fog Bell", "meadow")]},
     5003: {
         1: [(90101, 1, "On Air", "ember"), (90102, 2, "Dead Air", "meadow"), (90103, 3, "Request Hour", "aurora"),
             (90104, 4, "The Pledge Drive", "dusk")],
@@ -137,6 +146,7 @@ for seasons in EPISODES.values():
 # list does (to look at the app mid-refresh).
 SLOW = float(os.environ.get("FAKE_SLOW", "0"))
 SLOW_SERIES = float(os.environ.get("FAKE_SLOW_SERIES", "0"))
+DEAD_IDS = {int(i) for i in os.environ.get("FAKE_DEAD", "").split(",") if i.strip().isdigit()}
 
 
 # ---- generating the media ----------------------------------------------------------------------
@@ -294,6 +304,8 @@ EPISODE_PLOTS = {
     90003: "An unusually low tide uncovers a path no map shows.",
     90004: "A second logbook turns up, written in a hand the family recognises.",
     90005: "The storm of the decade arrives on the night the light fails.",
+    90201: "The family arrives on the island and finds the last keeper's logbook still open.",
+    90202: "A bell rings in the fog although nobody on the island is near it.",
     90101: "The station's first broadcast reaches exactly four people.",
     90102: "The transmitter breaks down in the middle of the town council debate.",
     90103: "A request for a song nobody has heard of starts a town-wide search.",
@@ -416,7 +428,7 @@ def api(action, q, host: str):
                 for i, (vid, n, c, tmdb, _, r, _, _) in enumerate(VOD)]
     if action == "get_series":
         return [{"num": i + 1, "name": n, "series_id": sid, "cover": f"{img}/cover-{sid}.png", "plot": plot,
-                 "genre": "Drama" if c == "20" else "Comedy", "releaseDate": f"{2019 + i}-03-01",
+                 "genre": "Comedy" if c == "21" else "Drama", "releaseDate": f"{2019 + i}-03-01",
                  "last_modified": str(1700000000 + i), "rating": "7.6", "category_id": c, "tmdb": tmdb,
                  "backdrop_path": [f"{img}/backdrop-s{sid}.png"]}
                 for i, (sid, n, c, tmdb, plot, _) in enumerate(SERIES)]
@@ -516,10 +528,11 @@ class Handler(BaseHTTPRequestHandler):
             path = MEDIA / parts[1]
             return self.send_file(path, "image/png") if path.exists() else self.send(b"not found", "text/plain", 404)
         if len(parts) == 4 and parts[0] in ("live", "movie", "series"):
-            clip = STREAMS.get((parts[0], int(parts[3].split(".")[0])))
+            stream_id = int(parts[3].split(".")[0])
+            clip = STREAMS.get((parts[0], stream_id))
             if clip is None:
                 return self.send(b"not found", "text/plain", 404)
-            if clip == DEAD:
+            if clip == DEAD or stream_id in DEAD_IDS:
                 self.send_response(302)
                 self.send_header("Location", DEAD)
                 self.end_headers()

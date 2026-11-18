@@ -36,6 +36,7 @@ import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.layout.widthIn
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.rememberLazyListState
 import androidx.compose.material3.CircularProgressIndicator
@@ -70,6 +71,7 @@ import androidx.compose.ui.input.key.type
 import androidx.compose.ui.platform.LocalView
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.font.FontWeight
+import androidx.compose.ui.text.style.TextOverflow
 import androidx.compose.ui.unit.dp
 import androidx.hilt.lifecycle.viewmodel.compose.hiltViewModel
 import androidx.lifecycle.Lifecycle
@@ -508,9 +510,12 @@ private fun InfoBar(
         val details = listOfNotNull(
             item.subtitle,
             stream?.quality?.badge(),
-            stream?.sourceName?.takeIf { item.streams.map { it.sourceName }.distinct().size > 1 },
-            // Only worth mentioning when the first choice failed and a fallback is playing.
-            if (ui.streamIndex > 0) stringResource(R.string.player_backup_stream) else null,
+            // With versions to choose from, the version button names the source instead.
+            stream?.sourceName?.takeIf { item.versions.size < 2 && item.streams.map { it.sourceName }.distinct().size > 1 },
+            // Only worth mentioning when the first choice failed and a fallback is playing. With versions
+            // the button names the one playing ("backup" would also be wrong for the main stream that
+            // takes over from a picked version that failed).
+            if (ui.streamIndex > 0 && item.versions.size < 2) stringResource(R.string.player_backup_stream) else null,
         )
         if (details.isNotEmpty()) Text(details.joinToString("  ·  "), color = Color(0xFFB0B3BA), style = MaterialTheme.typography.titleMedium)
         ui.audio.firstOrNull { it.selected }?.let {
@@ -588,7 +593,31 @@ private fun PlayerActions(
             button(stringResource(R.string.player_audio_choose, current?.let { audioShortLabel(it) } ?: "")) { onAudio() }
         }
         if (ui.subtitles.isNotEmpty()) button(subtitlesButtonLabel(ui.subtitles)) { onSubtitles() }
+        versionLabel(ui)?.let { label ->
+            // Provider category names can be long: one line, cut short.
+            Tile(onClick = { vm.nextVersion(); onUse() }, shape = RoundedCornerShape(50), modifier = Modifier.widthIn(max = 520.dp)) { _ ->
+                Text(
+                    label,
+                    style = MaterialTheme.typography.titleSmall,
+                    maxLines = 1,
+                    overflow = TextOverflow.Ellipsis,
+                    modifier = Modifier.padding(horizontal = 18.dp, vertical = 8.dp),
+                )
+            }
+        }
     }
+}
+
+/**
+ * "Version: NORDIC SERIES (2/3)" for the button that switches to the next one: the name is easy to
+ * remember, the position shows where in the round it is. Null when there is just one version.
+ */
+@Composable
+private fun versionLabel(ui: PlayerUi): String? {
+    val versions = ui.item?.versions ?: return null
+    if (versions.size < 2) return null
+    val index = ui.versionIndex.coerceAtLeast(0)
+    return stringResource(R.string.player_version, versions[index].label, index + 1, versions.size)
 }
 
 @Composable
@@ -664,6 +693,7 @@ private fun TouchControls(isLive: Boolean, playing: Boolean, vm: PlayerViewModel
         button("⤢ " + zoomLabel(ui.zoom), vm::cycleZoom)
         if (ui.audio.size > 1) button("♪", onAudio)
         if (ui.subtitles.isNotEmpty()) button("CC", onSubtitles)
+        versionLabel(ui)?.let { button(it, vm::nextVersion) }
         if (isLive) {
             button("▲") { vm.zap(-1) }
             button("▼") { vm.zap(1) }

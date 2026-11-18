@@ -196,6 +196,7 @@
     <string name="player_now_playing">Sedang diputar</string>
     <string name="player_backup_stream">Stream cadangan</string>
     <string name="player_zoom">Gambar: %1$s</string>
+    <string name="player_version">Versi: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  Tambah ke favorit</string>
     <string name="player_remove_favourite_short">★  Favorit</string>
     <string name="zoom_fit">Sesuaikan</string>

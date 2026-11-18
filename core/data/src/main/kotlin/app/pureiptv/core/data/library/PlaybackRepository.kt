@@ -4,6 +4,7 @@ import app.pureiptv.core.data.credentials.CredentialStore
 import app.pureiptv.core.data.credentials.SourceSecret
 import app.pureiptv.core.data.db.ContentStore
 import app.pureiptv.core.data.db.EpisodeEntity
+import app.pureiptv.core.data.db.SeriesEntity
 import app.pureiptv.core.data.db.SourceEntity
 import app.pureiptv.core.data.source.SourceException
 import app.pureiptv.core.data.source.XtreamClient
@@ -29,6 +30,22 @@ data class PlayableStream(
      * one channel can be encoded differently. The TS and HLS forms of one stream share it.
      */
     val streamKey: String,
+    /** What tells this copy apart from the others: the provider's stream name or category. */
+    val label: String = "",
+)
+
+/**
+ * One version of what plays: another copy, quality or source of the same channel, film or episode.
+ * The viewer cycles through them in the player; the last one picked is remembered per title.
+ */
+data class PlayVersion(
+    /** [PlayableStream.streamKey] of this version's stream(s). */
+    val streamKey: String,
+    val label: String,
+    /** Remembered for the title: the stream key, or for episodes the series copy (it holds every episode). */
+    val choiceKey: String = streamKey,
+    /** Episodes: this episode in that copy of the series (a different row, played by loading it). */
+    val episodeId: Long? = null,
 )
 
 data class PlayItem(
@@ -47,6 +64,8 @@ data class PlayItem(
     val nextEpisodeId: Long? = null,
     /** "S2 E1" for the next episode. */
     val nextEpisodeLabel: String? = null,
+    /** The versions to cycle through, in order (empty or one: nothing to choose). */
+    val versions: List<PlayVersion> = emptyList(),
 )
 
 data class MovieDetails(
@@ -84,7 +103,9 @@ class PlaybackRepository @Inject constructor(
         val sources = v.sources.associateBy { it.id }
         val backup = 1 shl NameFlag.Backup.ordinal
         val hevc = 1 shl NameFlag.Hevc.ordinal
-        val streams = dao.streamsOf(channelId, v.sourceIds)
+        val rows = dao.streamsOf(channelId, v.sourceIds)
+        val manySources = rows.map { it.sourceId }.distinct().size > 1
+        val best = rows
             .sortedWith(
                 compareBy(
                     { order[it.sourceId] ?: Int.MAX_VALUE },
@@ -98,6 +119,8 @@ class PlaybackRepository @Inject constructor(
                 val source = sources[s.sourceId] ?: return@flatMap emptyList()
                 val headers = StreamHeaders(s.userAgent, s.referrer)
                 val quality = Quality.entries.getOrElse(s.quality) { Quality.Unknown }
+                // The provider's own name tells its copies apart ("SVT1 FHD", "SVT1 HEVC").
+                val label = listOfNotNull(s.rawName.trim(), source.name.takeIf { manySources }).joinToString(" · ")
                 val urls = when {
                     s.url != null -> listOf(s.url)
                     else -> {
@@ -108,7 +131,7 @@ class PlaybackRepository @Inject constructor(
                         listOfNotNull(xtream.live(id, "ts"), if (source.liveFormat == "m3u8") xtream.live(id, "m3u8") else null)
                     }
                 }
-                urls.map { PlayableStream(it, headers, source.name, quality, "stream:${s.sourceId}:${s.providerKey}") }
+                urls.map { PlayableStream(it, headers, source.name, quality, "stream:${s.sourceId}:${s.providerKey}", label) }
             }
         return PlayItem(
             itemKey = ItemKeys.channel(channel.identityKey),
@@ -116,7 +139,9 @@ class PlaybackRepository @Inject constructor(
             subtitle = null,
             artwork = channel.logo,
             isLive = true,
-            streams = streams,
+            // Versions keep the best-first order so cycling through them is always the same.
+            streams = preferredFirst(ItemKeys.channel(channel.identityKey), best),
+            versions = versionsOf(best),
         )
     }
 
@@ -129,11 +154,12 @@ class PlaybackRepository @Inject constructor(
         val copies = listOf(movie) + dao.movieCopies(movie.itemKey, v.sourceIds)
             .filter { it.id != movie.id }
             .sortedBy { order[it.sourceId] ?: Int.MAX_VALUE }
-        val streams = copies.mapNotNull { m ->
+        val manySources = copies.map { it.sourceId }.distinct().size > 1
+        val all = copies.mapNotNull { m ->
             val source = sources[m.sourceId] ?: return@mapNotNull null
             val url = m.url ?: xtreamUrls(source)?.movie(m.providerKey.toLongOrNull() ?: return@mapNotNull null, m.containerExtension)
                 ?: return@mapNotNull null
-            PlayableStream(url, StreamHeaders.None, source.name, Quality.Unknown, "stream:${m.sourceId}:${m.providerKey}")
+            PlayableStream(url, StreamHeaders.None, source.name, Quality.Unknown, "stream:${m.sourceId}:${m.providerKey}", copyLabel(m.categoryId, source.name, manySources))
         }
         return PlayItem(
             itemKey = movie.itemKey,
@@ -141,14 +167,29 @@ class PlaybackRepository @Inject constructor(
             subtitle = movie.year?.toString(),
             artwork = movie.poster,
             isLive = false,
-            streams = streams,
+            streams = preferredFirst(movie.itemKey, all),
             resumeMs = user.progress(movie.itemKey)?.takeIf { it.resumable }?.positionMs ?: 0,
+            versions = versionsOf(all.sortedBy { it.streamKey }),
         )
     }
 
-    suspend fun episode(episodeId: Long): PlayItem? {
-        val episode = dao.episode(episodeId) ?: return null
-        val series = dao.series(episode.seriesId) ?: return null
+    /**
+     * An episode, in the copy of the series the viewer picked before when that copy has it ([preferred]
+     * false: exactly this one, e.g. when the viewer just switched to it).
+     */
+    suspend fun episode(episodeId: Long, preferred: Boolean = true): PlayItem? {
+        var episode = dao.episode(episodeId) ?: return null
+        var series = dao.series(episode.seriesId) ?: return null
+        if (preferred) {
+            user.versionChoice(series.itemKey)?.takeIf { it != copyKey(series) }?.let { choice ->
+                val copy = dao.seriesCopies(series.itemKey, browse.visibility.first().sourceIds).firstOrNull { copyKey(it) == choice }
+                val other = copy?.let { episodeIn(it, episode.season, episode.episode, fetch = true) }
+                if (copy != null && other != null) {
+                    series = copy
+                    episode = other
+                }
+            }
+        }
         val source = browse.visibility.first().sources.firstOrNull { it.id == series.sourceId } ?: return null
         val url = episode.url ?: xtreamUrls(source)?.episode(episode.providerKey, episode.containerExtension) ?: return null
         val key = ItemKeys.episode(series.itemKey, episode.season, episode.episode)
@@ -160,12 +201,62 @@ class PlaybackRepository @Inject constructor(
             subtitle = episodeLabel(episode, series.title),
             artwork = episode.image ?: series.cover,
             isLive = false,
-            streams = listOf(PlayableStream(url, StreamHeaders.None, source.name, Quality.Unknown, "stream:${series.sourceId}:episode:${episode.providerKey}")),
+            streams = listOf(PlayableStream(url, StreamHeaders.None, source.name, Quality.Unknown, episodeStreamKey(series, episode))),
             resumeMs = user.progress(key)?.takeIf { it.resumable }?.positionMs ?: 0,
             parentKey = series.itemKey,
             nextEpisodeId = next?.id,
             nextEpisodeLabel = next?.let { "S${it.season} E${it.episode}" },
+            versions = episodeVersions(episode.id, fetch = false),
         )
+    }
+
+    /**
+     * The same episode in every copy of its series (other qualities and sources), in a fixed order.
+     * [fetch]: also load the episode lists of copies not opened yet (Xtream, one request per copy);
+     * without it only copies whose episodes are stored count.
+     */
+    suspend fun episodeVersions(episodeId: Long, fetch: Boolean): List<PlayVersion> {
+        val episode = dao.episode(episodeId) ?: return emptyList()
+        val series = dao.series(episode.seriesId) ?: return emptyList()
+        val v = browse.visibility.first()
+        val sources = v.sources.associateBy { it.id }
+        val copies = dao.seriesCopies(series.itemKey, v.sourceIds).filter { it.sourceId in sources }
+        val manySources = copies.map { it.sourceId }.distinct().size > 1
+        val found = copies.mapNotNull { copy ->
+            val e = if (copy.id == series.id) episode else episodeIn(copy, episode.season, episode.episode, fetch) ?: return@mapNotNull null
+            PlayVersion(
+                streamKey = episodeStreamKey(copy, e),
+                label = copyLabel(copy.categoryId, sources.getValue(copy.sourceId).name, manySources),
+                choiceKey = copyKey(copy),
+                episodeId = e.id,
+            )
+        }
+        return found.zip(uniqueLabels(found.map { it.label })) { version, label -> version.copy(label = label) }
+    }
+
+    /** Episode [season]/[episode] in [copy]; loads that copy's episodes first if allowed and needed. */
+    private suspend fun episodeIn(copy: SeriesEntity, season: Int, episode: Int, fetch: Boolean): EpisodeEntity? {
+        dao.episodeAt(copy.id, season, episode)?.let { return it }
+        if (!fetch || dao.episodeCount(copy.id) > 0) return null
+        loadEpisodes(copy.id)
+        return dao.episodeAt(copy.id, season, episode)
+    }
+
+    /** Puts the version the viewer picked for [itemKey] first; the others stay behind it as fallbacks. */
+    private suspend fun preferredFirst(itemKey: String, streams: List<PlayableStream>): List<PlayableStream> {
+        val choice = user.versionChoice(itemKey) ?: return streams
+        return streams.sortedBy { if (it.streamKey == choice) 0 else 1 }
+    }
+
+    private fun versionsOf(streams: List<PlayableStream>): List<PlayVersion> {
+        val distinct = streams.distinctBy { it.streamKey }
+        return distinct.zip(uniqueLabels(distinct.map { it.label })) { s, label -> PlayVersion(s.streamKey, label) }
+    }
+
+    /** A film's or series' copy: its category (where providers put "4K", "Multi-sub" and the like), and the source when there are several. */
+    private suspend fun copyLabel(categoryId: Long?, sourceName: String, withSource: Boolean): String {
+        val category = categoryId?.let { dao.categoryName(it) }?.trim()?.takeIf { it.isNotEmpty() }
+        return listOfNotNull(category, sourceName.takeIf { withSource || category == null }).joinToString(" · ")
     }
 
     /**
@@ -220,10 +311,26 @@ class PlaybackRepository @Inject constructor(
         )
     }
 
+    private fun copyKey(series: SeriesEntity) = "series:${series.sourceId}:${series.providerKey}"
+
+    private fun episodeStreamKey(series: SeriesEntity, episode: EpisodeEntity) = "stream:${series.sourceId}:episode:${episode.providerKey}"
+
     private suspend fun xtreamUrls(source: SourceEntity): XtreamUrls? =
         (credentials.get(source.id) as? SourceSecret.Xtream)?.let { XtreamUrls(XtreamCredentials(it.serverUrl, it.username, it.password)) }
 
     companion object {
+        /** Labels that read the same get a number ("Films (2)"), so the viewer can tell the versions apart. */
+        internal fun uniqueLabels(labels: List<String>): List<String> {
+            val seen = HashMap<String, Int>()
+            val repeated = labels.groupingBy { it }.eachCount()
+            return labels.map { label ->
+                if ((repeated[label] ?: 0) < 2) return@map label
+                val n = (seen[label] ?: 0) + 1
+                seen[label] = n
+                "$label ($n)"
+            }
+        }
+
         fun episodeLabel(e: EpisodeEntity, seriesTitle: String? = null): String {
             val code = "S%02d E%02d".format(e.season, e.episode)
             return cleanEpisodeTitle(e.title, seriesTitle)?.let { "$code · $it" } ?: code

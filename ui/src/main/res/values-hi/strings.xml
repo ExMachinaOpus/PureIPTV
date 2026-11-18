@@ -200,6 +200,7 @@
     <string name="player_now_playing">अभी चल रहा है</string>
     <string name="player_backup_stream">बैकअप स्ट्रीम</string>
     <string name="player_zoom">तस्वीर: %1$s</string>
+    <string name="player_version">संस्करण: %1$s (%2$d/%3$d)</string>
     <string name="player_add_favourite_short">☆  पसंदीदा में जोड़ें</string>
     <string name="player_remove_favourite_short">★  पसंदीदा</string>
     <string name="zoom_fit">स्क्रीन में फ़िट</string>

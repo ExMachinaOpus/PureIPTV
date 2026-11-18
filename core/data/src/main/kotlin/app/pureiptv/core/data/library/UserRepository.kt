@@ -136,6 +136,17 @@ class UserRepository @Inject constructor(private val dao: UserDao) {
     }
 
     /**
+     * The version (copy, quality or source) last picked for a channel, film or series:
+     * [PlayVersion.choiceKey]. Null = none picked, the best one plays.
+     */
+    suspend fun versionChoice(itemKey: String): String? = dao.setting(KEY_VERSION_PREFIX + itemKey).first()
+    suspend fun clearVersionChoice(itemKey: String) = dao.deleteSetting(KEY_VERSION_PREFIX + itemKey)
+
+    suspend fun setVersionChoice(itemKey: String, choiceKey: String) {
+        dao.putSetting(SettingEntity(KEY_VERSION_PREFIX + itemKey, choiceKey))
+    }
+
+    /**
      * Audio/subtitle choice remembered for a channel, as languages (track numbers differ between a
      * channel's streams and backups). Null = nothing remembered.
      */
@@ -150,6 +161,7 @@ class UserRepository @Inject constructor(private val dao: UserDao) {
     private companion object {
         const val KEY_TRACKS_PREFIX = "tracks:"
         const val KEY_ZOOM_PREFIX = "zoom:"
+        const val KEY_VERSION_PREFIX = "version:"
         const val KEY_SHOW_ADULT = "show_adult"
         const val KEY_UI_LANGUAGE = "ui_language"
         const val KEY_GROUPS_BY_NAME = "groups_by_name"
